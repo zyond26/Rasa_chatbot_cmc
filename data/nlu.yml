@@ -1,0 +1,671 @@
+version: "2.0"
+nlu:
+- intent: thongtintoanbo
+  examples: |
+    - Thông tin toàn bộ của các ngành đào tạo
+    - thông tin toàn bộ của các ngành đào tạo
+    - all ngành đào tạo
+    - tất cả thông tin về các ngành đào tạo
+    - tất cả thông tin về các ngành
+    - tất cả thông tin về ngành
+    - thông tin về các ngành
+    - thông tin về ngành
+    - thông tin về các ngành đào tạo
+    - thông tin về ngành đào tạo
+- intent: asktuyensinh
+  examples: |
+    - Thầy ơi, cho em hỏi thông tin tuyển sinh các năm trước
+    - Cô ơi , cho em hỏi thông tin truyển sinh các năm trước
+    - Chào thầy, em hỏi thông tin tuyển sinh các năm trước
+    - Chào cô, cho em hỏi thông tin tuyển sinh các năm trước
+    - Cô có thể cho em biết thông tin tuyển sinh các năm trước
+    - chào admin cho em hỏi thông tin tuyển sinh các năm trước
+    - chào local cho em hỏi thông tin tuyển sinh các năm trước
+    - admin có thể cho em biết thông tin tuyển sinh các năm trước
+    - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
+    - thông tin tuyển sinh các năm
+    - thông tin tuyển sinh các năm trước
+- intent: tuyenSinhCacNam
+  examples: |
+    - Thông tin tuyển sinh năm [2021](year)
+    - Thông tin tuyển sinh năm [2021](year) của [trường]
+    - Thông tin tuyển sinh năm [2021](year) của học viện
+    - Tuyển sinh năm [2021](year)
+    - Tuyển sinh năm [2021](year) của [trường]
+    - Tuyển sinh năm [2021](year) của học viện
+    - Tuyển sinh năm [2021](year) của KMA
+    - Tuyển sinh năm [2021](year) của học viện mật mã
+    - Tuyển sinh năm [2021](year) của [trường] mình
+    - Tuyển sinh năm [2021](year) của học viện mình
+    - Thông tin tuyển sinh năm [2023](year)
+    - Thông tin tuyển sinh năm [2023](year) của [trường]
+    - Thông tin tuyển sinh năm [2023](year) của học viện
+    - Tuyển sinh năm [năm trước](year)
+    - Tuyển sinh năm [2023](year) của trường
+    - Tuyển sinh năm [năm ngoái](year) của học viện
+    - Tuyển sinh năm [2023](year) của KMA
+    - Tuyển sinh năm [năm trước](year) của học viện mật mã
+    - Tuyển sinh năm [2023](year) của trường mình
+    - Tuyển sinh năm [2023](year) của học viện mình
+    - Thông tin tuyển sinh năm [2022](year)
+    - Thông tin tuyển sinh năm [2022](year) của [trường]
+    - Thông tin tuyển sinh năm [2022](year) của học viện
+    - Tuyển sinh năm [năm kia](year)
+    - Tuyển sinh năm [2022](year) của trường
+    - Tuyển sinh năm [năm kia](year) của học viện
+    - Tuyển sinh năm [2022](year) của KMA
+    - Tuyển sinh năm [2022](year) của học viện mật mã
+    - Tuyển sinh năm [năm kia](year) của trường mình
+    - Tuyển sinh năm [2022](year) của học viện mình
+    - thông tin tuyển sinh [năm nay](year)
+    - thông tin tuyển sinh năm [2024](year)
+    - tuyển sinh năm [2024](year)
+    - tuyển sinh [năm nay](year)
+    - Tuyển sinh năm [2024](year)
+    - Tuyển sinh năm [năm nay](year) của [học viện]
+    - Tuyển sinh năm [2024](year) của trường
+    - Tuyển sinh năm [năm nay](year) của KMA
+    - Tuyển sinh năm [2024](year) của học viện mật mã
+    - Tuyển sinh năm [2024](year) của [học viện] mình
+    - Tuyển sinh năm [năm nay](year) của trường mình
+    - kết quả xét tuyển năm [2022](year)
+    - kết quả xét tuyển [năm nay](year)
+    - xem điểm chuẩn năm [2022](year) 
+    - Điểm chuẩn năm [2024](year)
+    - Điểm chuẩn [năm nay](year)
+    - Bảng điểm chuẩn năm [2024](year)
+    - Điểm chuẩn các ngành năm [2024](year)
+    - Điểm năm [2024](year)
+
+- intent: chon1
+  examples: |
+    - Điểm của các ngành
+    - điểm của các ngành
+    - điểm của ngành
+    - điểm của các ngành đào tạo
+    - tuyển sinh
+    - điểm chuẩn
+    - xem điểm chuẩn
+    - kết quả xét tuyển
+    - cho em xin kết quả xét tuyển
+    - thông tin tuyển sinh
+    - xét tuyển
+    - tra điểm
+- intent: chon2
+  examples: |
+    - Mã của các ngành
+    - mã của các ngành
+    - Mã của ngành
+    - Mã của các ngành đào tạo
+    - Tổ hợp môn của các ngành
+    - tổ hợp môn của các ngành
+    - Tổ hợp môn của ngành đào tạo
+    - tổ hợp môn của các ngành đào tạo
+    - tổ hợp môn
+
+- intent: Manganh
+  examples: |
+    - [Mã ngành](code) [Công nghệ thông tin](major)
+    - [Mã ngành](code) [An toàn thông tin](major)
+    - [Mã ngành](code) [Điện tử viễn thông](major)
+    - [Mã ngành](code) [CNTT](major)
+    - [Mã ngành](code) [ATTT](major)
+    - [Mã ngành](code) [DTVT](major)
+    - Ngành [Công nghệ thông tin](major) có [mã](code) là gì?
+    - Ngành [An toàn thông tin](major) có [mã](code) là gì?
+    - Ngành [Điện tử viễn thông](major) có [mã](code) là gì?
+    - [Công nghệ thông tin](major) có [mã ngành](code) là gì?
+    - [An toàn thông tin](major) có [mã ngành](code) là gì?
+    - [Điện tử viễn thông](major) có [mã ngành](code) là gì?
+    - Ngành [CNTT](major) có [mã](code) là gì?
+    - Ngành [ATTT](major) có [mã](code) là gì?
+    - Ngành [DTVT](major) có [mã](code) là gì?
+    - [CNTT](major) có [mã ngành](code) là gì?
+    - [ATTT](major) có [mã ngành](code) là gì?
+    - [DTVT](major) có [mã ngành](code) là gì?
+- intent: tohopmon
+  examples: |
+    - [Tổ hợp môn xét tuyển ngành](code) [Công nghệ thông tin](major)
+    - [Tổ hợp môn xét tuyển ngành](code) [An toàn thông tin](major)
+    - [Tổ hợp môn xét tuyển ngành](code) [Điện tử viễn thông](major)
+    - [Tổ hợp môn xét tuyển ngành](code) [CNTT](major)
+    - [Tổ hợp môn xét tuyển ngành](code) [ATTT](major)
+    - [Tổ hợp môn xét tuyển ngành](code) [DTVT](major)
+    - Ngành [Điện tử viễn thông](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+    - Ngành [An toàn thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+    - Ngành [Công nghệ thông tin](major) có [Tổ hợp môn xét tuyển ngành](code) là gì
+- intent: diemchuan2021
+  examples: |
+    - [Điểm ngành](code) [Công nghệ thông tin](major) năm [2021](year)
+    - [Điểm ngành](code) [An toàn thông tin](major) năm [2021](year)
+    - [Điểm ngành](code) [Điện tử viễn thông](major) năm [2021](year)
+    - [Điểm ngành](code) [CNTT](major) năm [2021](year)
+    - [Điểm ngành](code) [ATTT](major) năm [2021](year)
+    - [Năm nay](year) Ngành [Công nghệ thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+    - [Năm nay](year) Ngành [An toàn thông tin](major) có [điểm chuẩn](code) là bao nhiêu?
+    - [Năm nay](year) Ngành [Điện tử viễn thông](major) có [điểm chuẩn](code) là bao nhiêu?
+    - [Năm nay](year) Ngành [DTVT](major) có [điểm chuẩn](code) là bao nhiêu?
+    - [Công nghệ thông tin](major) năm [2022](year) có [điểm chuẩn](code) là bao nhiêu?
+    - [An toàn thông tin](major) năm [2023](year) có [điểm chuẩn](code) là bao nhiêu?
+    - [Điện tử viễn thông](major) năm [2024](year) có [điểm chuẩn](code) là bao nhiêu?
+    - [Công nghệ thông tin](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
+    - [An toàn thông tin](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
+    - [Điện tử viễn thông](major) năm [2021](year) lấy bao nhiêu [điểm](code)?
+- intent: chaohoithongminh
+  examples: |
+    - [Anh](sex) là [Long](name)
+    - [Anh](sex) là [Hoàng Long]
+    - [Anh](sex) là [Tiến](name)
+    - [Chị](sex) là [Phước](name)
+    - [Chị](sex) là [Hồng Phước](name)
+    - [Anh](sex) là [Thủy](name)
+    - [Anh](sex) là [Đăng Bình](name)
+
+- intent: kytucxa
+  examples: |
+    - cho em biết thông tin về ký túc xá
+    - ký túc xá học viện mật mã
+    - Học viện mật mã có ký túc xá không
+    - ký túc xa ở học viện mật mã như thế nào
+    - ký túc xá
+- intent: hocbong
+  examples: |
+    - cho em hỏi học bổng của [học viện] mình như thế nào
+    - thưa thầy, cho em hỏi học bổng của [trường] mình được trao như thế nào
+    - học bổng
+    - Thông tin về học bổng
+    - Chính sách về học bổng
+    - học bổng của [trường]
+    - học bổng của [trường] mình
+    - làm sao để có học bổng?
+    - học bổng của [học viện] như thế nào?
+    - học bổng của [trường] mình như thế nào?
+    - làm sao để có học bổng của [trường] mình?
+- intent: chaohoi
+  examples: |
+    - admin
+    - chào local
+    - chào admin
+    - Thưa thầy
+    - hi thầy
+    - hi cô
+    - hi bạn
+    - hi ad
+    - xin chào
+    - xin chao
+    - chào
+    - chào ad
+    - chào bot
+    - hello
+    - hi
+    - alo
+- intent: tambiet
+  examples: |
+    - tạm biệt
+    - bye bye
+    - cám ơn
+    - cám ơn nhiều
+    - pp
+    - bai bai
+    - bai
+    - bye
+- intent: bot_challenge
+  examples: |
+    - Bạn là ai?
+    - Giới thiệu về bạn
+    - Chatbot này là gì?
+    - Cho tôi biết về bạn
+    - Bạn có thể làm gì?
+    - Giới thiệu con chatbot này
+    - Bạn là chatbot đúng không?
+    - Bạn có thể giúp gì?
+    - Chatbot này có thể làm gì?
+    - Chatbot này hoạt động như thế nào?
+    - khả năng của bot
+    - bot có khả năng gì
+    - hãy nêu chức năng của bot
+    - bạn có thể làm gì
+- intent: infomation
+  examples: |
+    - thông tin học viện kĩ thuật mật mã
+    - thông tin trường học viện kĩ thuật mật mã
+    - thông tin về [học viện]
+    - thông tin về học viện
+    - thông tin về KMA
+    - [học viện] có những đặc điểm gì
+    - lịch sử của [trường]
+    - học viện kĩ thuật mật mã là gì
+    - school infomation
+    - info
+    - KMA là gì
+    - KMA có những gì
+- intent: majors
+  examples: |
+    - [trường] đào tạo những ngành gì
+    - thông tin ngành
+    - ngành học
+    - thông tin ngành đào tạo
+    - ngành đào tạo
+    - ngành
+    - những ngành [học viện] đào tạo
+    - [học viện] dạy những ngành gì
+    - majors
+    - major
+- intent: hocphi
+  examples: |
+    - học phí của [học viện] là bao nhiêu
+    - học phí tại [học viện] như thế nào
+    - mức học phí
+    - học phí
+    - học phí hiện tại
+    - học phí năm nay như thế nào
+    - học phí của [trường]
+    - học phí của [trường] mình
+    - học phí của [học viện] mình như thế nào
+    - học phí 1 năm là bao nhiêu
+    - học phí 1 năm
+    - bao nhiêu tiền 1 tín
+    - học phí 1 tín
+    - học phí 1 tín là bao nhiêu
+    - học phí bao nhiêu tiền 1 kì
+    - học phí 1 kì
+    - học phí 1 kì là bao nhiêu
+    - bao nhiêu tiền 1 kì
+    - học phí bao nhiêu tiền 1 học kì
+    - học phí 1 học kì
+- intent: tuyensinh
+  examples: |
+    - cách xét tuyển
+    - phương thức xét tuyển
+    - thông tin đăng ký xét tuyển
+    - cách đăng ký xét tuyển
+    - cho em hỏi cách đăng ký xét tuyển
+    - đăng ký xét tuyển như thế nào
+    - làm sao để đăng ký xét tuyển
+- intent: phuongthucrieng
+  examples: |
+    - phương thức riêng
+    - phương thức xét tuyển riêng
+    - Phương thức riêng
+    - Phương thức tuyển thẳng
+    - xét tuyển riêng
+    - riêng
+- intent: tuyenthang
+  examples: |
+    - xét tuyển thẳng
+    - xét tuyển theo phương thức tuyển thẳng
+    - tuyển thẳng
+    - học viện có xét tuyển thẳng không
+    - [trường] có xét tuyển thẳng không
+    - xét tuyển thẳng không
+    - điều kiện xét tuyển thẳng
+    - các điều kiện để xét tuyển theo phương thức tuyển thẳng
+    - các điều kiện cần để xét tuyển thẳng
+    - các điều kiện cần để xét tuyển theo phương thức tuyển thẳng
+    - điều kiện để được xét tuyển theo phương thức tuyển thẳng
+- intent: cachXetTuyenThang
+  examples: |
+    - nộp hồ sơ tuyển thẳng như thế nào
+    - làm hồ sơ tuyển thẳng
+    - hồ sơ tuyển thẳng
+    - làm thế nào để xét tuyển thẳng
+    - cách để xét tuyển theo phương thức tuyển thẳng
+    - làm cách nào để nộp hồ sơ xét tuyển phương thức tuyển thẳng
+    - cách để làm hồ sơ nhập học theo phương thức tuyển thẳng
+- intent: phuongthuchocba
+  examples: |
+    - xét học bạ
+    - xét tuyển theo phương thức học bạ
+    - học bạ
+    - học viện có xét học bạ không
+    - [học viện] có xét học bạ không
+    - [trường] có xét học bạ không
+    - xét học bạ không
+    - điều kiện xét học bạ
+    - các điều kiện để xét tuyển theo phương thức học bạ
+    - các điều kiện cần để xét học bạ
+    - các điều kiện cần để xét tuyển theo phương thức học bạ
+    - điều kiện để được xét tuyển theo phương thức học bạ
+- intent: phuongthucxetdiemthithpt
+  examples: |
+    - phương thức điểm thi tốt nghiệp trung học phổ thông
+    - phương thức điểm thi tốt nghiệp
+    - điểm thi
+    - thpt
+    - điểm thi tốt nghiệp
+    - tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp trung học phổ thông
+    - điều kiện xét tuyển điểm thi THPT
+    - các điều kiện để xét tuyển theo điểm thi THPT
+    - các điều kiện cần để xét tuyển theo điểm thi THPT
+    - các điều kiện cần để có thể xét tuyển theo điểm thi THPT
+    - điều kiện để được xét tuyển theo điểm thi THPT
+- intent: xettuyentheophuongthucdiemthiTHPT
+  examples: |
+    - làm thế nào để xét tuyển theo phương thức điểm thi THPT
+    - cách để xét tuyển theo phương thức lấy điểm thi THPT
+    - làm cách nào để nộp hồ sơ xét tuyển phương thức lấy điểm thi THPT
+    - cách để làm hồ sơ nhập học theo phương thức điểm thi THPT
+
+
+- intent: job
+  examples: |
+    - Công việc sau khi ra [trường]
+    - Công việc
+    - [Việc làm](job) sau khi ra [học viện]
+    - Cơ hội việc làm
+    - [Việc làm](job)
+    - Triển vọng nghề nghiệp
+    - [Việc làm](job) sau khi học xong
+    - [Việc làm](job) sau khi học xong ngành
+    - Ra [học viện] làm gì
+- intent: tochatnganhCNTT
+  examples: |
+    - Ngành [CNTT](major) yêu cầu những [tố chất](tochat) gì
+    - Ngành [IT](major) yêu cầu những gì
+    - Học [Công nghệ thông tin](major) cần những [Yếu tố](tochat) gì
+    - Để học ngành [Công nghệ thông tin](major) cần có những [Kỹ năng](tochat) nào
+    - Để vào ngành [CNTT](major) cần có những [Năng lực](tochat) gì
+    - Những [Năng khiếu](tochat) cần có cho ngành [Công nghệ thông tin](major) là gì
+    - Ngành [Công nghệ thông tin](major) cần [Tài năng](tochat) nào
+    - Ngành [Công nghệ thông tin](major) đòi hỏi những [Đặc điểm](tochat) gì
+    - Ngành [CNTT](major) cần [Tính cách](tochat) nào
+    - Ngành [CNTT](major) cần [Khả năng](tochat) nào
+    - ngành [CNTT](major) cần [tố chất](tochat) nào
+- intent: tochatnganhATTT
+  examples: |
+    - Ngành [ATTT](major) yêu cầu những [tố chất](tochat) gì
+    - Ngành [ATTT](major) yêu cầu những gì
+    - Học [ATTT](major) cần những [Yếu tố](tochat) gì
+    - Ngành [An toàn thông tin](major) yêu cầu những [Kỹ năng](tochat) gì
+    - Học [An toàn thông tin](major) cần những [Năng lực](tochat) gì
+    - Để học ngành [An toàn thông tin](major) cần có những [Năng khiếu](tochat) nào
+    - Để vào ngành [ATTT](major) cần có những [Tài năng](tochat) gì
+    - Những [Đặc điểm] cần có cho ngành [An toàn thông tin](major) là gì
+    - Ngành [An toàn thông tin](major) cần [Tính cách](tochat) nào
+    - Ngành [An toàn thông tin](major) đòi hỏi những [Khả năng](tochat) gì
+- intent: tochatnganhDTVT
+  examples: |
+    - Ngành [DTVT](major) yêu cầu những [tố chất](tochat) gì
+    - Ngành [DTVT](major) yêu cầu những gì
+    - Học [Điện tử viễn thông](major) cần những [Yếu tố](tochat) gì
+    - Để học ngành [Điện tử viễn thông](major) cần có những [Kỹ năng](tochat) nào
+    - Để vào ngành [Điện tử viễn thông](major) cần có những [Năng lực](tochat) gì
+    - Những [Năng khiếu](tochat) cần có cho ngành [DTVT](major) là gì
+    - Ngành [DTVT](major) cần [Tài năng](tochat) nào
+    - Ngành [Điện tử viễn thông](major) đòi hỏi những [Đặc điểm](tochat) gì
+    - Ngành [DTVT](major) cần [Tính cách](tochat) nào
+    - Ngành [DTVT](major) cần [Khả năng](tochat) nào
+- intent: monHocNganhCNTT
+  examples: |
+    - Chương trình đào tạo của ngành [CNTT](major) có những [môn học](monhoc) nào?
+    - Ngành [CNTT](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [IT](major) là gì?
+    - Ngành [Công nghệ thông tin](major) học những [môn học](monhoc) nào?
+    - Ngành [Công nghệ thông tin](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [Công nghệ thông tin](major) là gì?
+    - Chương trình học của ngành [CNTT](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
+    - chương trình đào tạo ngành [CNTT](major) có những [môn học](monhoc) nào
+- intent: monHocNganhATTT
+  examples: |
+    - Chương trình đào tạo của ngành [ATTT](major) có những [môn học](monhoc) nào?
+    - Ngành [An toàn thông tin](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [An toàn thông tin](major) là gì?
+    - Ngành [An toàn thông tin](major) học những [môn học](monhoc) nào?
+    - Ngành [An toàn thông tin](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [ATTT](major) là gì?
+    - Chương trình học của ngành [ATTT](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [An toàn thông tin](major) là gì?
+- intent: monHocNganhDTVT
+  examples: |
+    - Chương trình đào tạo của ngành [DTVT](major) có những [môn học](monhoc) nào?
+    - Ngành [DTVT](major) bao gồm các [môn học](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [Điện tử viễn thông](major) là gì?
+    - Ngành [Điện tử viễn thông](major) học những [môn](monhoc) nào?
+    - Ngành [Điện tử viễn thông](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [DTVT](major) là gì?
+    - Chương trình học của ngành [Điện tử viễn thông](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [Điện tử viễn thông](major) là gì?
+- intent: trinhDoGiaoVien
+  examples: |
+    - [giáo viên] của [học viện] có kinh nghiệm như thế nào?
+    - Kinh nghiệm của [giảng viên] [trường] là gì?
+    - giảng viên thế nào?
+    - Kinh nghiệm của [giảng viên] [trường]
+    - [giảng viên] [trường] có gì đặc biệt về kinh nghiệm?
+    - [giảng viên] [học viện] có bao nhiêu năm kinh nghiệm?
+    - Kinh nghiệm làm việc của [giảng viên] [trường] là gì?
+    - Cần bao nhiêu kinh nghiệm để làm [thầy] ở [trường] này?
+    - Kinh nghiệm [giáo viên] của [trường] ra sao?
+    - Kinh nghiệm của các [giảng viên] tại [học viện] là thế nào?
+    - Trình độ kinh nghiệm của [giảng viên] trong [trường] như thế nào??
+    - [thầy] trong [trường] có giỏi không?
+    - [cô] trong [trường] thế nào?
+    - [giảng viên] của học viện mật mã có giỏi không?
+- intent: cauLacBo
+  examples: |
+    - [học viện] có những [CLB] sinh viên nào?
+    - Các [câu lạc bộ] sinh viên tại [trường] là gì?
+    - Danh sách các [câu lạc bộ] sinh viên
+    - [câu lạc bộ] sinh viên của [trường]
+    - Những [câu lạc bộ] sinh viên tại [học viện]
+    - [CLB] nào có ở [trường]?
+    - nhiều [câu lạc bộ] không?
+    - Có các [câu lạc bộ] sinh viên nào tại [trường]?
+    - [học viện] có [câu lạc bộ] nào cho sinh viên không?
+    - Sinh viên có thể tham gia các [câu lạc bộ] nào?
+    - Các hoạt động [CLB] của sinh viên là gì?
+    - Làm cách nào để tham gia [câu lạc bộ] của [trường]?
+    - [câu lạc bộ]
+- intent: hocCoKhoKhong
+  examples: |
+    - Chương trình của [trường] có khó không?
+    - Độ khó của chương trình học ở [trường] như thế nào?
+    - Chương trình học của [học viện] có nặng không?
+    - [học viện] có chương trình học khó không?
+    - Học ở [trường] này có khó không?
+    - Chương trình học ở [trường] có thách thức không?
+    - Chương trình học của [trường] có yêu cầu cao không?
+    - [học viện] có dễ học không?
+    - [trường] có dễ ra trường không?
+    - [trường] có khó ra trường không?
+    - học có khó không?
+- intent: nhieuBanNuKhong
+  examples: |
+    - [học viện] có nhiều [bạn gái] không?
+    - Tỉ lệ [gái] ở [trường] như thế nào?
+    - Có nhiều bạn [nữ] không?
+    - Có nhiều [bạn gái] không?
+    - nhiều [nữ] không?
+    - [trường] có số lượng [nữ] lớn không?
+    - Tỉ lệ [sinh viên] [nữ] ở [trường]?
+    - Số lượng [nữ] trong [học viện] có nhiều không?
+    - [trường] có nhiều [học sinh] [nữ] không?
+    - Tình hình số lượng [bạn gái] ở [trường] thế nào?
+    - [nữ] ở [học viện] có xinh không
+    - [trường] có nhiều [nữ] xinh không
+    - [gái] có xinh không
+- intent: hoSo
+  examples: |
+    - hồ sơ nhập học
+    - hồ sơ cần thiết để nhập học
+    - làm hồ sơ xét tuyển
+    - nộp hồ sơ xét tuyển
+    - cách gửi hồ sơ xét tuyển
+    - Hồ sơ cần thiết để nhập học
+    - Cần những giấy tờ gì để nhập học
+    - Hồ sơ nhập học bao gồm những gì
+    - Tôi cần chuẩn bị gì để nhập học
+    - Hồ sơ nhập học cần có những gì
+    - Để nhập học tôi cần nộp những giấy tờ nào
+    - Cần nộp những gì để nhập học
+    - Những giấy tờ cần thiết để nhập học là gì
+- intent: chuanDauRaTiengAnh
+  examples: |
+    - Chuẩn đầu ra tiếng Anh của [trường] là bao nhiêu?
+    - [trường] yêu cầu chuẩn đầu ra tiếng Anh như thế nào?
+    - Chuẩn đầu ra tiếng Anh của [sinh viên] là gì?
+    - Mức tiếng Anh tối thiểu để tốt nghiệp là bao nhiêu?
+    - Chuẩn tiếng Anh khi ra [học viện] là gì?
+    - Chuẩn tiếng anh đầu ra?
+    - tiếng Anh đầu ra
+    - Tiếng Anh cần đạt bao nhiêu để ra [học viện]?
+    - [trường] có yêu cầu chuẩn tiếng Anh đầu ra không?
+    - Yêu cầu tiếng Anh đầu ra của [học viện] như thế nào?
+- intent: chuanDauVaoTiengAnh
+  examples: |
+    - Chuẩn đầu vào tiếng Anh của [trường] là bao nhiêu?
+    - Mức điểm tiếng Anh đầu vào của [học viện] là bao nhiêu?
+    - [học viện] yêu cầu chuẩn đầu vào tiếng Anh như thế nào?
+    - Tiêu chuẩn đầu vào tiếng Anh của [trường] là gì?
+    - Chuẩn tiếng anh đầu vào?
+    - Kì thi tiếng anh đầu vào?
+    - [trường] có phải thi tiếng anh đầu vào?
+    - Yêu cầu tiếng Anh đầu vào của [trường] là bao nhiêu?
+    - [trường] cần bao nhiêu điểm tiếng Anh để đạt chuẩn đầu vào?
+    - Đầu vào tiếng Anh của [trường] cần bao nhiêu điểm?
+- intent: doiDiemTiengAnh
+  examples: |
+    - Cách đổi điểm tiếng Anh 123
+    - Cách đổi điểm tiếng Anh
+    - Làm sao để đổi điểm tiếng Anh 123?
+    - Hướng dẫn đổi điểm tiếng Anh 123
+    - Quy trình đổi điểm tiếng Anh 123 như thế nào?
+    - Làm thế nào để chuyển điểm tiếng Anh 123?
+    - Làm thế nào để chuyển điểm tiếng Anh?
+    - Cách thức đổi điểm tiếng Anh 123 ra sao?
+    - Đổi điểm tiếng Anh 123 như thế nào?
+    - Tôi muốn đổi điểm tiếng Anh 123 thì làm thế nào?
+- intent: soLuongKhoaHoc
+#  oikakojga
+  examples: |
+    - [trường] có bao nhiêu khóa?
+    - Có bao nhiêu khóa học trong [học viện]?
+    - [trường] có mấy khóa?
+    - Số lượng khóa học của [trường] là bao nhiêu?
+    - [học viện] hiện tại có bao nhiêu khóa?
+    - [trường] đã có bao nhiêu khóa [học sinh]?
+    - Số khóa học của [trường] là bao nhiêu?
+    - Có bao nhiêu khóa [sv] đã tốt nghiệp?
+- intent: soLuongSinhVien
+  examples: |
+    - [học viện] có bao nhiêu [học sinh]?
+    - Số lượng [sinh viên] của [trường] là bao nhiêu?
+    - [trường] hiện tại có bao nhiêu [sinh viên]?
+    - Số [học viên] của [trường] là bao nhiêu?
+    - [học viện] có tổng cộng bao nhiêu [sinh viên]?
+    - Có bao nhiêu [sv] đang học tại [trường]?
+    - số lương sinh viên
+    - số lượng sv
+- intent: diemTrungBinh
+  examples: |
+    - Điểm chuẩn của [học viện] mình hằng năm khoảng bao nhiêu?
+    - Điểm chuẩn của [trường] mình hằng năm trung bình bao nhiêu?
+    - [trường] mình có điểm chuẩn trung bình là bao nhiêu?
+    - [học viện] mình có điểm chuẩn khoảng bao nhiêu?
+    - Mỗi năm điểm chuẩn trung bình của [trường] là bao nhiêu?
+    - Mỗi năm điểm chuẩn của [trường] khoảng bao nhiêu?
+    - Điểm chuẩn vào [trường] khoảng bao nhiêu?
+    - [trường] có điểm chuẩn trung bình là bao nhiêu?
+    - trường có điểm chuẩn trung bình là bao nhiêu
+- intent: Vieclam_DienTuVienThong
+  examples: |
+    - học xong ngành [Điện tử viễn thông](major) thì làm gì
+    - [Việc làm](job) ngành [Điện tử viễn thông](major)
+    - Công việc cho ngành [Điện tử viễn thông](major)
+    - ngành [Điện tử viễn thông](major) ra làm gì?
+    - Ngành [Điện tử viễn thông](major) ra trường làm gì?
+    - học xong ngành [DTVT](major) thì làm gì
+    - [Việc làm](job) ngành [DTVT](major)
+    - Công việc cho ngành [DTVT](major)
+    - ngành [DTVT](major) ra làm gì?
+    - Ngành [DTVT](major) ra trường làm gì?
+- intent: Vieclam_AnToanThongTin
+  examples: |
+    - học xong ngành [An toàn thông tin](major) thì làm gì
+    - [Việc làm](job) ngành [An toàn thông tin](major)
+    - Công việc cho ngành [An toàn thông tin](major)
+    - ngành [An toàn thông tin](major) ra làm gì?
+    - Ngành [An toàn thông tin](major) ra trường làm gì?
+    - học xong ngành [ATTT](major) thì làm gì
+    - [Việc làm](job) ngành [ATTT](major)
+    - Công việc cho ngành [ATTT](major)
+    - ngành [ATTT](major) ra làm gì?
+    - Ngành [ATTT](major) ra trường làm gì?
+- intent: Vieclam_CongNgheThongTin
+  examples: |
+    - học xong ngành [Công nghệ thông tin](major) thì làm gì
+    - [Việc làm](job) ngành [Công nghệ thông tin](major)
+    - Công việc cho ngành [Công nghệ thông tin](major)
+    - ngành [Công nghệ thông tin](major) ra làm gì?
+    - Ngành [Công nghệ thông tin](major) ra trường làm gì?
+    - học xong ngành [CNTT](major) thì làm gì
+    - [Việc làm](job) ngành [CNTT](major)
+    - Công việc cho ngành [IT](major)
+    - ngành [CNTT](major) ra làm gì?
+    - Ngành [IT](major) ra trường làm gì?
+
+- synonym: sinh viên
+  examples: |
+    - học sinh
+    - học viên
+    - sv
+- synonym: câu lạc bộ
+  examples: |
+    - CLB
+- synonym: nữ
+  examples: |
+    - gái
+    - bạn gái
+    - girl
+
+- synonym: giảng viên
+  examples: |
+    - giáo viên
+    - thầy
+    - cô
+    - thầy giáo
+    - cô giáo
+- synonym: trường
+  examples: |
+    - học viện
+    - hv
+- synonym: tố chất
+  examples: |
+    - Yếu tố
+    - Kỹ năng
+    - Năng lực
+    - Năng khiếu
+    - Tài năng
+    - Đặc điểm
+    - Tính cách
+    - Khả năng
+- synonym: Công nghệ thông tin
+  examples: |
+    - IT
+    - CNTT
+- synonym: An toàn thông tin
+  examples: |
+    - ATTT
+- synonym: Điện tử viễn thông
+  examples: |
+    - DTVT
+- synonym: '2024'
+  examples: |
+    - năm 2024
+    - năm nay
+- synonym: '2023'
+  examples: |
+    - năm 2023
+    - năm ngoái
+    - năm trước
+- synonym: '2022'
+  examples: |
+    - năm 2022
+    - năm kia
+
+- synonym: môn học
+  examples: |
+    - môn

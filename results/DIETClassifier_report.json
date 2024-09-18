@@ -1,0 +1,76 @@
+{
+  "tochat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 54,
+    "confused_with": {}
+  },
+  "major": {
+    "precision": 1.0,
+    "recall": 0.9472140762463344,
+    "f1-score": 0.9728915662650602,
+    "support": 341,
+    "confused_with": {}
+  },
+  "monhoc": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "sex": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 7,
+    "confused_with": {}
+  },
+  "name": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 8,
+    "confused_with": {}
+  },
+  "year": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 81,
+    "confused_with": {}
+  },
+  "job": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "code": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 111,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9727272727272728,
+    "f1-score": 0.9861751152073733,
+    "support": 660
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.9934017595307918,
+    "f1-score": 0.9966114457831325,
+    "support": 660
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9727272727272728,
+    "f1-score": 0.9859939759036145,
+    "support": 660
+  }
+}

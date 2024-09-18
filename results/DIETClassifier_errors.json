@@ -1,0 +1,591 @@
+[
+  {
+    "text": "Ngành Công nghệ thông tin có mã là gì?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 29,
+        "end": 31,
+        "value": "mã",
+        "entity": "code"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9997709393501282,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "code",
+        "start": 29,
+        "end": 31,
+        "confidence_entity": 0.7076929807662964,
+        "value": "mã",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Công nghệ thông tin có mã ngành là gì?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 23,
+        "end": 31,
+        "value": "mã ngành",
+        "entity": "code"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 5,
+        "end": 19,
+        "confidence_entity": 0.9997629523277283,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "code",
+        "start": 23,
+        "end": 31,
+        "confidence_entity": 0.6421995162963867,
+        "value": "mã ngành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin có Tổ hợp môn xét tuyển ngành là gì",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 29,
+        "end": 55,
+        "value": "Tổ hợp môn xét tuyển ngành",
+        "entity": "code"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9997755885124207,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "code",
+        "start": 29,
+        "end": 55,
+        "confidence_entity": 0.9838808178901672,
+        "value": "Tổ hợp môn xét tuyển ngành",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Công nghệ thông tin năm 2022 có điểm chuẩn là bao nhiêu?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 24,
+        "end": 28,
+        "value": "2022",
+        "entity": "year"
+      },
+      {
+        "start": 32,
+        "end": 42,
+        "value": "điểm chuẩn",
+        "entity": "code"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 5,
+        "end": 19,
+        "confidence_entity": 0.9996004700660706,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.9996410608291626,
+        "value": "2022",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "code",
+        "start": 32,
+        "end": 42,
+        "confidence_entity": 0.9946460723876953,
+        "value": "điểm chuẩn",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Công nghệ thông tin năm 2021 lấy bao nhiêu điểm?",
+    "entities": [
+      {
+        "start": 0,
+        "end": 19,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 24,
+        "end": 28,
+        "value": "2021",
+        "entity": "year"
+      },
+      {
+        "start": 43,
+        "end": 47,
+        "value": "điểm",
+        "entity": "code"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 5,
+        "end": 19,
+        "confidence_entity": 0.9996795654296875,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "year",
+        "start": 24,
+        "end": 28,
+        "confidence_entity": 0.9996669292449951,
+        "value": "2021",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "code",
+        "start": 43,
+        "end": 47,
+        "confidence_entity": 0.9911447167396545,
+        "value": "điểm",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Học Công nghệ thông tin cần những Yếu tố gì",
+    "entities": [
+      {
+        "start": 4,
+        "end": 23,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 34,
+        "end": 40,
+        "value": "Yếu tố",
+        "entity": "tochat"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 9,
+        "end": 23,
+        "confidence_entity": 0.9996992349624634,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tochat",
+        "start": 34,
+        "end": 40,
+        "confidence_entity": 0.9965240359306335,
+        "value": "tố chất",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Để học ngành Công nghệ thông tin cần có những Kỹ năng nào",
+    "entities": [
+      {
+        "start": 13,
+        "end": 32,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 46,
+        "end": 53,
+        "value": "Kỹ năng",
+        "entity": "tochat"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 18,
+        "end": 32,
+        "confidence_entity": 0.999638557434082,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tochat",
+        "start": 46,
+        "end": 53,
+        "confidence_entity": 0.9866992235183716,
+        "value": "tố chất",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Những Năng khiếu cần có cho ngành Công nghệ thông tin là gì",
+    "entities": [
+      {
+        "start": 6,
+        "end": 16,
+        "value": "Năng khiếu",
+        "entity": "tochat"
+      },
+      {
+        "start": 34,
+        "end": 53,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "tochat",
+        "start": 6,
+        "end": 16,
+        "confidence_entity": 0.9776196479797363,
+        "value": "tố chất",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "major",
+        "start": 39,
+        "end": 53,
+        "confidence_entity": 0.9996509552001953,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin cần Tài năng nào",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 30,
+        "end": 38,
+        "value": "Tài năng",
+        "entity": "tochat"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9997512698173523,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tochat",
+        "start": 30,
+        "end": 38,
+        "confidence_entity": 0.9964599013328552,
+        "value": "tố chất",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin đòi hỏi những Đặc điểm gì",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 40,
+        "end": 48,
+        "value": "Đặc điểm",
+        "entity": "tochat"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.99959796667099,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "tochat",
+        "start": 40,
+        "end": 48,
+        "confidence_entity": 0.9878644347190857,
+        "value": "tố chất",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin học những môn học nào?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      },
+      {
+        "start": 36,
+        "end": 43,
+        "value": "môn học",
+        "entity": "monhoc"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9998012185096741,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "monhoc",
+        "start": 36,
+        "end": 43,
+        "confidence_entity": 0.9539577960968018,
+        "value": "môn học",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin có những môn nào?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9997791647911072,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Công việc cho ngành Điện tử viễn thông",
+    "entities": [
+      {
+        "start": 20,
+        "end": 38,
+        "value": "Điện tử viễn thông",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 25,
+        "end": 38,
+        "confidence_entity": 0.9995198249816895,
+        "value": "tử viễn thông",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "học xong ngành Công nghệ thông tin thì làm gì",
+    "entities": [
+      {
+        "start": 15,
+        "end": 34,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 20,
+        "end": 34,
+        "confidence_entity": 0.9995526671409607,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Việc làm ngành Công nghệ thông tin",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "Việc làm",
+        "entity": "job"
+      },
+      {
+        "start": 15,
+        "end": 34,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "job",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9913451671600342,
+        "value": "Việc làm",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "major",
+        "start": 20,
+        "end": 34,
+        "confidence_entity": 0.9996329545974731,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Công việc cho ngành Công nghệ thông tin",
+    "entities": [
+      {
+        "start": 20,
+        "end": 39,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 25,
+        "end": 39,
+        "confidence_entity": 0.9997506737709045,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "ngành Công nghệ thông tin ra làm gì?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9996702671051025,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Ngành Công nghệ thông tin ra trường làm gì?",
+    "entities": [
+      {
+        "start": 6,
+        "end": 25,
+        "value": "Công nghệ thông tin",
+        "entity": "major"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "major",
+        "start": 11,
+        "end": 25,
+        "confidence_entity": 0.9997283816337585,
+        "value": "nghệ thông tin",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

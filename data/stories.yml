@@ -1,0 +1,266 @@
+version: "2.0"
+stories:
+  - story: khangnangcuabot
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+  - story: botchaohoi
+    steps:
+      - intent: chaohoi
+      - action: utter_chaohoi
+  - story: bottambiet
+    steps:
+      - intent: tambiet
+      - action: utter_tambiet
+  - story: botchaohoithongminh
+    steps:
+      - intent: chaohoithongminh
+      - action: utter_chaohoithongminh
+  - story: kytucxa
+    steps:
+      - intent: kytucxa
+      - action: utter_kytucxa
+  - story: hocbong
+    steps:
+      - intent: hocbong
+      - action: utter_hocbong
+
+
+  - story: test2
+    steps:
+      - intent: asktuyensinh
+      - action: utter_thongTinTuyenSinhCacNam
+      - intent: tuyensinh2021
+      - action: utter_diem2021
+      - intent: tuyensinh2022
+      - action: utter_diem2022
+      - intent: tuyensinh2023
+      - action: utter_diem2023
+      - intent: tuyensinh2024
+      - action: utter_diem2024
+
+  - story: thongtintoanbo
+    steps:
+      - intent: thongtintoanbo
+      - action: utter_toanbo
+
+  - story: handle_tuyen_sinh
+    steps:
+      - intent: tuyenSinhCacNam
+      - action: action_handle_tuyen_sinh
+
+
+  - story: chon1
+    steps:
+      - intent: chon1
+      - action: utter_chon1
+  - story: chon2
+    steps:
+      - intent: chon2
+      - action: utter_chon2
+  - story: diem
+    steps:
+      - intent: diemchuan2021
+        entities:
+          - diem: "Điểm ngành"
+          - major: "Công nghệ thông tin"
+      - slot_was_set:
+          - major: "Công nghệ thông tin"
+      - action: action_diemchuan2021
+  - story: manganh
+    steps:
+      - intent: Manganh
+        entities:
+          - code: "Mã ngành"
+          - major: "Công nghệ thông tin"
+      - slot_was_set:
+          - major: "Công nghệ thông tin"
+      - action: action_Manganh
+  - story: tohopmon
+    steps:
+      - intent: tohopmon
+        entities:
+          - mon: "Tổ hợp môn xét tuyển ngành"
+          - major: "Công nghệ thông tin"
+      - slot_was_set:
+          - major: "Công nghệ thông tin"
+      - action: action_tohopmon
+
+
+  - story: hỏi thông tin trường
+    steps:
+      - intent: infomation
+      - action: utter_info1
+      # - action: utter_info2
+      - action: utter_info3
+
+  - story: hỏi ngành đào tạo
+    steps:
+      - intent: majors
+      - action: utter_majors
+
+  - story: hỏi học phí
+    steps:
+      - intent: hocphi
+      - action: utter_hocphi
+
+  - story: hỏi điều kiện xét tuyển
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+      - intent: phuongthucxetdiemthithpt
+      - action: utter_dieukienxettuyendiemthi
+      - intent: xettuyentheophuongthucdiemthiTHPT
+      - action: utter_cachxettuyendiemthithpt
+      - intent: tuyenthang
+      - action: utter_dieukientuyenthang
+      - intent: cachXetTuyenThang
+      - action: utter_cachxettuyenthang
+      - intent: phuongthuchocba
+      - action: utter_dieukienxethocba
+
+  - story: hỏi phương thức riêng
+    steps:
+      - intent: phuongthucrieng
+      - action: utter_tuyensinh
+
+  - story: hỏi điều kiện bằng học bạ
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+      - intent: phuongthuchocba
+      - action: utter_dieukienxethocba
+
+  - story: hỏi điều kiện xét tuyển bằng điểm tốt nghiệp
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+      - intent: phuongthucxetdiemthithpt
+      - action: utter_dieukienxettuyendiemthi
+      - intent: xettuyentheophuongthucdiemthiTHPT
+      - action: utter_cachxettuyendiemthithpt
+
+  - story: hỏi điều kiện xét tuyển thẳng
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+      - intent: tuyenthang
+      - action: utter_dieukientuyenthang
+      - intent: cachXetTuyenThang
+      - action: utter_cachxettuyenthang
+
+
+  - story: hỏi việc làm
+    steps:
+      - intent: job
+      - action: utter_job
+
+  - story: hỏi việc làm ngành Công nghệ thông tin
+    steps:
+      - intent: Vieclam_CongNgheThongTin
+        entities:
+          - job: "Việc làm"
+          - major: "Công nghệ thông tin"
+      - action: utter_ViecLamNganhCongNgheThongTin
+  - story: hỏi việc làm ngành An toàn thông tin
+    steps:
+      - intent: Vieclam_AnToanThongTin
+        entities:
+          - job: "Việc làm"
+          - major: "An toàn thông tin"
+      - action: utter_ViecLamNganhAnToanThongTin
+  - story: hỏi việc làm ngành Điện tử viễn thông
+    steps:
+      - intent: Vieclam_DienTuVienThong
+        entities:
+          - job: "Việc làm"
+          - major: "Điện tử viễn thông"
+      - action: utter_ViecLamNganhDienTuVienThong
+  - story: hỏi tố chất ngành CNTT
+    steps:
+      - intent: tochatnganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - tochat: "Tố chất"
+      - action: utter_TochatnganhCNTT
+  - story: hỏi tố chất ngành ATTT
+    steps:
+      - intent: tochatnganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - tochat: "Tố chất"
+      - action: utter_TochatnganhATTT
+  - story: hỏi tố chất ngành DTVT
+    steps:
+      - intent: tochatnganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - tochat: "Tố chất"
+      - action: utter_TochatnganhDTVT
+  - story: hỏi môn học ngành CNTT
+    steps:
+      - intent: monHocNganhCNTT
+        entities:
+          - major: "Công nghệ thông tin"
+          - monhoc: "môn học"
+      - action: utter_monHocNganhCNTT
+  - story: hỏi môn học ngành ATTT
+    steps:
+      - intent: monHocNganhATTT
+        entities:
+          - major: "An toàn thông tin"
+          - monhoc: "môn học"
+      - action: utter_monHocNganhATTT
+  - story: hỏi môn học ngành DTVT
+    steps:
+      - intent: monHocNganhDTVT
+        entities:
+          - major: "Điện tử viễn thông"
+          - monhoc: "môn học"
+      - action: utter_monHocNganhDTVT
+  - story: hỏi về giảng viên
+    steps:
+      - intent: trinhDoGiaoVien
+      - action: utter_trinhDoGiaoVien
+  - story: hỏi về câu lạc bộ
+    steps:
+      - intent: cauLacBo
+      - action: utter_cauLacBo
+  - story: hỏi về có khó học không
+    steps:
+      - intent: hocCoKhoKhong
+      - action: utter_hocCoKhoKhong
+  - story: hỏi về bạn nũ
+    steps:
+      - intent: nhieuBanNuKhong
+      - action: utter_nhieuBanNuKhong
+  - story: hỏi về hồ sơ
+    steps:
+      - intent: hoSo
+      - action: utter_hoSo
+  - story: hỏi về đầu ra tiếng anh
+    steps:
+      - intent: chuanDauRaTiengAnh
+      - action: utter_chuanDauRaTiengAnh
+  - story: hỏi về đầu vào tiếng anh
+    steps:
+      - intent: chuanDauVaoTiengAnh
+      - action: utter_chuanDauVaoTiengAnh
+  - story: hỏi về đổi điểm tiếng anh
+    steps:
+      - intent: doiDiemTiengAnh
+      - action: utter_doiDiemTiengAnh
+  - story: hỏi về số khóa học
+    steps:
+      - intent: soLuongKhoaHoc
+      - action: utter_soLuongKhoaHoc
+  - story: hỏi về số sinh viên
+    steps:
+      - intent: soLuongSinhVien
+      - action: utter_soLuongSinhVien
+  - story: hỏi về điểm trung bình
+    steps:
+      - intent: diemTrungBinh
+      - action: utter_diemTrungBinh
+
+

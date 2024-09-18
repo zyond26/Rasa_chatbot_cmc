@@ -1,0 +1,352 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- asktuyensinh
+- tuyenSinhCacNam:
+    use_entities: []
+- chaohoi
+- hocbong
+- kytucxa
+- thongtintoanbo
+- chon1
+- chon2
+- tohopmon:
+    use_entities: []
+- Manganh:
+    use_entities: []
+- diemchuan2021:
+    use_entities: []
+- cachxettuyenhocba
+- cachXetTuyenThang
+- xettuyentheophuongthucdiemthiTHPT
+- chaohoithongminh
+- faq
+- tambiet
+- infomation
+- majors
+- hocphi
+- tuyensinh
+- phuongthucrieng
+- phuongthuchocba
+- phuongthucxetdiemthithpt
+- tuyenthang
+- job
+- bot_challenge
+- tuyensinh2021
+- tuyensinh2022
+- tuyensinh2023
+- tuyensinh2024
+- Vieclam_CongNgheThongTin:
+    use_entities:
+    - major
+    - job
+- Vieclam_AnToanThongTin:
+    use_entities:
+    - major
+    - job
+- Vieclam_DienTuVienThong:
+    use_entities:
+    - major
+    - job
+- diemTrungBinh
+- monHocNganhCNTT
+- tochatnganhCNTT
+- tochatnganhATTT
+- tochatnganhDTVT
+- monHocNganhATTT
+- monHocNganhDTVT
+- trinhDoGiaoVien
+- cauLacBo
+- hocCoKhoKhong
+- nhieuBanNuKhong
+- hoSo
+- chuanDauRaTiengAnh
+- doiDiemTiengAnh
+- chuanDauVaoTiengAnh
+- soLuongKhoaHoc
+- soLuongSinhVien
+entities:
+- code
+- diem
+- job
+- major
+- mon
+- name
+- sex
+- tochat
+- year
+- monhoc
+slots:
+  major:
+    type: text
+    influence_conversation: true
+  sex:
+    type: text
+    influence_conversation: true
+  name:
+    type: text
+    influence_conversation: true
+  year:
+    type: text
+    influence_conversation: true
+responses:
+  utter_toanbo:
+  - text: |
+          - Thông tin ngành Công nghệ thông tin: https://tuyensinh.actvn.edu.vn/nganh-cong-nghe-thong-tin/ 
+          - Thông tin ngành An toàn thông tin: https://tuyensinh.actvn.edu.vn/nganh-an-toan-thong-tin/ 
+          - Thông tin ngành Kỹ thuật Điện tử viễn thông: https://tuyensinh.actvn.edu.vn/nganh-ky-thuat-dien-tu-vien-thong/ 
+          - Đây là trang thông tin tuyển sinh của học viện. Bạn có thể tìm hiểu thêm ở đây: https://tuyensinh.actvn.edu.vn/
+  utter_diem2021:
+  - text: ' Thông tin năm 2021 '
+    image: https://i.imgur.com/P9e43lQ.jpeg
+  utter_diem2022:
+  - text: ' Thông tin năm 2022 '
+    image: https://i.imgur.com/RzdAZNE.jpeg
+  utter_diem2023:
+  - text: ' Thông tin năm 2023 '
+    image: https://i.imgur.com/gMWznIY.png
+  utter_diem2024:
+  - text: ' Thông tin năm 2024 '
+    image: https://i.imgur.com/jMXQwbp.jpeg
+  utter_thongTinTuyenSinhCacNam:
+  - text: Bạn cần thông tin tuyển sinh năm nào?
+    buttons:
+    - title: Năm 2021
+      payload: /tuyensinh2021
+    - title: Năm 2022
+      payload: /tuyensinh2022
+    - title: Năm 2023
+      payload: /tuyensinh2023
+    - title: Năm 2024
+      payload: /tuyensinh2024
+
+  utter_chaohoithongminh:
+  - text: Kính chào {sex} {name}. Bot có thể giúp gì được cho {sex} {name} ạ !!
+  utter_kytucxa:
+  - text: ' Hiện tại Học viện Kỹ thuật Mật Mã không hỗ trợ kí túc xá cho các bạn thi xét tuyển hệ dân sự, bạn có thể tìm kiếm chỗ ở từ rất nhiều khu nhà trọ xung quanh trường.'
+  utter_hocbong:
+  - text: |-
+      - Hiện nay, học viên Kỹ thuật Mật Mã có 3 loại học bổng:
+      - Học bổng du học: học bổng du học gồm học bổng của Ban Cơ yếu Chính phủ và học bổng của Bộ Giáo dục và Đào tạo, học bổng bao gồm 100% tiền học phí và phí sinh hoạt, sinh viên được sắp xếp công việc phù hợp tại cơ quan, đơn vị sau khi tốt nghiệp.
+      - Thời gian xét: kết thúc học kỳ 1 của năm học đầu tiên của khóa học.
+      - Chỉ tiêu: Học viện Kỹ thuật mật mã có tổng 20-30 chỉ tiêu (cho cả cơ sở Hà Nội và Phân hiệu Học viện KTMM tại TP. Hồ Chí Minh)
+      - Yêu cầu: Chỉ xét cho các sinh viên năm thứ nhất; sinh viên thuộc TOP điểm tổng kết học kỳ 1 của năm học đầu tiên của khóa học; sinh viên thuộc TOP điểm đầu vào; sinh viên chấp hành kỷ luật tốt.
+      - Học bổng học kỳ: quỹ học bổng khuyến khích học tập được bố trí tối thiểu bằng 8% nguồn thu học phí của trường, các thông tin chi tiết:
+      - Thời gian xét: kết thúc học kỳ
+      - Học bổng loại xuất sắc: bằng số tiền học phí của 1 học kỳ (5 tháng) x 1,4
+      - Học bổng loại giỏi: bằng số tiền học phí của 1 học kỳ (5 tháng) x 1,2
+      - Học bổng loại khá: bằng số tiền học phí của 1 học kỳ (5 tháng)  
+      - Yêu cầu: sinh viên học lực khá trở lên; không thi lại môn nào; chấp hành kỷ luật tốt.
+      - Học bổng khuyến học: hàng năm trường trao suất học bổng dành cho các sinh viên có hoàn cảnh khó khăn, có ý chí vươn lên trong học tập, đạt kết quả học tập tốt.
+      - Phân hiệu Học viện Kỹ thuật mật mã tại TP. Hồ Chí Minh thực hiện các chế độ miễn giảm học phí cho sinh viên theo các quy định hiện hành.
+  utter_chaohoi:
+  - text: Chào bạn. Mình là Chatbot hỗ trợ tư vấn tuyển sinh Học viện Kĩ thuật Mật mã. Bạn cần tư vấn về vấn đề gì?
+  utter_fallback:
+  - text: |-
+      Xin lỗi, Tôi chưa hiểu ý muốn của bạn ạ. Bạn có thể nói lại được không ạ
+       - Bạn có thê xem thêm thông tin tuyển sinh tại website: https://tuyensinh.actvn.edu.vn/ - Ngoài ra bạn có thể tra cứu các thông tin của người học tại website chính của học viện: https://actvn.edu.vn/
+  utter_tambiet:
+  - text: Cám ơn bạn đã đến đây.Tạm biệt bạn
+  utter_info1:
+  - text: Học viện Kỹ thuật Mật mã là một trường đại học công lập trực thuộc Ban Cơ yếu Chính phủ của Bộ Quốc phòng, được thành lập ngày 17 tháng 2 năm 1995 có chức năng đào tạo cán bộ có trình độ đại học, sau đại học và nghiên cứu khoa học kỹ thuật mật mã của ngành Cơ yếu Việt Nam.
+  utter_info3:
+  - text: |2-
+       Địa chỉ 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội
+       Năm thành lập: 1995
+       Số điện thoại: 024 3854 4244
+       Email: kma@vnn.vn
+       Là bộ phận của: Ban Cơ yếu Chính phủ của Bộ Quốc phòng
+       Facebook: facebook.com/hocvienkythuatmatma
+  utter_majors:
+  - text: |2-
+       Các khoa ngành học viện đang đào tạo:
+       - Công nghệ thông tin
+       - An toàn thông tin
+       - Điện tử viễn thông
+  utter_hocphi:
+  - text: |2
+       Hiện tại, tiền học phí chung của học viện là 450.000đ/tín chỉ. Tổng 8.550.000đ/kỳ
+  utter_tuyensinh:
+  - text: |
+      Hiện tại học viện kỹ thuật mật mã có 2 phương thức xét tuyển:
+      - Sử dụng kết quả kỳ thi THPT Quốc gia (Được cộng điểm ưu tiên nếu có Chứng chỉ IELTS, TOEIC hoặc TOEFL iBT)
+      - Xét tuyển thẳng
+      - Bạn đang hỏi xét tuyển theo phương thức nào?
+  utter_dieukientuyenthang:
+  - text: ' Điều kiện xét tuyển thẳng: Thí sinh đoạt giải nhất, nhì, ba trong kỳ thi chọn học sinh giỏi Quốc gia (điều kiện: môn được giải là Toán hoặc Tin học hoặc giải thưởng sáng tạo về khoa học công nghệ cấp Quốc gia), đã tốt nghiệp Trung học phổ thông.'
+  utter_cachxettuyenthang:
+  - text: |2-
+       - Hồ sơ đăng ký xét tuyển: Phiếu ĐKXT theo mẫu (thí sinh có thể tải tại địa chỉ: https://bit.ly/MAUDONXETTUYENRIENG); bản sao Giấy chứng nhận đạt giải, học bạ, chứng chỉ, … theo quy định của từng trường.
+       - Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
+       - Thời gian nộp hồ sơ ĐKXT: Từ ngày 22/4/2024 đến 17h00 ngày 25/6/2024.
+       - Địa chỉ nộp hồ sơ ĐKXT: Thí sinh chuyển phát nhanh (EMS) qua đường Bưu điện theo địa chỉ: Ban Đào tạo và Công tác sinh viên Học viện Kỹ thuật Mật Mã, số 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội (thời gian nộp qua EMS được tính theo dấu bưu điện).
+       CÔNG BỐ KẾT QUẢ XÉT TUYỂN: 
+       Dự kiến trước 17h00 ngày 30/6/2024.  
+      - Thông tin chi tiết: https://tuyensinh.actvn.edu.vn/tuyen-thang-vao-hoc-vien-ky-thuat-mat-ma/
+  utter_dieukienxettuyendiemthi:
+  - text: |
+      Học viện Kỹ thuật Mật Mã sử dụng kết quả kỳ thi THPT Quốc gia năm 2024 do Bộ GD&ĐT tổ chức để xét tuyển. Điểm xét tuyển là tổng điểm của một trong ba tổ hợp môn xét tuyển:
+      - A00: Toán, Vật lí, Hóa học;
+      - A01: Toán, Vật lí, Tiếng Anh;
+      - D90: Toán, Khoa học tự nhiên, Tiếng Anh.
+      Ngoài điểm ưu tiên theo quy chế tuyển sinh hiện hành, Học viện cộng thêm điểm ưu tiên với thí sinh (sử dụng kết quả kỳ thi THPT Quốc gia để xét tuyển) có chứng chỉ tiếng Anh quốc tế (còn giá trị sử dụng tính đến ngày xét tuyển), theo 3 mức ưu tiên như sau:
+      - Chứng chỉ IELTS từ 5.5 – 6.0 hoặc TOEIC từ 650 đến dưới 750 hoặc TOEFL iBT từ 65 đến dưới 80 : 1,5 điểm;
+      - Chứng chỉ IELTS từ 6.5 – 7.0  hoặc TOEIC từ 750 đến dưới 850 hoặc TOEFL iBT từ 80 đến dưới 95: 2,0 điểm;
+      - Chứng chỉ IELTS từ 7.5 trở lên hoặc TOEIC từ 850 trở lên hoặc TOEFL iBT từ 95 trở lên: 2,5 điểm;
+      Điều kiện dự tuyển:
+      - Tốt nghiệp THPT và đủ điều kiện được xét tuyển vào đại học theo quy định của Bộ Giáo dục và Đào tạo.
+  utter_cachxettuyendiemthithpt:
+  - text: |2
+       Với trực tiếp: Hồ sơ đăng ký xét tuyển gồm có: -	Phiếu ĐKXT theo mẫu đính kèm; 
+       -	Bản chính Giấy chứng nhận kết quả thi tốt nghiệp THPT năm 2021;
+       -	Bản sao Giấy chứng chỉ tiếng anh (đối với thí sinh có chứng chỉ tiếng anh được quy định);
+       -	Lệ phí xét tuyển: Thí sinh được miễn lệ phí xét tuyển.
+       Với trực tuyến: - Thí sinh ĐKXT xét tuyển trực tuyến tại địa chỉ: http://dkxt.hueuni.edu.vn. Thí sinh trúng tuyển sẽ nộp bản chính các hồ sơ liên quan (ở mục 1) khi làm thủ tục nhập học tại trường
+       - Thời gian: Theo kế hoạch hỗ trợ tuyển sinh chung cho các cơ sở giáo dục đại học của Bộ Giáo dục và Đào tạo;
+       - Địa điểm (đối với hình thức ĐKXT trực tiếp):
+       Thí sinh nộp hồ sơ ĐKXT bằng cách gửi chuyển phát nhanh (EMS) qua đường bưu điện về Ban Đào tạo và Công tác sinh viên Học viện Kỹ thuật Mật Mã, số 141 Chiến Thắng, Tân Triều, Thanh Trì, Hà Nội.
+       - Công bố kết quả: Dự kiến trước 17h00 ngày 07 tháng 10 năm 2021.
+  utter_dieukienxethocba:
+  - text: |
+      Hiện tại Học viện Kỹ thuật Mật Mã không cung cấp phương thức xét tuyển bằng học bạ.
+  utter_chon1:
+  - text: 'Điểm chuẩn năm 2024'
+    image: https://i.imgur.com/jMXQwbp.jpeg
+
+  utter_chon2:
+  - text: 'Thông tin mã ngành và tổ hợp môn'
+    image: https://i.imgur.com/VOz1RCu.jpeg
+  utter_iamabot:
+  - text: '- mình là auto chatbot, mình có khả năng trả lời các câu hỏi về tuyển sinh của trường Học viện Kỹ thuật Mật Mã'
+  utter_job:
+  - text: Bạn muốn hỏi công việc cho ngành đào tạo nào? Hãy nhập theo cú pháp "Việc làm ngành [tên ngành]". Ví dụ "Việc làm ngành Công nghệ thông tin"
+  utter_ViecLamNganhCongNgheThongTin:
+  - text: |-
+      Sinh viên tốt nghiệp ngành Công nghệ Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:
+       - Chuyên viên phát triển phần mềm, ứng dụng di động, và web tại các công ty công nghệ.
+       - Chuyên viên quản trị hệ thống, quản trị cơ sở dữ liệu, và bảo mật thông tin tại các doanh nghiệp, tổ chức.
+       - Kỹ sư hệ thống, kỹ sư mạng tại các công ty viễn thông, trung tâm dữ liệu.
+       - Chuyên viên phát triển hệ thống nhúng, thiết kế phần mềm cho các thiết bị điện tử thông minh tại các công ty phần mềm và công ty sản xuất thiết bị điện tử.
+       - Chuyên viên phân tích dữ liệu, khoa học dữ liệu tại các tổ chức tài chính, ngân hàng, và công ty khởi nghiệp.
+       - Giám đốc kỹ thuật, Trưởng bộ phận công nghệ thông tin tại các công ty, tập đoàn.
+       - Chuyên viên phát triển trí tuệ nhân tạo, máy học, và các hệ thống thông minh tại các trung tâm nghiên cứu, doanh nghiệp công nghệ cao.
+  utter_ViecLamNganhAnToanThongTin:
+  - text: |-
+      Sinh viên tốt nghiệp ngành An toàn Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:
+       - Chuyên viên bảo mật thông tin, phân tích và quản lý rủi ro bảo mật tại các doanh nghiệp, tổ chức.
+       - Kỹ sư bảo mật mạng, thiết kế và triển khai các giải pháp bảo mật cho hệ thống mạng và dữ liệu.
+       - Chuyên viên phân tích và điều tra sự cố bảo mật, phản ứng với các cuộc tấn công mạng tại các công ty bảo mật, tổ chức chính phủ.
+       - Chuyên viên kiểm thử bảo mật, thực hiện các bài kiểm tra và đánh giá lỗ hổng bảo mật cho các hệ thống phần mềm và phần cứng.
+       - Quản trị viên an ninh hệ thống, quản lý và bảo trì các hệ thống bảo mật, giám sát các hoạt động để đảm bảo an toàn thông tin.
+       - Giám đốc an ninh thông tin (CISO), lãnh đạo và xây dựng chiến lược bảo mật cho các tổ chức lớn.
+       - Chuyên viên tư vấn bảo mật, cung cấp các giải pháp và dịch vụ tư vấn bảo mật cho các doanh nghiệp và tổ chức.
+  utter_ViecLamNganhDienTuVienThong:
+  - text: |-
+      Sinh viên tốt nghiệp ngành Điện tử Viễn thông có thể làm việc trong các lĩnh vực và vị trí sau:
+       - Kỹ sư thiết kế và phát triển hệ thống viễn thông, bao gồm các thiết bị mạng, trạm phát sóng và các công nghệ liên quan.
+       - Chuyên viên quản trị mạng, thiết kế, cài đặt và bảo trì các hệ thống mạng và thiết bị viễn thông.
+       - Kỹ sư hệ thống viễn thông, làm việc với các công ty viễn thông để triển khai và duy trì các hệ thống truyền thông và dữ liệu.
+       - Chuyên viên phát triển phần mềm nhúng và ứng dụng cho các thiết bị viễn thông như điện thoại di động, bộ định tuyến, và thiết bị truyền thông.
+       - Kỹ sư mạng, giám sát và tối ưu hóa hiệu suất mạng, đảm bảo sự ổn định và an toàn của hệ thống.
+       - Kỹ sư bảo trì và hỗ trợ kỹ thuật cho các thiết bị và hệ thống viễn thông tại các công ty cung cấp dịch vụ viễn thông.
+       - Chuyên viên phân tích và phát triển các giải pháp công nghệ mới trong lĩnh vực điện tử và viễn thông.
+  utter_TochatnganhCNTT:
+  - text: |-
+      Để thành công trong ngành Công nghệ thông tin, bạn cần có một số tố chất và kỹ năng quan trọng:
+       - Tư duy logic và phân tích: Ngành Công nghệ thông tin đòi hỏi bạn phải có khả năng suy nghĩ logic, phân tích vấn đề một cách hệ thống và tìm ra giải pháp tối ưu.
+       - Khả năng học hỏi và cập nhật kiến thức: Công nghệ thông tin là một lĩnh vực luôn thay đổi. Bạn cần có khả năng tự học, nắm bắt những công nghệ mới và cập nhật kiến thức liên tục.
+       - Kỹ năng giải quyết vấn đề: Làm việc trong ngành này, bạn sẽ gặp phải nhiều thách thức kỹ thuật. Kỹ năng giải quyết vấn đề sẽ giúp bạn xử lý những tình huống phức tạp và đưa ra giải pháp hiệu quả.
+       - Kiên nhẫn và tỉ mỉ: Phát triển phần mềm và xử lý dữ liệu yêu cầu sự kiên nhẫn, chú ý đến từng chi tiết nhỏ để đảm bảo sản phẩm hoạt động trơn tru.
+       - Kỹ năng làm việc nhóm: Dự án công nghệ thường đòi hỏi sự hợp tác giữa nhiều thành viên. Kỹ năng làm việc nhóm sẽ giúp bạn phối hợp hiệu quả với các đồng nghiệp.
+       - Đam mê công nghệ: Cuối cùng, đam mê với công nghệ sẽ là động lực để bạn vượt qua mọi khó khăn và tiếp tục phát triển trong sự nghiệp.
+  utter_TochatnganhATTT:
+  - text: |-
+      Để thành công trong ngành An toàn thông tin, bạn cần có những tố chất sau:
+       - Kỹ năng phân tích và tư duy logic: Ngành An toàn thông tin yêu cầu khả năng phân tích và giải quyết các vấn đề phức tạp, cũng như tư duy logic để phát hiện và xử lý các mối đe dọa bảo mật.
+       - Khả năng làm việc dưới áp lực: Công việc trong lĩnh vực bảo mật thường yêu cầu bạn phải làm việc trong các tình huống khẩn cấp và đối phó với các sự cố bảo mật một cách nhanh chóng và hiệu quả.
+       - Kỹ năng giải quyết vấn đề và tư duy phản biện: Để phát hiện và khắc phục các lỗ hổng bảo mật, bạn cần có khả năng tư duy phản biện và giải quyết vấn đề một cách sáng tạo và hiệu quả.
+       - Sự chú ý đến chi tiết: Bảo mật yêu cầu bạn phải chú ý đến từng chi tiết nhỏ để đảm bảo rằng không có lỗ hổng bảo mật nào bị bỏ sót.
+       - Khả năng cập nhật và học hỏi liên tục: Ngành An toàn thông tin liên tục phát triển với các công nghệ và mối đe dọa mới, vì vậy bạn cần có khả năng học hỏi và cập nhật kiến thức liên tục để duy trì khả năng bảo mật hiệu quả.
+       - Kỹ năng giao tiếp và làm việc nhóm: Bạn sẽ thường xuyên làm việc cùng các bộ phận khác và cần truyền đạt các vấn đề bảo mật một cách rõ ràng và hiệu quả.
+  utter_TochatnganhDTVT:
+  - text: |-
+      Để thành công trong ngành Điện tử viễn thông, bạn cần có những tố chất sau:
+       - Kỹ năng phân tích và tư duy logic: Ngành Điện tử viễn thông yêu cầu khả năng phân tích và xử lý các vấn đề kỹ thuật phức tạp, cũng như tư duy logic để thiết kế và triển khai các hệ thống điện tử và viễn thông.
+       - Kiến thức liên quan về điện tử: Bạn cần hiểu rõ các nguyên lý và công nghệ liên quan đến điện tử và viễn thông, vật lý bao gồm các mạch điện, tín hiệu, và truyền thông dữ liệu.
+       - Khả năng làm việc dưới áp lực: Công việc trong lĩnh vực điện tử viễn thông thường yêu cầu bạn phải đối phó với các tình huống khẩn cấp và xử lý sự cố một cách nhanh chóng và hiệu quả.
+       - Kỹ năng giải quyết vấn đề và tư duy phản biện: Để khắc phục các sự cố và tối ưu hóa hệ thống, bạn cần có khả năng tư duy phản biện và giải quyết vấn đề một cách sáng tạo và hiệu quả.
+       - Sự chú ý đến chi tiết: Ngành Điện tử viễn thông yêu cầu sự chú ý đến từng chi tiết nhỏ trong thiết kế và triển khai hệ thống để đảm bảo hoạt động chính xác và hiệu quả.
+       - Khả năng cập nhật và học hỏi liên tục: Ngành Điện tử viễn thông phát triển nhanh chóng với các công nghệ mới, vì vậy bạn cần có khả năng học hỏi và cập nhật kiến thức liên tục để duy trì khả năng làm việc hiệu quả.
+       - Kỹ năng giao tiếp và làm việc nhóm: Bạn sẽ thường xuyên làm việc cùng các bộ phận khác và cần truyền đạt các vấn đề kỹ thuật một cách rõ ràng và hiệu quả.
+  utter_monHocNganhCNTT:
+  - text: |-
+      Chương trình đào tạo ngành Công nghệ thông tin bao gồm các môn học chính như:
+       - Khối kiến thức chung: Tiếng Anh, Triết học Mác – Lênin, Kinh tế chính trị, Tư tưởng Hồ Chí Minh, Giáo dục quốc phòng và Giáo dục thể chất.
+       - Khối kiến thức theo lĩnh vực và khối ngành: Các môn học chung cho các ngành khối khoa học tự nhiên và khối ngành máy tính.
+       - Khối kiến thức theo nhóm ngành và chuyên ngành: Các môn học đặc thù cho ngành Công nghệ thông tin và môn học chuyên sâu.
+       - Thực tập tốt nghiệp và đồ án: Thực tập và đồ án tốt nghiệp để ứng dụng kiến thức vào thực tiễn.
+  utter_monHocNganhATTT:
+  - text: |-
+      Chương trình đào tạo ngành An toàn thông tin bao gồm các môn học như:
+       - Khối kiến thức giáo dục đại cương: Giải tích 1 & 2, Đại số tuyến tính, Toán xác suất thống kê, Vật lý đại cương, Tiếng Anh, Triết học Mác – Lênin, Giáo dục quốc phòng an ninh, và Kỹ năng mềm.
+       - Khối kiến thức cơ sở ngành: Tiếng Anh chuyên ngành, Phương pháp tính, Toán chuyên đề, Cơ sở lý thuyết truyền tin, Kỹ thuật truyền số liệu, Lập trình căn bản, Cấu trúc dữ liệu và giải thuật, Hệ quản trị cơ sở dữ liệu, Mạng máy tính, Quản trị mạng, và Nguyên lý hệ điều hành.
+       - Khối kiến thức chuyên ngành: Bao gồm các môn học như Chuyên đề An toàn hệ thống thông tin, Giám sát và ứng phó sự cố an toàn mạng, An toàn mạng không dây, Phân tích thiết kế an toàn mạng máy tính, và Điều tra số.
+  utter_monHocNganhDTVT:
+  - text: |-
+      Chương trình đào tạo ngành Điện tử viễn thông gồm:
+       - Khối cơ sở ngành (55 tín chỉ): Môn học về lập trình, công nghệ mạng, kỹ thuật điện, điện tử công suất, điện tử số, đo lường điện tử, thiết kế mạch điện tử, hệ thống viễn thông, và các đồ án.
+       - Khối chuyên ngành (42 tín chỉ): Môn học về thiết kế hệ thống số, kiến trúc máy tính, thiết bị ngoại vi, hệ thống nhúng, thiết kế VLSI, và các đồ án chuyên sâu.
+       - Thực tập và đồ án tốt nghiệp (11 tín chỉ): Thực tập và đồ án tốt nghiệp.
+  utter_trinhDoGiaoVien:
+  - text: Giảng viên của trường có kinh nghiệm rất đa dạng và phong phú. Toàn bộ giảng viên trong trường đều là những thạc sĩ, tiến sĩ, là các chuyên gia hàng đầu trong lĩnh vực. Đặc biệt, nhiều giảng viên có nhiều năm kinh nghiệm giảng dạy và làm việc trong ngành, cũng như có kinh nghiệm quốc tế. Học viện luôn cung cấp chất lượng giáo dục tốt nhất với sự hỗ trợ từ đội ngũ giảng viên dày dạn kinh nghiệm và nhiệt huyết
+  utter_cauLacBo:
+  - text: Trường có rất nhiều câu lạc bộ sinh viên hoạt động thường xuyên như Câu lạc bộ Lập trình - KIT, Câu lạc bộ Máu Mật mã, Câu lạc bộ Bóng bàn, Câu lạc bộ Cờ vua, Câu lạc bộ Bóng chuyền, Câu lạc bộ Bóng đá, và nhiều câu lạc bộ khác. Bạn có thể dễ dàng tìm kiếm thông tin về các câu lạc bộ mình quan tâm bằng cách tham gia các cộng đồng trên mạng xã hội của trường, liên hệ với các anh chị khóa trên, hoặc tham khảo thông tin từ phòng hoạt động sinh viên.
+  utter_hocCoKhoKhong:
+  - text: Chương trình học của trường nhìn chung là không khó. Chỉ cần bạn lắng nghe và chăm chú trong các bài giảng, bạn có thể dễ dàng đạt được bằng khá. Nếu bạn duy trì được sự chăm chỉ và đều đặn trong học tập như ở cấp 3, bạn hoàn toàn có khả năng đạt được bằng giỏi hoặc thậm chí là bằng xuất sắc.
+  utter_nhieuBanNuKhong:
+  - text: Trường của chúng tôi chủ yếu tập trung vào các ngành kỹ thuật, vì vậy số lượng nữ sinh không nhiều. Tuy nhiên, chúng tôi luôn chào đón tất cả các sinh viên và tạo điều kiện học tập tốt nhất cho mọi người. Nếu bạn có bất kỳ câu hỏi nào khác hoặc cần thêm thông tin, đừng ngần ngại liên hệ với chúng tôi.
+  utter_hoSo:
+  - text: |-
+      Để nộp hồ sơ bạn cần mang các giấy tờ đến phòng tuyển sinh của học viện:
+       - Bản sao Giấy báo trúng tuyển kiêm Giấy báo nhập học.
+       - Bản sao có công chứng Học bạ THPT hoặc Bổ túc văn hóa.
+       - Bản sao có công chứng Giấy chứng nhận tốt nghiệp hoặc bằng tốt nghiệp (THPT hoặc THCN hoặc tương đương).
+       - Bản sao các loại: Giấy khai sinh, căn cước công dân.
+       - Sơ yếu lý lịch học sinh, sinh viên (02 bản) theo mẫu của Bộ Giáo dục và Đào tạo, có dán ảnh.
+       - Các giấy tờ xác nhận ưu tiên (nếu có).
+       - Bản sao Thẻ bảo hiểm y tế (với thí sinh sử dụng BHYT theo đối tượng ưu tiên hoặc hộ gia đình).
+       - Sổ Đoàn (chuyển về Đoàn thanh niên Học viện Kỹ thuật mật mã).
+       - Phiếu sinh viên.
+       - Bản phô tô công chứng chứng chỉ tiếng Anh (với thí sinh trúng tuyển có sử dụng chứng chỉ tiếng Anh để được cộng điểm ưu tiên)
+       - Giấy đăng ký nghĩa vụ quân sự và Giấy di chuyển nghĩa vụ quân sự của Ban chỉ huy quân sự quận/huyện hoặc tương đương cấp đối với nam sinh viên (bắt buộc).
+       - Giấy giới thiệu chuyển sinh hoạt Đảng về Đảng ủy Ban Cơ yếu Chính phủ (đối với sinh viên là đảng viên).
+  utter_chuanDauRaTiengAnh:
+  - text: Theo Quyết định số 40 ngày 10/1/2017 của Giám đốc HV KTMM, tất cả học viên từ khoá H23, sinh viên từ khoá AT10, CT1; ĐT1 đều phải đạt chuẩn đầu ra Tiếng Anh tối thiểu 450 TOEIC mới đủ điều kiện xét tốt nghiệp ra trường.
+  utter_chuanDauVaoTiengAnh:
+  - text: Từ khóa tuyển sinh 12 (năm 2015) chuẩn đầu vào tiếng Anh được quy định đạt tối thiểu trình độ A1 theo khung tham chiếu châu Âu (Tương đương TOEIC 250 điểm). Những sinh viên không đạt chuẩn đầu vào sau kỳ kiểm tra sát hạch (dưới 250 điểm TOEIC) phải đăng ký học bổ sung  6 tín chỉ tiếng Anh đầu vào tại cơ sở đào tạo Tiếng Anh của Học viện do Bộ môn Ngoại ngữ - Khoa Cơ bản phụ trách.
+  utter_doiDiemTiengAnh:
+  - text: |-
+      Sinh viên có thể dùng chứng chỉ Tiếng Anh nội bộ của Học viện hoặc chứng chỉ TOEIC quốc tế để được miễn học Tiếng Anh 1, 2, 3 và xét quy đổi điểm tương ứng. 
+       - Để được xét miễn học Tiếng Anh, các em phải nộp đơn xét miễn học và chuyển điểm quy đổi các học phần Tiếng Anh về Ban Giáo vụ - Tuyển sinh Phòng Đào tạo vào tuần lễ trước khi đăng kí học của mỗi kì.
+  utter_soLuongKhoaHoc:
+  - text: |-
+      Tính đến năm nay (2024), học viện có các khóa như sau: 
+       - Ngành An toàn thông tin là khóa thứ 21 (AT21)
+       - Ngành Công nghệ thông tin là khóa thứ 9 (CT9)
+       - Ngành Điện tử viễn thông là khóa thứ 8 (DT8)
+  utter_soLuongSinhVien:
+  - text: Học viện hiện có khoảng 3000 sinh viên đang theo học tại trường.
+  utter_diemTrungBinh:
+  - text: |-
+      Trung bình điểm chuẩn của trường hàng năm khoảng:
+       - Ngành An toàn thông tin: 25.9
+       - Ngành Điện tử viễn thông: 25.2
+       - Ngành Công nghệ thông tin: 26.2
+actions:
+- action_Manganh
+- action_diemchuan2021
+- action_handle_tuyen_sinh
+- action_tohopmon
+
