@@ -25,13 +25,10 @@ stories:
       - intent: hocbong
       - action: utter_hocbong
 
-
   - story: test2
     steps:
       - intent: asktuyensinh
       - action: utter_thongTinTuyenSinhCacNam
-      - intent: tuyensinh2021
-      - action: utter_diem2021
       - intent: tuyensinh2022
       - action: utter_diem2022
       - intent: tuyensinh2023
@@ -48,7 +45,6 @@ stories:
     steps:
       - intent: tuyenSinhCacNam
       - action: action_handle_tuyen_sinh
-
 
   - story: chon1
     steps:
@@ -85,7 +81,6 @@ stories:
       - slot_was_set:
           - major: "Công nghệ thông tin"
       - action: action_tohopmon
-
 
   - story: hỏi thông tin trường
     steps:
@@ -149,75 +144,6 @@ stories:
       - intent: cachXetTuyenThang
       - action: utter_cachxettuyenthang
 
-
-  - story: hỏi việc làm
-    steps:
-      - intent: job
-      - action: utter_job
-
-  - story: hỏi việc làm ngành Công nghệ thông tin
-    steps:
-      - intent: Vieclam_CongNgheThongTin
-        entities:
-          - job: "Việc làm"
-          - major: "Công nghệ thông tin"
-      - action: utter_ViecLamNganhCongNgheThongTin
-  - story: hỏi việc làm ngành An toàn thông tin
-    steps:
-      - intent: Vieclam_AnToanThongTin
-        entities:
-          - job: "Việc làm"
-          - major: "An toàn thông tin"
-      - action: utter_ViecLamNganhAnToanThongTin
-  - story: hỏi việc làm ngành Điện tử viễn thông
-    steps:
-      - intent: Vieclam_DienTuVienThong
-        entities:
-          - job: "Việc làm"
-          - major: "Điện tử viễn thông"
-      - action: utter_ViecLamNganhDienTuVienThong
-  - story: hỏi tố chất ngành CNTT
-    steps:
-      - intent: tochatnganhCNTT
-        entities:
-          - major: "Công nghệ thông tin"
-          - tochat: "Tố chất"
-      - action: utter_TochatnganhCNTT
-  - story: hỏi tố chất ngành ATTT
-    steps:
-      - intent: tochatnganhATTT
-        entities:
-          - major: "An toàn thông tin"
-          - tochat: "Tố chất"
-      - action: utter_TochatnganhATTT
-  - story: hỏi tố chất ngành DTVT
-    steps:
-      - intent: tochatnganhDTVT
-        entities:
-          - major: "Điện tử viễn thông"
-          - tochat: "Tố chất"
-      - action: utter_TochatnganhDTVT
-  - story: hỏi môn học ngành CNTT
-    steps:
-      - intent: monHocNganhCNTT
-        entities:
-          - major: "Công nghệ thông tin"
-          - monhoc: "môn học"
-      - action: utter_monHocNganhCNTT
-  - story: hỏi môn học ngành ATTT
-    steps:
-      - intent: monHocNganhATTT
-        entities:
-          - major: "An toàn thông tin"
-          - monhoc: "môn học"
-      - action: utter_monHocNganhATTT
-  - story: hỏi môn học ngành DTVT
-    steps:
-      - intent: monHocNganhDTVT
-        entities:
-          - major: "Điện tử viễn thông"
-          - monhoc: "môn học"
-      - action: utter_monHocNganhDTVT
   - story: hỏi về giảng viên
     steps:
       - intent: trinhDoGiaoVien
@@ -246,10 +172,6 @@ stories:
     steps:
       - intent: chuanDauVaoTiengAnh
       - action: utter_chuanDauVaoTiengAnh
-  - story: hỏi về đổi điểm tiếng anh
-    steps:
-      - intent: doiDiemTiengAnh
-      - action: utter_doiDiemTiengAnh
   - story: hỏi về số khóa học
     steps:
       - intent: soLuongKhoaHoc
@@ -262,5 +184,3 @@ stories:
     steps:
       - intent: diemTrungBinh
       - action: utter_diemTrungBinh
-
-
