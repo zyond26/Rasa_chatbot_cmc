@@ -1,0 +1,67 @@
+version: "3.1"
+
+rules:
+  - rule: Greet user
+    steps:
+      - intent: chào_hỏi
+      - action: utter_greet
+
+  - rule: Say goodbye
+    steps:
+      - intent: tạm_biệt
+      - action: utter_goodbye
+
+  - rule: Respond to thank you
+    steps:
+      - intent: cảm_ơn
+      - action: utter_you_are_welcome
+
+  - rule: Answer university information
+    steps:
+      - intent: hỏi_thông_tin_trường
+      - action: utter_university_info
+
+  - rule: Answer programs available
+    steps:
+      - intent: hỏi_chương_trình_đào_tạo
+      - action: utter_programs
+
+  - rule: Answer admission process
+    steps:
+      - intent: hỏi_quy_trình_tuyển_sinh
+      - action: utter_admission_process
+
+  - rule: Answer tuition fees
+    steps:
+      - intent: hỏi_học_phí
+      - action: utter_tuition_fees
+
+  - rule: Answer scholarships
+    steps:
+      - intent: hỏi_học_bổng
+      - action: utter_scholarships
+
+  - rule: Provide contact information
+    steps:
+      - intent: hỏi_thông_tin_liên_hệ
+      - action: utter_contact_info
+
+  - rule: Answer facilities information
+    steps:
+      - intent: hỏi_cơ_sở_vật_chất
+      - action: utter_facilities
+
+  - rule: Respond to bot question
+    steps:
+      - intent: hỏi_bot
+      - action: utter_bot_identity
+
+  - rule: Answer enrollment time
+    steps:
+      - intent: hỏi_thời_gian_nhập_học
+      - action: utter_enrollment_time
+
+  - rule: Answer about lecturers
+    steps:
+      - intent: hỏi_thông_tin_giảng_viên
+      - action: utter_lecturers_info

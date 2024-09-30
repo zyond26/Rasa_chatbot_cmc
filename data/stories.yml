@@ -1,0 +1,69 @@
+version: "3.1"
+
+stories:
+  - story: Greet and ask about university
+    steps:
+      - intent: chào_hỏi
+      - action: utter_greet
+      - intent: hỏi_thông_tin_trường
+      - action: utter_university_info
+
+  - story: Greet and ask about programs
+    steps:
+      - intent: chào_hỏi
+      - action: utter_greet
+      - intent: hỏi_chương_trình_đào_tạo
+      - action: utter_programs
+
+  - story: Ask about tuition fees and thank
+    steps:
+      - intent: hỏi_học_phí
+      - action: utter_tuition_fees
+      - intent: cảm_ơn
+      - action: utter_you_are_welcome
+
+  - story: Ask about scholarships and affirm
+    steps:
+      - intent: hỏi_học_bổng
+      - action: utter_scholarships
+      - intent: xác_nhận
+      - action: utter_affirm
+
+  - story: Ask about contact information
+    steps:
+      - intent: hỏi_thông_tin_liên_hệ
+      - action: utter_contact_info
+
+  - story: Ask about facilities and say goodbye
+    steps:
+      - intent: hỏi_cơ_sở_vật_chất
+      - action: utter_facilities
+      - intent: tạm_biệt
+      - action: utter_goodbye
+
+  - story: User asks about admission process
+    steps:
+      - intent: hỏi_quy_trình_tuyển_sinh
+      - action: utter_admission_process
+
+  - story: User asks about enrollment time
+    steps:
+      - intent: hỏi_thời_gian_nhập_học
+      - action: utter_enrollment_time
+
+  - story: User asks about lecturers
+    steps:
+      - intent: hỏi_thông_tin_giảng_viên
+      - action: utter_lecturers_info
+
+  - story: Ask if bot is human
+    steps:
+      - intent: hỏi_bot
+      - action: utter_bot_identity
+
+  - story: Greet and ask about facilities
+    steps:
+      - intent: chào_hỏi
+      - action: utter_greet
+      - intent: hỏi_cơ_sở_vật_chất
+      - action: utter_facilities
