@@ -29,9 +29,8 @@ django
 ## Cách chạy project này
 
 1. bạn hãy git clone git này về : " https://github.com/zyond26/AI_project.git "
-2. `pip install -r requirements.txt`
-3. `rasa run actions`
-4. `rasa shell`
+2. `rasa train`
+3. `rasa shell`
 
 ## Chạy chương trình trên web
 
