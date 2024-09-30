@@ -1,0 +1,61 @@
+version: "3.1"
+
+intents:
+  - chào_hỏi
+  - tạm_biệt
+  - cảm_ơn
+  - xác_nhận
+  - từ_chối
+  - hỏi_thông_tin_trường
+  - hỏi_chương_trình_đào_tạo
+  - hỏi_quy_trình_tuyển_sinh
+  - hỏi_học_phí
+  - hỏi_học_bổng
+  - hỏi_thông_tin_liên_hệ
+  - hỏi_cơ_sở_vật_chất
+  - hỏi_bot
+  - hỏi_thời_gian_nhập_học
+  - hỏi_thông_tin_giảng_viên
+
+responses:
+  utter_greet:
+    - text: "Chào bạn, tôi có thể giúp gì cho bạn về Đại học CMC?"
+
+  utter_goodbye:
+    - text: "Tạm biệt, hẹn gặp lại bạn sau!"
+
+  utter_you_are_welcome:
+    - text: "Rất vui được giúp đỡ bạn!"
+
+  utter_university_info:
+    - text: "Đại học CMC là một trường đại học uy tín với nhiều chương trình học đa dạng, phù hợp với nhu cầu của sinh viên hiện đại."
+
+  utter_programs:
+    - text: "Trường cung cấp các chương trình như Công nghệ thông tin, Quản trị kinh doanh, Kỹ thuật phần mềm, và nhiều ngành khác."
+
+  utter_admission_process:
+    - text: "Bạn có thể đăng ký nhập học trực tuyến hoặc đến trực tiếp văn phòng tuyển sinh của trường để nộp hồ sơ."
+
+  utter_tuition_fees:
+    - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chương trình học."
+
+  utter_scholarships:
+    - text: "Trường cung cấp nhiều loại học bổng, bao gồm học bổng dành cho sinh viên xuất sắc và hỗ trợ tài chính cho sinh viên có hoàn cảnh khó khăn."
+
+  utter_contact_info:
+    - text: "Đại học CMC nằm tại địa chỉ: số 123, đường ABC, Hà Nội. Bạn có thể liên hệ qua số điện thoại: 0123456789."
+
+  utter_facilities:
+    - text: "Trường có cơ sở vật chất hiện đại bao gồm thư viện, phòng thí nghiệm, và ký túc xá tiện nghi."
+
+  utter_bot_identity:
+    - text: "Tôi là một chatbot được tạo ra để hỗ trợ tư vấn tuyển sinh cho Đại học CMC."
+
+  utter_enrollment_time:
+    - text: "Thời gian nhập học thường vào tháng 8 và tháng 2 hàng năm. Bạn nên theo dõi thông báo trên website để cập nhật thông tin mới nhất."
+
+  utter_lecturers_info:
+    - text: "Giảng viên tại Đại học CMC đều là những người có kinh nghiệm trong ngành và tận tâm với sinh viên. Trường cũng có giảng viên quốc tế tham gia giảng dạy."
+
+  utter_affirm:
+    - text: "Vâng, đúng vậy!"
