@@ -67,3 +67,43 @@ stories:
       - action: utter_greet
       - intent: hỏi_cơ_sở_vật_chất
       - action: utter_facilities
+
+  - story: ask about IT information
+    steps:
+      - intent: hỏi_chuyên_ngành_cntt
+      - action: utter_IT_info
+
+  - story: ask about CS infomation
+    steps:
+      - intent: hỏi_chuyên_ngành_khmt
+      - action: utter_CS_info
+
+  - story: ask about name school
+    steps:
+      - intent: hỏi_tên_trường
+      - action: utter_name_info
+
+  - story: ask about point
+    steps:
+      - intent: hỏi_điểm_chuẩn
+      - action: utter_point_info
+
+  - story: ask about job opportunities
+    steps:
+      - intent: hỏi_cơ_hội_việc_làm
+      - action: utter_opportunities_info
+
+  - story: ask about working partner
+    steps:
+      - intent: hỏi_các_đối_tác
+      - action: utter_partner_info
+
+  - story: ask about detail scholarship
+    steps:
+      - intent: hỏi_chi_tiết_học_bổng
+      - action: utter_detail_scholarship_info
+
+  - story: ask about student
+    steps:
+      - intent: hỏi_về_sinh_viên
+      - action: utter_student_info

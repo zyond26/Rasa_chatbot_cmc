@@ -94,6 +94,7 @@ nlu:
       - Trường có ký túc xá không?
       - Đại học CMC có những tiện nghi gì?
       - Cơ sở vật chất của trường có hiện đại không?
+      - Cơ sở vật chất
 
   - intent: cảm_ơn
     examples: |
@@ -119,6 +120,7 @@ nlu:
       - Lịch nhập học tại trường như thế nào?
       - Bao giờ thì trường bắt đầu học?
       - Cho tôi biết thời gian nhập học
+      - lịch nhập học
 
   - intent: hỏi_thông_tin_giảng_viên
     examples: |
@@ -127,3 +129,62 @@ nlu:
       - Trường có giảng viên nước ngoài không?
       - Giảng viên tại trường CMC là ai?
       - Chất lượng giảng viên của trường như thế nào?
+      - giảng viên thế nào?
+      - giảng viên
+
+  - intent: hỏi_chuyên_ngành_cntt
+    examples: |
+      - Ngành công nghệ thông tin (cntt) có những chuyên ngành gì?
+      - Học cntt có những chuyên ngành gì ?
+      - cntt có những chuyên ngành gì ?
+      - cntt có gì?
+
+  - intent: hỏi_chuyên_ngành_khmt
+    examples: |
+      - Ngành khoa học máy tính(khmt) có những chuyên ngành gì?
+      - Học khmt có những chuyên ngành gì?
+      - khmt có những chuyên ngành gì?
+      - khmt có gì?
+
+  - intent: hỏi_tên_trường
+    examples: |
+      - cmc có nghĩa là gì?
+      - cmc viết tắt của gì?
+      - mục đích của cmc university?
+      - cmc nghĩa là gì?
+      - ý nghĩa của cmc?
+      - tại sao lại tên là cmc?
+      - tên trường
+
+  - intent: hỏi_điểm_chuẩn
+    examples: |
+      - Điểm chuẩn thế nào?
+      - Điểm chuẩn để đỗ các ngành ra sao ?
+      - Điểm chuẩn?
+      - điểm chuẩn
+
+  - intent: hỏi_cơ_hội_việc_làm
+    examples: |
+      - cơ hội  việc làm của trường ra sao?
+      - ra trường có thể làm ở đâu?
+      - có những cơ hội việc làm nào cho sinh viên?
+      - cơ hội việc làm
+
+  - intent: hỏi_các_đối tác
+    examples: |
+      - các đối tác của cmc
+      - cmc có những đối tác nào?
+      - đối tác
+
+  - intent: hỏi_chi_tiết_học_bổng
+    examples: |
+      - chi tiết về học bổng
+      - có những loại học bổng nào?
+      - điều kiện học bổng?
+      - chi tiết học bổng
+
+  - intent: hỏi_về_sinh_viên
+    examples: |
+      - có bao nhiêu sinh viên
+      - sinh viên
+      - số lượng sinh viên

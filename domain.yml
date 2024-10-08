@@ -28,34 +28,74 @@ responses:
     - text: "Rất vui được giúp đỡ bạn!"
 
   utter_university_info:
-    - text: "Đại học CMC là một trường đại học uy tín với nhiều chương trình học đa dạng, phù hợp với nhu cầu của sinh viên hiện đại."
+    - text: "Đại học CMC là một trường đại học số hàng đầu uy tín với nhiều chương trình học đa dạng, phù hợp với nhu cầu của sinh viên hiện đại."
 
   utter_programs:
-    - text: "Trường cung cấp các chương trình như Công nghệ thông tin, Quản trị kinh doanh, Kỹ thuật phần mềm, và nhiều ngành khác."
+    - text: "Trường cung cấp các chương trình như Công nghệ thông tin,Khoa học máy tính, Quản trị kinh doanh, và nhiều ngành khác."
 
   utter_admission_process:
     - text: "Bạn có thể đăng ký nhập học trực tuyến hoặc đến trực tiếp văn phòng tuyển sinh của trường để nộp hồ sơ."
 
   utter_tuition_fees:
-    - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chương trình học."
+    - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chuyên ngành và chương trình học."
 
   utter_scholarships:
     - text: "Trường cung cấp nhiều loại học bổng, bao gồm học bổng dành cho sinh viên xuất sắc và hỗ trợ tài chính cho sinh viên có hoàn cảnh khó khăn."
 
   utter_contact_info:
-    - text: "Đại học CMC nằm tại địa chỉ: số 123, đường ABC, Hà Nội. Bạn có thể liên hệ qua số điện thoại: 0123456789."
+    - text: "Đại học CMC có 3 cơ sở
+        Cơ sở 1: Số 84C, Đường Nguyễn Thanh Bình, Vạn Phúc, Hà Đông, Hà Nội
+        Cơ sở 2: Vạn Phúc Building, Đường Tố Hữu, Vạn Phúc, Hà Đông, Hà Nội
+        Cơ sở 3: Tây Mỗ, Nam Từ Liêm, Hà Nội"
 
   utter_facilities:
-    - text: "Trường có cơ sở vật chất hiện đại bao gồm thư viện, phòng thí nghiệm, và ký túc xá tiện nghi."
+    - text: "Trường có cơ sở vật chất hiện đại bao gồm thư viện, phòng tự học điều hòa 24/7 cho sinh viên"
 
   utter_bot_identity:
     - text: "Tôi là một chatbot được tạo ra để hỗ trợ tư vấn tuyển sinh cho Đại học CMC."
 
   utter_enrollment_time:
-    - text: "Thời gian nhập học thường vào tháng 8 và tháng 2 hàng năm. Bạn nên theo dõi thông báo trên website để cập nhật thông tin mới nhất."
+    - text: "Thời gian nhập học thường vào tháng 8 hàng năm. Bạn nên theo dõi thông báo trên website https://cmc-u.edu.vn/ để cập nhật thông tin mới nhất."
 
   utter_lecturers_info:
     - text: "Giảng viên tại Đại học CMC đều là những người có kinh nghiệm trong ngành và tận tâm với sinh viên. Trường cũng có giảng viên quốc tế tham gia giảng dạy."
 
+  utter_IT_info:
+    - text: "Ngành cntt ở đại học CMC có các chuyên ngành :
+        - Kỹ thuật phần mềm
+        - Kỹ thuật máy tính
+        - An toàn thông tin
+        - Điện toán đám mây (cloud) "
+
+  utter_CS_info:
+    - text: "Ngành khmt ở đại học CMC có các chuyên ngành :
+        - Phát triển phần mềm
+        - Trí tuệ nhân tạo (AI)
+        - Big data
+        - Hệ thống thông tin"
+
+  utter_name_info:
+    - text: "Cái tên CMC của đại học cmc là khởi nguồn từ các chữ cái đầu tiên của các sáng lập viên là ông Nguyễn Trung Chính, ông Hà Thế Minh và các cộng sự "
+
+  utter_point_info:
+    - text: "Điểm chuẩn của các ngành công nghệ xét theo điểm thpt là:
+        - ngành cntt lấy 24 điểm
+        - ngành khmt láy 24 điểm"
+
+  utter_opportunities_info:
+    - text: "Về cơ hội việc làm thì đại học CMC cam kết việc làm 100% cho các sinh viên học hệ song ngữ , còn đối với sinh viên học hệ thường sẽ được giới thiệu làm việc tại các công ty đối tác của tập đoàn"
+
+  utter_partner_info:
+    - text: "Tập đoàn CMC có nhiều đối tác công nghệ lớn như: Samsung ,Google,AWS,hp,Intel,...... "
+
+  utter_detail_scholarship_info:
+    - text: "Đại học CMC có các loại học bổng sau:
+      - Học bổng 100% học phí 1 năm học cho sinh viên đạt 26 điểm thpt hoặc có bằng ielt hoặc đạt giải nhất trong các kì thi quốc gia
+      - Học bổng 70% học phí 1 năm học cho sinh viên đạt 25 điểm thpt hoặc đạt giải nhì,ba trong kì thi quốc gia
+      - Học bổng 50% học phí 1 năm cho sinh viên đạt 24 điểm thpt "
+
+  utter_student_info:
+    - text: "Hiện tại trường có gần 2000 sinh viên . Vì là trường mới nên mới có sinh viên Khóa 1, khóa 2 và khóa 3"
+    
   utter_affirm:
-    - text: "Vâng, đúng vậy!"
+    - text: "Xin lỗi, thông tin này tui đang cập nhật "

@@ -65,3 +65,43 @@ rules:
     steps:
       - intent: hỏi_thông_tin_giảng_viên
       - action: utter_lecturers_info
+
+  - rule: Answer about IT
+    steps:
+      - intent: hỏi_chuyên_ngành-cntt
+      - action: utter_IT_info
+
+  - rule: Answer about CS
+    steps:
+      - intent: hỏi_chuyên_ngành_khmt
+      - action: utter_CS_info
+
+  - rule: Anser about name
+    steps:
+      - intent: hỏi_tên_trường
+      - action: utter_name_info
+
+  - rule: Answer about point
+    steps:
+      - intent: hỏi_điểm_chuẩn
+      - action: utter_point_info
+
+  - rule: Answer about job opportunities
+    steps:
+      - intent: hỏi_cơ_hội_việc_làm
+      - action: utter_opportunities_info
+
+  - rule: Answer about working partner
+    steps:
+      - intent: hỏi_các_đối_tác
+      - action: utter_partner_info
+
+  - rule: Answer about detail scholarship
+    steps:
+      - intent: hỏi_chi_tiết_học_bổng
+      - action: utter_detail_scholarship_info
+
+  - rule: Answer about student
+    steps:
+      - intent: hỏi_về_sinh_viên
+      - action: utter_student_info

@@ -226,6 +226,10 @@
             <td>Lớp</td>
             <td class="td-info">: 23IT6</td>
           </tr>
+          <tr>
+            <td>Muốn biết chi tiết hơn hãy truy cập trang web :</td>
+            <td><a href="https://cmc-u.edu.vn/"> https://cmc-u.edu.vn/</a></td>
+          </tr>
         </table>
       </div>
     </div>
@@ -280,14 +284,23 @@
           return;
         }
 
-        // Display user message
+        // Hiển thị tin nhắn của người dùng
         document.getElementById(
           "chat-messages"
         ).innerHTML += `<div class="message user"><b>You:</b> ${userMessage}</div>`;
         document.getElementById("chat-messages").scrollTop =
           document.getElementById("chat-messages").scrollHeight;
 
-        // Send message to Rasa server
+        // Hiển thị dấu hiệu typing của bot
+        const typingIndicator = document.createElement("div");
+        typingIndicator.id = "typing-indicator";
+        typingIndicator.className = "message bot";
+        typingIndicator.innerHTML = "<b>Bot:</b> ...";
+        document.getElementById("chat-messages").appendChild(typingIndicator);
+        document.getElementById("chat-messages").scrollTop =
+          document.getElementById("chat-messages").scrollHeight;
+
+        // Gửi tin nhắn tới server Rasa
         fetch("http://localhost:5005/webhooks/rest/webhook", {
           method: "POST",
           headers: {
@@ -297,13 +310,24 @@
         })
           .then((response) => response.json())
           .then((data) => {
-            data.forEach((message) => {
-              document.getElementById(
-                "chat-messages"
-              ).innerHTML += `<div class="message bot"><b>Bot:</b> ${message.text}</div>`;
-              document.getElementById("chat-messages").scrollTop =
-                document.getElementById("chat-messages").scrollHeight;
-            });
+            // Đợi khoảng thời gian trước khi hiển thị câu trả lời
+            setTimeout(() => {
+              // Xóa dấu hiệu typing
+              const typingIndicator =
+                document.getElementById("typing-indicator");
+              if (typingIndicator) {
+                typingIndicator.remove();
+              }
+
+              // Hiển thị câu trả lời của bot
+              data.forEach((message) => {
+                document.getElementById(
+                  "chat-messages"
+                ).innerHTML += `<div class="message bot"><b>Bot:</b> ${message.text}</div>`;
+                document.getElementById("chat-messages").scrollTop =
+                  document.getElementById("chat-messages").scrollHeight;
+              });
+            }, 1000); // Thời gian chờ 2 giây
           });
       }
 
