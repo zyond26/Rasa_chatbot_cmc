@@ -1,13 +1,19 @@
- - intent: ý đồ của người dùng
- - utter : phản hồi của máy
 
- - entity: Là các thực thể mà người dùng cung cấp và chúng ta cần lấy. 
+Các thành phần chính trong Rasa Framework
 
- - slot:  là các ô lưu trữ của chatbot, nó thích lưu gì thì lưu
+---Domain: Tệp domain (thường là domain.yml) định nghĩa cách hoạt động của bot, bao gồm:---
+
+- Intents: Ý định của người dùng mà bot có thể xử lý.
+- Entities: Các thực thể mà bot có thể nhận biết từ câu nói.
+- Actions: Những hành động bot có thể thực hiện (ví dụ: gửi tin nhắn trả lời, gọi API).
+- Slots: Các biến lưu trữ thông tin để duy trì ngữ cảnh trong cuộc hội thoại.
+- Responses: Các phản hồi mà bot có thể trả về cho người dùng.
+- Stories: Tệp stories.yml mô tả các kịch bản và tình huống hội thoại khác nhau mà bot sẽ thực hiện,
+ thường dựa trên những gì người dùng đã nói trước đó. Nó giúp bot học cách phản hồi và xử lý ngữ cảnh.
 
 
 
-Thao tác này sẽ tạo ra một dự án mẫu với cấu trúc thư mục như sau:
+--- Thao tác này sẽ tạo ra một dự án mẫu với cấu trúc thư mục như sau: ---
 
 - actions/:  Chứa các action tùy chỉnh.
 - data/:     Chứa dữ liệu đào tạo cho mô hình (stories, NLU data).
@@ -18,6 +24,24 @@ Thao tác này sẽ tạo ra một dự án mẫu với cấu trúc thư mục n
 - endpoints.yml:    Chứa thông tin về các endpoint (action server, model server).
 - tests/:   Chứa các tập tin để kiểm tra bot của bạn.
 
+
+--- Training Data: ----
+
+- NLU Data: Chứa các ví dụ mẫu về các câu nói của người dùng cùng với các ý định và thực thể tương ứng 
+để huấn luyện mô hình NLU.
+- Stories: Chứa các kịch bản hội thoại mà bot sẽ sử dụng để học cách điều khiển cuộc trò chuyện.
+- Custom Actions: Các hành động tùy chỉnh mà bot có thể thực hiện, chẳng hạn như truy vấn dữ liệu từ một API, 
+gửi email hoặc thực hiện các tác vụ logic phức tạp khác. Những hành động này thường được viết trong tệp actions.py.
+
+- Pipelines: Trong config.yml, pipeline được định nghĩa là chuỗi các bước để xử lý ngôn ngữ, từ tiền xử lý văn bản, 
+nhận diện thực thể, cho đến phân loại ý định.
+
+- Policies: Các chính sách định nghĩa cách bot sẽ lựa chọn hành động tiếp theo trong cuộc hội thoại.
+Các loại policies phổ biến:
+
+- MemoizationPolicy: Học trực tiếp từ các kịch bản hội thoại trong các story.
+- TED Policy: Mô hình học sâu giúp bot dự đoán hành động tiếp theo dựa trên ngữ cảnh.
+- RulePolicy: Định nghĩa các quy tắc rõ ràng cho các phản hồi trong một số tình huống cụ thể.
 
 
 ------------ Các lệnh đào tạo chatbot bằng rasa framework ------------
