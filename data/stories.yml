@@ -3,107 +3,112 @@ version: "3.1"
 stories:
   - story: Greet and ask about university
     steps:
-      - intent: chào_hỏi
-      - action: utter_greet
-      - intent: hỏi_thông_tin_trường
-      - action: utter_university_info
+      - intent: chaohoi
+      - action: utter_chaohoi
+      - intent: thongtintruong
+      - action: utter_thongtintruong
 
   - story: Greet and ask about programs
     steps:
-      - intent: chào_hỏi
-      - action: utter_greet
-      - intent: hỏi_chương_trình_đào_tạo
-      - action: utter_programs
+      - intent: chaohoi
+      - action: utter_chaohoi
+      - intent: chuongtrinhdaotao
+      - action: utter_chuongtrinhdaotao
 
   - story: Ask about tuition fees and thank
     steps:
-      - intent: hỏi_học_phí
-      - action: utter_tuition_fees
-      - intent: cảm_ơn
+      - intent: hocphi
+      - action: utter_hocphi
+      - intent: camon
       - action: utter_you_are_welcome
 
   - story: Ask about scholarships and affirm
     steps:
-      - intent: hỏi_học_bổng
-      - action: utter_scholarships
-      - intent: xác_nhận
-      - action: utter_affirm
+      - intent: hocbong
+      - action: utter_hocbong
+      - intent: xacnhan
+      - action: utter_xacnhan
 
   - story: Ask about contact information
     steps:
-      - intent: hỏi_thông_tin_liên_hệ
-      - action: utter_contact_info
+      - intent: thongtinlienhe
+      - action: utter_thongtinlienhe
 
   - story: Ask about facilities and say goodbye
     steps:
-      - intent: hỏi_cơ_sở_vật_chất
-      - action: utter_facilities
-      - intent: tạm_biệt
-      - action: utter_goodbye
+      - intent: cosovatchat
+      - action: utter_cosovatchat
+      - intent: tambiet
+      - action: utter_tambiet
 
   - story: User asks about admission process
     steps:
-      - intent: hỏi_quy_trình_tuyển_sinh
-      - action: utter_admission_process
+      - intent: tuyensinh
+      - action: utter_tuyensinh
 
   - story: User asks about enrollment time
     steps:
-      - intent: hỏi_thời_gian_nhập_học
-      - action: utter_enrollment_time
+      - intent: thoigiannhaphoc
+      - action: utter_thoigiannhaphoc
 
   - story: User asks about lecturers
     steps:
-      - intent: hỏi_thông_tin_giảng_viên
-      - action: utter_lecturers_info
+      - intent: giangvien
+      - action: utter_giangvien
 
   - story: Ask if bot is human
     steps:
-      - intent: hỏi_bot
-      - action: utter_bot_identity
+      - intent: hoi_bot
+      - action: utter_hoibot
 
   - story: Greet and ask about facilities
     steps:
-      - intent: chào_hỏi
-      - action: utter_greet
-      - intent: hỏi_cơ_sở_vật_chất
-      - action: utter_facilities
+      - intent: chaohoi
+      - action: utter_chaohoi
+      - intent: cosovatchat
+      - action: utter_cosovatchat
 
   - story: ask about IT information
     steps:
-      - intent: hỏi_chuyên_ngành_cntt
-      - action: utter_IT_info
+      - intent: chuyennganhcntt
+      - action: utter_chuyennganhcntt
 
   - story: ask about CS infomation
     steps:
-      - intent: hỏi_chuyên_ngành_khmt
-      - action: utter_CS_info
+      - intent: chuyennganhkhmt
+      - action: utter_chuyennganhkhmt
+
+  - story: ask about dtvt infomation
+    steps:
+      - intent: chuyennganhdtvt
+      - action: utter_chuyennganhdtvt
 
   - story: ask about name school
     steps:
-      - intent: hỏi_tên_trường
-      - action: utter_name_info
+      - intent: tentruong
+      - action: utter_tentruong
 
   - story: ask about point
     steps:
-      - intent: hỏi_điểm_chuẩn
-      - action: utter_point_info
+      - intent: diemchuan
+      - action: utter_diemchuan
 
   - story: ask about job opportunities
     steps:
-      - intent: hỏi_cơ_hội_việc_làm
-      - action: utter_opportunities_info
+      - intent: cohoivieclam
+      - action: utter_cohoivieclam
 
   - story: ask about working partner
     steps:
-      - intent: hỏi_các_đối_tác
-      - action: utter_partner_info
+      - intent: doitac
+      - action: utter_doitac
 
   - story: ask about detail scholarship
     steps:
-      - intent: hỏi_chi_tiết_học_bổng
-      - action: utter_detail_scholarship_info
+      - intent: hocbong
+      - action: utter_hocbong
 
   - story: ask about student
     steps:
-      - intent: hỏi_về_sinh_viên
-      - action: utter_student_info
+      - intent: sinhvien
+      - action: utter_sinhvien

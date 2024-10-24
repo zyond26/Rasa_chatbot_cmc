@@ -1,7 +1,7 @@
 version: "3.1"
 
 nlu:
-  - intent: chào_hỏi
+  - intent: chaohoi
     examples: |
       - chào
       - xin chào
@@ -12,7 +12,7 @@ nlu:
       - chào buổi chiều
       - chào buổi tối
 
-  - intent: tạm_biệt
+  - intent: tambiet
     examples: |
       - tạm biệt
       - chào nhé
@@ -22,7 +22,7 @@ nlu:
       - gặp lại sau
       - chúc một ngày tốt lành
 
-  - intent: xác_nhận
+  - intent: xacnhan
     examples: |
       - vâng
       - đúng vậy
@@ -31,7 +31,7 @@ nlu:
       - tất nhiên rồi
       - chắc chắn
 
-  - intent: từ_chối
+  - intent: tuchoi
     examples: |
       - không
       - không phải
@@ -39,7 +39,7 @@ nlu:
       - tôi không nghĩ vậy
       - không đồng ý
 
-  - intent: hỏi_thông_tin_trường
+  - intent: thongtintruong
     examples: |
       - Hãy cho tôi biết về Đại học CMC
       - Trường Đại học CMC là gì?
@@ -47,7 +47,7 @@ nlu:
       - Đại học CMC là trường như thế nào?
       - Giới thiệu về Đại học CMC
 
-  - intent: hỏi_chương_trình_đào_tạo
+  - intent: chuongtrinhdaotao
     examples: |
       - Trường CMC có những ngành học nào?
       - Trường CMC đào tạo những chương trình gì?
@@ -55,7 +55,7 @@ nlu:
       - Các ngành đào tạo tại CMC là gì?
       - Trường có những ngành học nào?
 
-  - intent: hỏi_quy_trình_tuyển_sinh
+  - intent: tuyensinh
     examples: |
       - Làm thế nào để đăng ký vào Đại học CMC?
       - Quy trình tuyển sinh của trường CMC như thế nào?
@@ -63,7 +63,7 @@ nlu:
       - Điều kiện để được tuyển sinh là gì?
       - Cho tôi biết tiêu chí tuyển sinh của trường
 
-  - intent: hỏi_học_phí
+  - intent: hocphi
     examples: |
       - Học phí của Đại học CMC là bao nhiêu?
       - Học ở trường CMC thì tốn bao nhiêu tiền?
@@ -71,7 +71,7 @@ nlu:
       - Bạn có thể cho tôi biết học phí tại Đại học CMC không?
       - Cơ cấu học phí như thế nào?
 
-  - intent: hỏi_học_bổng
+  - intent: hocbong
     examples: |
       - Trường CMC có học bổng không?
       - Có những loại học bổng nào ở CMC?
@@ -79,7 +79,7 @@ nlu:
       - Học bổng của trường có những loại nào?
       - Trường có hỗ trợ tài chính không?
 
-  - intent: hỏi_thông_tin_liên_hệ
+  - intent: thongtinlienhe
     examples: |
       - Địa chỉ của Đại học CMC là gì?
       - Trường CMC nằm ở đâu?
@@ -87,7 +87,7 @@ nlu:
       - Cho tôi xin thông tin liên hệ của trường CMC
       - Đại học CMC nằm ở địa chỉ nào?
 
-  - intent: hỏi_cơ_sở_vật_chất
+  - intent: cosovatchat
     examples: |
       - Cơ sở vật chất của Đại học CMC như thế nào?
       - Trường có thư viện không?
@@ -96,7 +96,7 @@ nlu:
       - Cơ sở vật chất của trường có hiện đại không?
       - Cơ sở vật chất
 
-  - intent: cảm_ơn
+  - intent: camon
     examples: |
       - cảm ơn
       - cảm ơn bạn
@@ -105,7 +105,7 @@ nlu:
       - cảm ơn rất nhiều
       - cảm ơn nhé
 
-  - intent: hỏi_bot
+  - intent: hoi_bot
     examples: |
       - Bạn có phải là bot không?
       - Bạn có phải là con người không?
@@ -113,7 +113,7 @@ nlu:
       - Bạn có thật không?
       - Bạn có biết nói chuyện không?
 
-  - intent: hỏi_thời_gian_nhập_học
+  - intent: thoigiannhaphoc
     examples: |
       - Khi nào nhập học tại CMC?
       - Thời gian nhập học của trường là khi nào?
@@ -122,7 +122,7 @@ nlu:
       - Cho tôi biết thời gian nhập học
       - lịch nhập học
 
-  - intent: hỏi_thông_tin_giảng_viên
+  - intent: giangvien
     examples: |
       - Giảng viên ở Đại học CMC như thế nào?
       - Giảng viên của trường có kinh nghiệm không?
@@ -132,21 +132,21 @@ nlu:
       - giảng viên thế nào?
       - giảng viên
 
-  - intent: hỏi_chuyên_ngành_cntt
+  - intent: chuyennganhcntt
     examples: |
       - Ngành công nghệ thông tin (cntt) có những chuyên ngành gì?
       - Học cntt có những chuyên ngành gì ?
       - cntt có những chuyên ngành gì ?
       - cntt có gì?
 
-  - intent: hỏi_chuyên_ngành_khmt
+  - intent: chuyennganhkhmt
     examples: |
       - Ngành khoa học máy tính(khmt) có những chuyên ngành gì?
       - Học khmt có những chuyên ngành gì?
       - khmt có những chuyên ngành gì?
       - khmt có gì?
 
-  - intent: hỏi_tên_trường
+  - intent: tentruong
     examples: |
       - cmc có nghĩa là gì?
       - cmc viết tắt của gì?
@@ -156,35 +156,95 @@ nlu:
       - tại sao lại tên là cmc?
       - tên trường
 
-  - intent: hỏi_điểm_chuẩn
+  - intent: diemchuan
     examples: |
       - Điểm chuẩn thế nào?
       - Điểm chuẩn để đỗ các ngành ra sao ?
       - Điểm chuẩn?
       - điểm chuẩn
 
-  - intent: hỏi_cơ_hội_việc_làm
+  - intent: cohoivieclam
     examples: |
       - cơ hội  việc làm của trường ra sao?
       - ra trường có thể làm ở đâu?
       - có những cơ hội việc làm nào cho sinh viên?
       - cơ hội việc làm
 
-  - intent: hỏi_các_đối tác
+  - intent: doitac
     examples: |
       - các đối tác của cmc
       - cmc có những đối tác nào?
       - đối tác
 
-  - intent: hỏi_chi_tiết_học_bổng
+  - intent: hocbong
     examples: |
       - chi tiết về học bổng
       - có những loại học bổng nào?
       - điều kiện học bổng?
       - chi tiết học bổng
 
-  - intent: hỏi_về_sinh_viên
+  - intent: sinhvien
     examples: |
       - có bao nhiêu sinh viên
       - sinh viên
       - số lượng sinh viên
+
+  - intent: thuvien
+    exampes: |
+      - cmc có thư viện không ?
+      - thư viện cmc có gì?
+      - thư viện
+
+  - intent: toanbonganhcongnghe
+    exampes: |
+      - cmc chuyên về công nghệ có những ngành gì?
+      - các ngành công nghệ
+      - thông tin các ngành công nghệ
+      - toàn bộ về công nghệ ở cmc
+      - có những ngành nào liên quan đến công nghệ
+      - công nghệ
+
+  - intent: phonghoc
+    exampes: |
+      - cmc có phòng học như nào
+      - hệ thống phòng học
+      - thông tin về phòng học
+      - toàn bộ về phòng học ở cmc
+      - phòng học ở cmc có gì
+      - phòng học
+
+  - intent: caulong
+    exampes: |
+      - cmc có câu lạc bộ cầu lông không?
+      - cmc có sân cầu lông không
+      - thông tin về câu lạc bộ cầu lông
+      - toàn bộ về câu lạc bộ cầu lông
+      - câu lạc bộ cầu lông
+      - cầu lông
+
+  - intent: bongda
+    exampes: |
+      - cmc có câu lạc bóng đá không?
+      - cmc có sân bóng không
+      - thông tin về câu lạc bộ bóng đá
+      - toàn bộ về câu lạc bộ bóng đá
+      - câu lạc bộ bóng đá
+      - bóng đá
+
+  - intent: bongro
+    exampes: |
+      - cmc có câu lạc bộ bóng rổ không?
+      - cmc có sân bóng rổ không
+      - thông tin về câu lạc bộ bóng rổ
+      - toàn bộ về câu lạc bộ bóng rổ
+      - câu lạc bộ bóng rổ
+      - bóng rổ
+
+  - intent: bongchuyen
+    exampes: |
+      - cmc có câu lạc bộ bóng chuyền không?
+      - cmc có sân bóng chuyền không
+      - thông tin về câu lạc bộ bóng chuyền
+      - toàn bộ về câu lạc bộ bóng chuyền
+      - câu lạc bộ bóng chuyền
+      - bóng chuyền

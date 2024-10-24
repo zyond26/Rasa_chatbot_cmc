@@ -1,101 +1,162 @@
 version: "3.1"
 
 intents:
-  - chào_hỏi
-  - tạm_biệt
-  - cảm_ơn
-  - xác_nhận
-  - từ_chối
-  - hỏi_thông_tin_trường
-  - hỏi_chương_trình_đào_tạo
-  - hỏi_quy_trình_tuyển_sinh
-  - hỏi_học_phí
-  - hỏi_học_bổng
-  - hỏi_thông_tin_liên_hệ
-  - hỏi_cơ_sở_vật_chất
-  - hỏi_bot
-  - hỏi_thời_gian_nhập_học
-  - hỏi_thông_tin_giảng_viên
+  - chaohoi
+  - tambiet
+  - thongtintruong
+  - chuongtrinhdaotao
+  - phonghoc
+  - clb
+  - bongda
+  - caulong
+  - bongchuyen
+  - bong ro
+  - tuyensinh
+  - hocphi
+  - hocbong
+  - thongtinlienhe
+  - cosovatchat
+  - thuvien
+  - hoi_bot
+  - thoigiannhaphoc
+  - giangvien
+  - sinhvien
+  - camon
+  - xacnhan
+  - tuchoi
+  - toanbonganhcongnghe
 
 responses:
-  utter_greet:
-    - text: "Chào bạn, tôi có thể giúp gì cho bạn về Đại học CMC?"
+  utter_all_tech:
+    - text: |
+        - Thông tin ngành Công nghệ thông tin :https://cmc-u.edu.vn/nganh-cong-nghe-thong-tin/
+        - Thông tin ngành Khoa học máy tính : https://cmc-u.edu.vn/nganh-khoa-hoc-may-tinh/
+        - Thông tin ngành Công nghệ kỹ thuật điện tử - viễn thông : https://cmc-u.edu.vn/nganh-cong-nghe-ky-thuat-dien-tu-vien-thong/
 
-  utter_goodbye:
+  utter_chaohoi:
+    - text: "Xin chào, tôi có thể giúp gì cho bạn về Đại học CMC?"
+
+  utter_tambiet:
     - text: "Tạm biệt, hẹn gặp lại bạn sau!"
 
   utter_you_are_welcome:
     - text: "Rất vui được giúp đỡ bạn!"
 
-  utter_university_info:
+  utter_thongtintruong:
     - text: "Đại học CMC là một trường đại học số hàng đầu uy tín với nhiều chương trình học đa dạng, phù hợp với nhu cầu của sinh viên hiện đại."
 
-  utter_programs:
+  utter_chuongtrinhdaotao:
     - text: "Trường cung cấp các chương trình như Công nghệ thông tin,Khoa học máy tính, Quản trị kinh doanh, và nhiều ngành khác."
 
-  utter_admission_process:
+  utter_tuyensinh:
     - text: "Bạn có thể đăng ký nhập học trực tuyến hoặc đến trực tiếp văn phòng tuyển sinh của trường để nộp hồ sơ."
 
-  utter_tuition_fees:
+  utter_hocphi:
     - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chuyên ngành và chương trình học."
 
-  utter_scholarships:
+  utter_hocbong:
     - text: "Trường cung cấp nhiều loại học bổng, bao gồm học bổng dành cho sinh viên xuất sắc và hỗ trợ tài chính cho sinh viên có hoàn cảnh khó khăn."
 
-  utter_contact_info:
-    - text: "Đại học CMC có 3 cơ sở
-        Cơ sở 1: Số 84C, Đường Nguyễn Thanh Bình, Vạn Phúc, Hà Đông, Hà Nội
-        Cơ sở 2: Vạn Phúc Building, Đường Tố Hữu, Vạn Phúc, Hà Đông, Hà Nội
-        Cơ sở 3: Tây Mỗ, Nam Từ Liêm, Hà Nội"
+  utter_thongtinlienhe:
+    - text: |
+        Đại học CMC có 3 cơ sở :
+        - Cơ sở 1: Số 84C, Đường Nguyễn Thanh Bình, Vạn Phúc, Hà Đông, Hà Nội
+        - Cơ sở 2: Vạn Phúc Building, Đường Tố Hữu, Vạn Phúc, Hà Đông, Hà Nội
+        - Cơ sở 3: Tây Mỗ, Nam Từ Liêm, Hà Nội
 
-  utter_facilities:
-    - text: "Trường có cơ sở vật chất hiện đại bao gồm thư viện, phòng tự học điều hòa 24/7 cho sinh viên"
+  utter_cosovatchat:
+    - text: "Trường có cơ sở vật chất mới hiện đại bao gồm thư viện, phòng tự học điều hòa 24/7 cho sinh viên"
 
-  utter_bot_identity:
+  utter_hoibot:
     - text: "Tôi là một chatbot được tạo ra để hỗ trợ tư vấn tuyển sinh cho Đại học CMC."
 
-  utter_enrollment_time:
-    - text: "Thời gian nhập học thường vào tháng 8 hàng năm. Bạn nên theo dõi thông báo trên website https://cmc-u.edu.vn/ để cập nhật thông tin mới nhất."
+  utter_thoigiannhaphoc:
+    - text: "Thời gian nhập học thường vào tháng 8 hàng năm. Bạn hãy theo dõi thông báo trên website https://cmc-u.edu.vn/ để cập nhật thông tin mới nhất."
 
-  utter_lecturers_info:
+  utter_giangvien:
     - text: "Giảng viên tại Đại học CMC đều là những người có kinh nghiệm trong ngành và tận tâm với sinh viên. Trường cũng có giảng viên quốc tế tham gia giảng dạy."
 
-  utter_IT_info:
-    - text: "Ngành cntt ở đại học CMC có các chuyên ngành :
+  utter_chuyennganhcntt:
+    - text: |
+        Ngành công nghệ thông tin ở đại học CMC có các chuyên ngành : 
         - Kỹ thuật phần mềm
         - Kỹ thuật máy tính
         - An toàn thông tin
-        - Điện toán đám mây (cloud) "
+        - Điện toán đám mây
 
-  utter_CS_info:
-    - text: "Ngành khmt ở đại học CMC có các chuyên ngành :
+  utter_chuyennganhkhmt:
+    - text: |
+        Ngành khoa học máy tính ở đại học CMC có các chuyên ngành :
         - Phát triển phần mềm
-        - Trí tuệ nhân tạo (AI)
+        - Trí tuệ nhân tạo
         - Big data
-        - Hệ thống thông tin"
+        - Hệ thống thông tin
 
-  utter_name_info:
+  utter_chuyennganhdtvt:
+    - text: |
+        Ngành Công nghệ kỹ thuật điện tử - viễn thông có các chuyên ngành :
+        - Thiết kế vi mạch bán dẫn (IC design)
+        - Hệ thống nhúng và IOT
+        - Công nghệ mạng và truyền thông tiên tiến
+
+  utter_tentruong:
     - text: "Cái tên CMC của đại học cmc là khởi nguồn từ các chữ cái đầu tiên của các sáng lập viên là ông Nguyễn Trung Chính, ông Hà Thế Minh và các cộng sự "
 
-  utter_point_info:
-    - text: "Điểm chuẩn của các ngành công nghệ xét theo điểm thpt là:
-        - ngành cntt lấy 24 điểm
-        - ngành khmt láy 24 điểm"
+  utter_diemchuan:
+    - text: |
+        Điểm chuẩn của các ngành công nghệ xét theo điểm thpt năm 2024 là:
+        - ngành Công nghệ thông tin lấy 24 điểm
+        - ngành Khoa học máy tính lấy 24 điểm
+        - ngành Công nghệ kỹ thuật điện tử - viễn thông lấy 24 điểm
 
-  utter_opportunities_info:
+  utter_cohoivieclam:
     - text: "Về cơ hội việc làm thì đại học CMC cam kết việc làm 100% cho các sinh viên học hệ song ngữ , còn đối với sinh viên học hệ thường sẽ được giới thiệu làm việc tại các công ty đối tác của tập đoàn"
 
-  utter_partner_info:
+  utter_doitac:
     - text: "Tập đoàn CMC có nhiều đối tác công nghệ lớn như: Samsung ,Google,AWS,hp,Intel,...... "
 
-  utter_detail_scholarship_info:
-    - text: "Đại học CMC có các loại học bổng sau:
-      - Học bổng 100% học phí 1 năm học cho sinh viên đạt 26 điểm thpt hoặc có bằng ielt hoặc đạt giải nhất trong các kì thi quốc gia
-      - Học bổng 70% học phí 1 năm học cho sinh viên đạt 25 điểm thpt hoặc đạt giải nhì,ba trong kì thi quốc gia
-      - Học bổng 50% học phí 1 năm cho sinh viên đạt 24 điểm thpt "
+  utter_hocbong:
+    - text: |
+        Đại học CMC có các loại học bổng sau:
+        - Học bổng 100% học phí 1 năm học cho sinh viên đạt 26 điểm thpt hoặc có bằng ielt hoặc đạt giải nhất trong các kì thi quốc gia
+        - Học bổng 70% học phí 1 năm học cho sinh viên đạt 25 điểm thpt hoặc đạt giải nhì,ba trong kì thi quốc gia
+        - Học bổng 50% học phí 1 năm cho sinh viên đạt 24 điểm thpt
 
-  utter_student_info:
+  utter_sinhvien:
     - text: "Hiện tại trường có gần 2000 sinh viên . Vì là trường mới nên mới có sinh viên Khóa 1, khóa 2 và khóa 3"
-    
-  utter_affirm:
+
+  utter_xacnhan:
     - text: "Xin lỗi, thông tin này tui đang cập nhật "
+
+  utter_thuvien:
+    - text: "CMC có phòng thư viện với đầy đủ các đầu sách cho sinh viên các ngành. Bên cạnh đó thư viện cũng có 1 view học rất chill, hãy đến trải nghiệm nhé"
+
+  utter_phonghoc:
+    - text:
+        "Phòng học ở CMC được trang bị đầy đủ các thiết bị hiện đại phục vụ cho giảng viên và sinh viên. Mỗi phòng sẽ có 1 máy chiếu , 2 điều hòa , hệ thống bóng sáng toàn bộ phòng học
+        đảm bảo những gì tốt nhất cho sinh viên"
+
+  utter_clb:
+    - text:
+        "CMC có rất nhiều câu lạc bộ(clb) đa dạng cho các bạn sinh viên thỏa sức tham gia sáng tạo đóng góp. Hiện tại có khoảng gần 15 clb nha.Có đa dạng các clb
+        từ thể theo cho đến nghệ thuật cho các bạn lựa chọn thử sức nhé!!"
+  utter_caulong:
+    - text:
+        "CMC hiện tại đang trong quá trình xây dựng cơ sở chính ở Nam Từ Liêm nên chưa có sân cầu lông nhé nhưng vẫn có clb cầu lông cho các lông thủ nha.Muốn biết thêm chi tiết hãy truy cập
+        page của clb https://www.facebook.com/profile.php?id=61552317201568 nhaa "
+
+  utter_bongda:
+    - text:
+        "CMC có clb đá bóng cho các cầu thủ đam mê quả bóng tròn nha, có sân bóng trường chúng ta ở cơ sở 1 nhé. Hãy tham gia
+        page của clb để biết nhiều hơn nhaa https://www.facebook.com/CMC.Uni.FC "
+
+  utter_bongro:
+    - text:
+        " CMC có clb bóng rổ cho các vận động viên đam mê quả bóng màu cam nha. Hiện có sân bóng rổ xịn xò indoor ở cơ sở 1 nhé.
+        Hãy like page của clb cập nhật thêm nhiều điều hay nha https://www.facebook.com/CMCU.BasketballTeam "
+
+  utter_bongchuyen:
+    - text:
+        "CMC có clb bóng chuyền nhé. Hiện chưa có sân chính thức của trường nhưng khi tham gia clb sẽ được cùng các đồng đội đi khám phá
+        các sân bốn phương luôn nha. Hãy like page của clb để biết thêm thông tin nha https://www.facebook.com/profile.php?id=61552178861778 "
+
