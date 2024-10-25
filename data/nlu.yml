@@ -190,13 +190,13 @@ nlu:
       - số lượng sinh viên
 
   - intent: thuvien
-    exampes: |
+    examples: |
       - cmc có thư viện không ?
       - thư viện cmc có gì?
       - thư viện
 
   - intent: toanbonganhcongnghe
-    exampes: |
+    examples: |
       - cmc chuyên về công nghệ có những ngành gì?
       - các ngành công nghệ
       - thông tin các ngành công nghệ
@@ -205,7 +205,7 @@ nlu:
       - công nghệ
 
   - intent: phonghoc
-    exampes: |
+    examples: |
       - cmc có phòng học như nào
       - hệ thống phòng học
       - thông tin về phòng học
@@ -214,7 +214,7 @@ nlu:
       - phòng học
 
   - intent: caulong
-    exampes: |
+    examples: |
       - cmc có câu lạc bộ cầu lông không?
       - cmc có sân cầu lông không
       - thông tin về câu lạc bộ cầu lông
@@ -223,7 +223,7 @@ nlu:
       - cầu lông
 
   - intent: bongda
-    exampes: |
+    examples: |
       - cmc có câu lạc bóng đá không?
       - cmc có sân bóng không
       - thông tin về câu lạc bộ bóng đá
@@ -232,7 +232,7 @@ nlu:
       - bóng đá
 
   - intent: bongro
-    exampes: |
+    examples: |
       - cmc có câu lạc bộ bóng rổ không?
       - cmc có sân bóng rổ không
       - thông tin về câu lạc bộ bóng rổ
@@ -241,7 +241,7 @@ nlu:
       - bóng rổ
 
   - intent: bongchuyen
-    exampes: |
+    examples: |
       - cmc có câu lạc bộ bóng chuyền không?
       - cmc có sân bóng chuyền không
       - thông tin về câu lạc bộ bóng chuyền

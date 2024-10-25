@@ -54,9 +54,6 @@ responses:
   utter_hocphi:
     - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chuyên ngành và chương trình học."
 
-  utter_hocbong:
-    - text: "Trường cung cấp nhiều loại học bổng, bao gồm học bổng dành cho sinh viên xuất sắc và hỗ trợ tài chính cho sinh viên có hoàn cảnh khó khăn."
-
   utter_thongtinlienhe:
     - text: |
         Đại học CMC có 3 cơ sở :
@@ -159,4 +156,3 @@ responses:
     - text:
         "CMC có clb bóng chuyền nhé. Hiện chưa có sân chính thức của trường nhưng khi tham gia clb sẽ được cùng các đồng đội đi khám phá
         các sân bốn phương luôn nha. Hãy like page của clb để biết thêm thông tin nha https://www.facebook.com/profile.php?id=61552178861778 "
-

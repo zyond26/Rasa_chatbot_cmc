@@ -121,10 +121,10 @@ rules:
       - intent: phonghoc
       - action: utter_phonghoc
 
-  - rule: Answer about alltech
+  - rule: Answer about all_tech
     steps:
       - intent: toanbonganhcongnghe
-      - action: utter_toanbonganhcongnghe
+      - action: utter_all_tech
 
   - rule: Answer about badminton
     steps:
@@ -145,5 +145,3 @@ rules:
     steps:
       - intent: bongchuyen
       - action: utter_bongchuyen
-
-  

@@ -6,7 +6,6 @@ Các thành phần chính trong Rasa Framework
 - Intents: Ý định của người dùng mà bot có thể xử lý.
 - Entities: Các thực thể mà bot có thể nhận biết từ câu nói.
 - Actions: Những hành động bot có thể thực hiện (ví dụ: gửi tin nhắn trả lời, gọi API).
-- Slots: Các biến lưu trữ thông tin để duy trì ngữ cảnh trong cuộc hội thoại.
 - Responses: Các phản hồi mà bot có thể trả về cho người dùng.
 - Stories: Tệp stories.yml mô tả các kịch bản và tình huống hội thoại khác nhau mà bot sẽ thực hiện,
  thường dựa trên những gì người dùng đã nói trước đó. Nó giúp bot học cách phản hồi và xử lý ngữ cảnh.
