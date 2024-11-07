@@ -3,28 +3,61 @@ version: "3.1"
 intents:
   - chaohoi
   - tambiet
+  - xacnhan
+  - tuchoi
   - thongtintruong
   - chuongtrinhdaotao
-  - phonghoc
-  - clb
-  - bongda
-  - caulong
-  - bongchuyen
-  - bong ro
   - tuyensinh
   - hocphi
   - hocbong
+  - chitiethocbong
   - thongtinlienhe
   - cosovatchat
-  - thuvien
+  - camon
   - hoi_bot
   - thoigiannhaphoc
   - giangvien
   - sinhvien
-  - camon
-  - xacnhan
-  - tuchoi
-  - toanbonganhcongnghe
+  - tentruong
+  - diemchuan
+  - cohoivieclam
+  - doitac
+  - thuvien 
+  - toanbonganhcongnghe 
+  - chuyennganhcntt
+  - chitietcntt
+  - chuyennganhkhmt
+  - chitietkhmt
+  - chuyennganhdtvt
+  - chitietdtvt
+  - chuyennganhtkdh
+  - chitiettkdh
+  - chuyennganhqtkd
+  - chitietqtkd
+  - chuyennganhnn
+  - chitietnn
+  - nganh_nnh
+  - nganh_nnn
+  - phonghoc
+  - clb
+  - clb_bongda
+  - clb_caulong
+  - clb_bongchuyen
+  - clb_bong ro
+  - quanhaphoc
+  - diemrenluyen
+  - dongphuc
+  - kytucxa
+  - hotrohoctap
+  - thongtingiaotrinh
+  - xethoclai
+  - cauhoithuonggap
+  - noiquy
+  - clb_english
+  - clb_dance
+  - clb_event
+ 
+
 
 responses:
   utter_all_tech:
@@ -142,7 +175,7 @@ responses:
         "CMC hiện tại đang trong quá trình xây dựng cơ sở chính ở Nam Từ Liêm nên chưa có sân cầu lông nhé nhưng vẫn có clb cầu lông cho các lông thủ nha.Muốn biết thêm chi tiết hãy truy cập
         page của clb https://www.facebook.com/profile.php?id=61552317201568 nhaa "
 
-  utter_bongda:
+  utter_bongda:d
     - text:
         "CMC có clb đá bóng cho các cầu thủ đam mê quả bóng tròn nha, có sân bóng trường chúng ta ở cơ sở 1 nhé. Hãy tham gia
         page của clb để biết nhiều hơn nhaa https://www.facebook.com/CMC.Uni.FC "

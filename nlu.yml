@@ -78,13 +78,6 @@ nlu:
       - Làm sao để xin học bổng tại Đại học CMC?
       - Học bổng của trường có những loại nào?
       - Trường có hỗ trợ tài chính không?
-    
-   - intent: chitiethocbong
-    examples: |
-      - chi tiết về học bổng
-      - có những loại học bổng nào?
-      - điều kiện học bổng?
-      - chi tiết học bổng
 
   - intent: thongtinlienhe
     examples: |
@@ -139,11 +132,19 @@ nlu:
       - giảng viên thế nào?
       - giảng viên
 
-   - intent: sinhvien
+  - intent: chuyennganhcntt
     examples: |
-      - có bao nhiêu sinh viên
-      - sinh viên
-      - số lượng sinh viên
+      - Ngành công nghệ thông tin (cntt) có những chuyên ngành gì?
+      - Học cntt có những chuyên ngành gì ?
+      - cntt có những chuyên ngành gì ?
+      - cntt có gì?
+
+  - intent: chuyennganhkhmt
+    examples: |
+      - Ngành khoa học máy tính(khmt) có những chuyên ngành gì?
+      - Học khmt có những chuyên ngành gì?
+      - khmt có những chuyên ngành gì?
+      - khmt có gì?
 
   - intent: tentruong
     examples: |
@@ -175,6 +176,19 @@ nlu:
       - cmc có những đối tác nào?
       - đối tác
 
+  - intent: hocbong
+    examples: |
+      - chi tiết về học bổng
+      - có những loại học bổng nào?
+      - điều kiện học bổng?
+      - chi tiết học bổng
+
+  - intent: sinhvien
+    examples: |
+      - có bao nhiêu sinh viên
+      - sinh viên
+      - số lượng sinh viên
+
   - intent: thuvien
     examples: |
       - cmc có thư viện không ?
@@ -188,74 +202,7 @@ nlu:
       - thông tin các ngành công nghệ
       - toàn bộ về công nghệ ở cmc
       - có những ngành nào liên quan đến công nghệ
-      - toàn bộ các ngành liên quan đến công nghệ ở đại học CMC
-
-  - intent: chuyennganhcntt
-    examples: |
-      - Ngành công nghệ thông tin (cntt) có những chuyên ngành gì?
-      - Học cntt có những chuyên ngành gì ?
-      - cntt có những chuyên ngành gì ?
-      - cntt có gì?
-      - công nghệ thông tin có gì
-  - intent: chitietcntt
-    examples: |
-      - ngành công nghệ thông tin học những môn gì?
-      - học công nghệ thông tin có gì hay 
-      - học công nghệ thông tin được học những gì?
-
-  - intent: chuyennganhkhmt
-    examples: |
-      - Ngành khoa học máy tính(khmt) có những chuyên ngành gì?
-      - Học khmt có những chuyên ngành gì?
-      - khmt có những chuyên ngành gì?
-      - khmt có gì?
-      - khoa học máy tính có gì?
-
-  - intent: chitietkhmt
-    examples: |
-      - ngành khoa học máy tính học những môn gì?
-      - học khoa học máy tính có gì hay 
-      - học khoa học máy tính được học những gì?
-
-  - intent: chuyennganhdtvt
-    examples: |
-      - ngành điện tử viễn thông có những chuyên ngành gì?
-      - học điện tử viễn thông có những chuyên ngành gì
-      - điện tử viễn thông có gì
-      - dtvt có gì?
-      - dtvt có những chuyên ngành nào thú vị
-
-  - intent: chitietdtvt
-    examples: |
-      - ngành dtvt học những môn gì?
-      - ngành dtvt có hay không
-      - học điện tử viễn thông có gì
-  
-  - intent: chuyennganhtkdh
-    examples: |
-      - ngành thiết kế đồ họa có những chuyên ngành gì?
-      - học thiết kế đồ họa có những ngành nào
-      - thiết kế đồ họa có gì 
-      - tkdh có gì ?
-      - thiết kết đồ họa có những chuyên ngành nào
-
-  - intent: chitiettkdh
-    examples: |
-      - ngành thiết kế đồ họa có những môn gì 
-      - ngành thiết kế đồ họa có hay không
-      - học thiết kế đồ họa có gì
-
-  - intent: chuyennganhnn
-    examples: |
-      - cmc có ngành ngôn ngữ không?
-      - có những ngành ngôn ngữ nào ở cmc
-      - có những ngành ngôn ngữ nào 
-      - cmc đào tạo những ngành ngôn ngữ nào
-  
-  - intent: nganh_nnh
-    examples: |
-      - 
-
+      - công nghệ
 
   - intent: phonghoc
     examples: |
