@@ -78,8 +78,8 @@ nlu:
       - Làm sao để xin học bổng tại Đại học CMC?
       - Học bổng của trường có những loại nào?
       - Trường có hỗ trợ tài chính không?
-    
-   - intent: chitiethocbong
+
+  - intent: chitiethocbong
     examples: |
       - chi tiết về học bổng
       - có những loại học bổng nào?
@@ -139,7 +139,7 @@ nlu:
       - giảng viên thế nào?
       - giảng viên
 
-   - intent: sinhvien
+  - intent: sinhvien
     examples: |
       - có bao nhiêu sinh viên
       - sinh viên
@@ -157,10 +157,35 @@ nlu:
 
   - intent: diemchuan
     examples: |
-      - Điểm chuẩn thế nào?
-      - Điểm chuẩn để đỗ các ngành ra sao ?
-      - Điểm chuẩn?
+      - điểm chuẩn đại học cmc
+      - điểm chuẩn các ngành 
+      - điểm chuẩn để vào đại học cmc
       - điểm chuẩn
+      - điểm chuẩn các năm
+
+  - intent: diemchuan2022
+    examples: |
+      - Điểm chuẩn năm 2022 thế nào?
+      - Điểm chuẩn năm 2022 để đỗ các ngành ra sao ?
+      - Điểm chuẩn năm 2022?
+      - điểm chuẩn của năm 2022
+      - năm 2022
+
+  - intent: diemchuan2023
+    examples: |
+      - Điểm chuẩn năm 2023 thế nào?
+      - Điểm chuẩn năm 2023 để đỗ các ngành ra sao ?
+      - Điểm chuẩn năm 2023?
+      - điểm chuẩn của năm 2023
+      - năm 2023
+
+  - intent: diemchuan2024
+    examples: |
+      - Điểm chuẩn năm 2024 thế nào?
+      - Điểm chuẩn năm 2024 để đỗ các ngành ra sao ?
+      - Điểm chuẩn năm 2024?
+      - điểm chuẩn của năm 2024
+      - năm 2024
 
   - intent: cohoivieclam
     examples: |
@@ -181,7 +206,7 @@ nlu:
       - thư viện cmc có gì?
       - thư viện
 
-  - intent: chuyên ngành công nghệ
+  - intent: chuyennganhcongnghe
     examples: |
       - cmc chuyên về công nghệ có những ngành gì?
       - các ngành công nghệ
@@ -236,7 +261,7 @@ nlu:
       - ngành dtvt có hay không
       - học điện tử viễn thông có gì
       - chi tiết điện tử viễn thông
-  
+
   - intent: chuyennganhtkdh
     examples: |
       - ngành thiết kế đồ họa có những chuyên ngành gì?
@@ -250,21 +275,33 @@ nlu:
       - ngành thiết kế đồ họa có hay không
       - học thiết kế đồ họa có gì
       - chi tiết thiết kế đồ họa
-  
+
   - intent: chuyennganhqtkd
     examples: |
       - ngành quản trị kinh doanh có những chuyên ngành gì?
       - học quản trị kinh doanh có chuyên ngành nào
       - các chuyên ngành của qtkd
       - chuyên ngành của quản trị kinh doanh
-    
+
+  - intent: chitietqtkd
+    examples: |
+      - chi tiết quản trị kinh doanh
+      - quản trị kinh doanh học môn gì
+      - học quản trị kinh doanh có hay không
+
   - intent: chuyennganhnn
     examples: |
       - cmc có ngành ngôn ngữ không?
       - có những ngành ngôn ngữ nào ở cmc
       - có những ngành ngôn ngữ nào 
       - cmc đào tạo những ngành ngôn ngữ nào
-  
+
+  - intent: chitietnn
+    examples: |
+      - chi tiết ngành ngôn ngữ
+      - ngành ngôn ngữ nào hay nhất 
+      - hai ngành ngôn ngữ
+
   - intent: nganh_nnh
     examples: |
       - ngành ngôn ngữ hàn có gì ?
@@ -289,6 +326,13 @@ nlu:
       - toàn bộ về phòng học ở cmc
       - phòng học ở cmc có gì
       - phòng học
+
+  - intent: clb
+    examples: |
+      - cmc có những câu lạc bộ nào
+      - những câu lạc bộ ở cmc
+      - câu lạc bộ
+      - có những câu lạc bộ nào
 
   - intent: clb_caulong
     examples: |
@@ -347,3 +391,64 @@ nlu:
       - thông tin về câu lạc bộ sự kiện
       - câu lạc bộ sự kiện
       - event
+
+  - intent: quanhaphoc
+    examples: |
+      - nhập học có gì?
+      - quà nhập học của cmc là gì
+      - khi đi nhập học được gì?
+      - quà nhập học
+
+  - intent: diemrenluyen
+    examples: |
+      - cmc tính điểm rèn luyện như thế nào 
+      - cách tính điểm rèn luyện
+      - thêm điểm rèn luyện
+      - điểm rèn luyện
+      - tính điểm rèn luyện
+
+  - intent: dongphuc
+    examples: |
+      - đồng phục cmc màu gì
+      - cmc có đồng phục không
+      - đồng phục
+
+  - intent: kytucxa
+    examples: |
+      - cmc có ký túc xá cho sinh viên không
+      - ký túc xá cmc
+      - ký túc xá có to không 
+      - ký túc xá
+
+  - intent: hotrohoctap
+    examples: |
+      - cmc có hỗ trợ học tập cho các sinh viên không?
+      - hỗ trọ học tập
+      - học kém có được hỗ trợ học tập không
+
+  - intent: hoclai
+    examples: |
+      - thi trượt học lại thế nào 
+      - ở cmc cho học lại thế nào
+      - cách thức học lại ở cmc
+      - học lại
+      - trượt môn học lại
+
+  - intent: cauhoithuonggap
+    examples: |
+      - chủ đề nào được quan tâm nhất
+      - người ta hay hỏi gì về cmc
+      - dùng chat bot hỏi gì nhiều nhất
+      - chủ đề quan tâm nhất ở cmc
+      - những câu hỏi thường gặp
+      - những câu hỏi nào hay được hỏi nhiều nhất
+
+  - intent: noiquy
+    examples: |
+      - có những nội quy gì
+      - nội quy
+      - nội quy cmc
+      - cmc có nội quy học tập gì
+      - những nội quy gì có khi đi học ở cmc
+      - những nội quy quy định
+      - các nội quy cần tuân thủ
