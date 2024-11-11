@@ -1,287 +1,262 @@
 version: "3.1"
 
 rules:
-  - rule: Chao hoi
-    steps:
-      - intent: chaohoi
-      - action: utter_chaohoi
+  # - rule: Trả lời câu hỏi thường gặp
+  #   steps:
+  #     - intent: cauhoithuonggap
+  #     - action: utter_cauhoithuonggap
 
-  - rule: Tam biet
-    steps:
-      - intent: tambiet
-      - action: utter_tambiet
+  # - rule: Chào hỏi
+  #   steps:
+  #     - intent: chaohoi
+  #     - action: utter_chaohoi
 
-  - rule: Cam on
-    steps:
-      - intent: camon
-      - action: utter_camon
+  # - rule: Cung cấp thông tin trường
+  #   steps:
+  #     - intent: thongtintruong
+  #     - action: utter_thongtintruong
 
-  - rule: Xac nhan
-    steps:
-      - intent: xacnhan
-      - action: utter_xacnhan
+  # - rule: Tạm biệt
+  #   steps:
+  #     - intent: tambiet
+  #     - action: utter_tambiet
 
-  - rule: Tu choi
-    steps:
-      - intent: tuchoi
-      - action: utter_tuchoi
+  # - rule: Cảm ơn
+  #   steps:
+  #     - intent: camon
+  #     - action: utter_camon
 
-  - rule: Thong tin truong
-    steps:
-      - intent: thongtintruong
-      - action: utter_thongtintruong
+  # - rule: Cung cấp thông tin tuyển sinh
+  #   steps:
+  #     - intent: tuyensinh
+  #     - action: utter_tuyensinh
 
-  - rule: Chuong trinh dao tao
-    steps:
-      - intent: chuongtrinhdaotao
-      - action: utter_chuongtrinhdaotao
+  # - rule: Chương trình đào tạo
+  #   steps:
+  #     - intent: chuongtrinhdaotao
+  #     - action: utter_chuongtrinhdaotao
 
-  - rule: Tuyen sinh
-    steps:
-      - intent: tuyensinh
-      - action: utter_tuyensinh
+  # - rule: Học phí
+  #   steps:
+  #     - intent: hocphi
+  #     - action: utter_hocphi
 
-  - rule: Hoc phi
-    steps:
-      - intent: hocphi
-      - action: utter_hocphi
+  # - rule: Học bổng
+  #   steps:
+  #     - intent: hocbong
+  #     - action: utter_hocbong
 
-  - rule: Hoc bong
-    steps:
-      - intent: hocbong
-      - action: utter_hocbong
+  # - rule: Duy trì học bổng
+  #   steps:
+  #     - intent: duytrihocbong
+  #     - action: utter_duytrihocbong
 
-  - rule: Chi tiet hoc bong
-    steps:
-      - intent: chitiethocbong
-      - action: utter_chitiethocbong
+  # - rule: Thông tin liên hệ
+  #   steps:
+  #     - intent: thongtinlienhe
+  #     - action: utter_thongtinlienhe
 
-  - rule: Thong tin lien he
-    steps:
-      - intent: thongtinlienhe
-      - action: utter_thongtinlienhe
+  # - rule: Hỏi về bot
+  #   steps:
+  #     - intent: hoi_bot
+  #     - action: utter_hoibot
 
-  - rule: Co so vat chat
-    steps:
-      - intent: cosovatchat
-      - action: utter_cosovatchat
+  # - rule: Thời gian nhập học
+  #   steps:
+  #     - intent: thoigiannhaphoc
+  #     - action: utter_thoigiannhaphoc
 
-  - rule: Hoi bot
-    steps:
-      - intent: hoi_bot
-      - action: utter_hoibot
+  # - rule: Thông tin giảng viên
+  #   steps:
+  #     - intent: giangvien
+  #     - action: utter_giangvien
 
-  - rule: Thoi gian nhap hoc
-    steps:
-      - intent: thoigiannhaphoc
-      - action: utter_thoigiannhaphoc
+  # - rule: Số lượng sinh viên
+  #   steps:
+  #     - intent: SoLuongSinhVien
+  #     - action: utter_SoLuongSinhVien
 
-  - rule: Giang vien
-    steps:
-      - intent: giangvien
-      - action: utter_giangvien
+  # - rule: Tên trường
+  #   steps:
+  #     - intent: tentruong
+  #     - action: utter_tentruong
 
-  - rule: Sinh vien
-    steps:
-      - intent: sinhvien
-      - action: utter_sinhvien
+  # - rule: Điểm chuẩn
+  #   steps:
+  #     - intent: diemchuan
+  #     - action: utter_diemchuan
 
-  - rule: Ten truong
-    steps:
-      - intent: tentruong
-      - action: utter_tentruong
+  # - rule: Điểm chuẩn năm 2022
+  #   steps:
+  #     - intent: diemchuanNam2022
+  #     - action: utter_diemchuanNam2022
 
-  - rule: Diem chuan
-    steps:
-      - intent: diemchuan
-      - action: utter_diemchuan
+  # - rule: Điểm chuẩn năm 2023
+  #   steps:
+  #     - intent: diemchuanNam2023
+  #     - action: utter_diemchuanNam2023
 
-  - rule: Diem chuan 2022
-    steps:
-      - intent: diemchuan2022
-      - action: utter_diemchuan2022
+  # - rule: Điểm chuẩn năm 2024
+  #   steps:
+  #     - intent: diemchuanNam2024
+  #     - action: utter_diemchuanNam2024
 
-  - rule: Diem chuan 2023
-    steps:
-      - intent: diemchuan2023
-      - action: utter_diemchuan2023
+  # - rule: Cơ hội việc làm
+  #   steps:
+  #     - intent: cohoivieclam
+  #     - action: utter_cohoivieclam
 
-  - rule: Diem chuan 2024
-    steps:
-      - intent: diemchuan2024
-      - action: utter_diemchuan2024
+  # - rule: Đối tác
+  #   steps:
+  #     - intent: doitac
+  #     - action: utter_doitac
 
-  - rule: Co hoi viec lam
-    steps:
-      - intent: cohoivieclam
-      - action: utter_cohoivieclam
+  # - rule: Chuyên ngành công nghệ
+  #   steps:
+  #     - intent: chuyennganhcongnghe
+  #     - action: utter_chuyennganhcongnghe
 
-  - rule: Doi tac
-    steps:
-      - intent: doitac
-      - action: utter_doitac
+  # - rule: Ngành công nghệ thông tin
+  #   steps:
+  #     - intent: NganhCNTT
+  #     - action: utter_NganhCNTT
 
-  - rule: Chuyen nganh cong nghe
-    steps:
-      - intent: chuyennganhcongnghe
-      - action: utter_chuyennganhcongnghe
+  # - rule: Ngành khoa học máy tính
+  #   steps:
+  #     - intent: NganhKHMT
+  #     - action: utter_NganhKHMT
 
-  - rule: Chuyen nganh cong nghe thong tin
-    steps:
-      - intent: chuyennganhcntt
-      - action: utter_chuyennganhcntt
+  # - rule: Ngành điện tử viễn thông
+  #   steps:
+  #     - intent: NganhDTVT
+  #     - action: utter_NganhDTVT
 
-  - rule: Chi tiet cong nghe thong tin
-    steps:
-      - intent: chitietcntt
-      - action: utter_chitietcntt
+  # - rule: Ngành thiết kế đồ họa
+  #   steps:
+  #     - intent: NganhTKDH
+  #     - action: utter_NganhTKDH
 
-  - rule: Chuyen nganh khoa hoc may tinh
-    steps:
-      - intent: chuyennganhkhmt
-      - action: utter_chuyennganhkhmt
+  # - rule: Ngành quản trị kinh doanh
+  #   steps:
+  #     - intent: NganhQTKD
+  #     - action: utter_NganhQTKD
 
-  - rule: Chi tiet khoa hoc may tinh
-    steps:
-      - intent: chitietkhmt
-      - action: utter_chitietkhmt
+  # - rule: Ngành ngôn ngữ
+  #   steps:
+  #     - intent: NganhNN
+  #     - action: utter_NganhNN
 
-  - rule: Chuyen nganh dien tu vien thong
-    steps:
-      - intent: chuyennganhdtvt
-      - action: utter_chuyennganhdtvt
+  # - rule: Ngôn ngữ Hàn
+  #   steps:
+  #     - intent: NgonNguHan
+  #     - action: utter_NgonNguHan
 
-  - rule: Chi tiet dien tu vien thong
-    steps:
-      - intent: chitietdtvt
-      - action: utter_chitietdtvt
+  # - rule: Ngôn ngữ Nhật
+  #   steps:
+  #     - intent: NgonNguNhat
+  #     - action: utter_NgonNguNhat
 
-  - rule: Chuyen nganh thiet ke do hoa
-    steps:
-      - intent: chuyennganhtkdh
-      - action: utter_chuyennganhtkdh
+  # - rule: Cơ sở vật chất
+  #   steps:
+  #     - intent: cosovatchat
+  #     - action: utter_cosovatchat
 
-  - rule: Chi tiet thiet ke do hoa
-    steps:
-      - intent: chitiettkdh
-      - action: utter_chitiettkdh
+  # - rule: Thư viện
+  #   steps:
+  #     - intent: thuvien
+  #     - action: utter_thuvien
 
-  - rule: Chuyen nganh quan tri kinh doanh
-    steps:
-      - intent: chuyennganhqtkd
-      - action: utter_chuyennganhqtkd
+  # - rule: Phòng học
+  #   steps:
+  #     - intent: phonghoc
+  #     - action: utter_phonghoc
 
-  - rule: Chi tiet quan tri kinh doanh
-    steps:
-      - intent: chitietqtkd
-      - action: utter_chitietqtkd
+  # - rule: Phòng Lab
+  #   steps:
+  #     - intent: phongLab
+  #     - action: utter_phongLab
 
-  - rule: Chuyen nganh ngon ngu
-    steps:
-      - intent: chuyennganhnn
-      - action: utter_chuyennganhnn
+  # - rule: Câu lạc bộ
+  #   steps:
+  #     - intent: cauLacBo
+  #     - action: utter_cauLacBo
 
-  - rule: Chi tiet ngon ngu
-    steps:
-      - intent: chitietnn
-      - action: utter_chitietnn
+  # - rule: Câu lạc bộ lập trình
+  #   steps:
+  #     - intent: clb_lapTrinh
+  #     - action: utter_clb_lapTrinh
 
-  - rule: Nganh ngon ngu han
-    steps:
-      - intent: nganh_nnh
-      - action: utter_nganh_nnh
+  # - rule: Câu lạc bộ cầu lông
+  #   steps:
+  #     - intent: clb_caulong
+  #     - action: utter_clb_caulong
 
-  - rule: Nganh ngon ngu nhat
-    steps:
-      - intent: nganh_nnn
-      - action: utter_nganh_nnn
+  # - rule: Câu lạc bộ bóng đá
+  #   steps:
+  #     - intent: clb_bongda
+  #     - action: utter_clb_bongda
 
-  - rule: Thu vien
-    steps:
-      - intent: thuvien
-      - action: utter_thuvien
+  # - rule: Câu lạc bộ bóng rổ
+  #   steps:
+  #     - intent: clb_bongro
+  #     - action: utter_clb_bongro
 
-  - rule: Phong hoc
-    steps:
-      - intent: phonghoc
-      - action: utter_phonghoc
+  # - rule: Câu lạc bộ bóng chuyền
+  #   steps:
+  #     - intent: clb_bongchuyen
+  #     - action: utter_clb_bongchuyen
 
-  - rule: Cau lac bo
-    steps:
-      - intent: clb
-      - action: utter_clb
+  # - rule: Câu lạc bộ tiếng Anh
+  #   steps:
+  #     - intent: clb_tiengAnh
+  #     - action: utter_clb_tiengAnh
 
-  - rule: Câu lac bo cau long
-    steps:
-      - intent: clb_caulong
-      - action: utter_clb_caulong
+  # - rule: Câu lạc bộ tiếng Hàn
+  #   steps:
+  #     - intent: clb_tiengHan
+  #     - action: utter_clb_tiengHan
 
-  - rule: Cau lac bo bong da
-    steps:
-      - intent: clb_bongda
-      - action: utter_clb_bongda
+  # - rule: Câu lạc bộ tiếng Nhật
+  #   steps:
+  #     - intent: clb_tiengNhat
+  #     - action: utter_clb_tiengNhat
 
-  - rule: Cau lac bo bong ro
-    steps:
-      - intent: clb_bongro
-      - action: utter_clb_bongro
+  # - rule: Câu lạc bộ nhảy
+  #   steps:
+  #     - intent: clb_nhay
+  #     - action: utter_clb_nhay
 
-  - rule: Cau lac bo bong chuyen
-    steps:
-      - intent: clb_bongchuyen
-      - action: utter_clb_bongchuyen
+  # - rule: Quà nhập học
+  #   steps:
+  #     - intent: quanhaphoc
+  #     - action: utter_quanhaphoc
 
-  - rule: Cau lac bo tieng anh
-    steps:
-      - intent: clb_english
-      - action: utter_clb_english
+  # - rule: Điểm rèn luyện
+  #   steps:
+  #     - intent: diemrenluyen
+  #     - action: utter_diemrenluyen
 
-  - rule: Cau lac bo nhay
-    steps:
-      - intent: clb_dance
-      - action: utter_clb_dance
+  # - rule: Ký túc xá
+  #   steps:
+  #     - intent: kytucxa
+  #     - action: utter_kytucxa
 
-  - rule: Cau lac bo su kien
-    steps:
-      - intent: clb_event
-      - action: utter_clb_event
+  # - rule: Hỗ trợ học tập
+  #   steps:
+  #     - intent: hotrohoctap
+  #     - action: utter_hotrohoctap
 
-  - rule: Qua nhap hoc
-    steps:
-      - intent: quanhaphoc
-      - action: utter_quanhaphoc
+  # - rule: Học lại
+  #   steps:
+  #     - intent: hoclai
+  #     - action: utter_hoclai
 
-  - rule: Diem ren luyen
-    steps:
-      - intent: diemrenluyen
-      - action: utter_diemrenluyen
+  # - rule: Nội quy
+  #   steps:
+  #     - intent: noiquy
+  #     - action: utter_noiquy
 
-  - rule: Dong phuc
-    steps:
-      - intent: dongphuc
-      - action: utter_dongphuc
-
-  - rule: Ky tuc xa
-    steps:
-      - intent: kytucxa
-      - action: utter_kytucxa
-
-  - rule: Ho tro hoc tap
-    steps:
-      - intent: hotrohoctap
-      - action: utter_hotrohoctap
-
-  - rule: Hoc lai
-    steps:
-      - intent: hoclai
-      - action: utter_hoclai
-
-  - rule: Noi quy
-    steps:
-      - intent: noiquy
-      - action: utter_noiquy
-
-  - rule: Cau hoi thuong gap
-    steps:
-      - intent: cauhoithuonggap
-      - action: utter_cauhoithuonggap
+  # - rule: Fallback cho câu hỏi không có câu trả lời
+  #   steps:
+  #     - intent: nlu_fallback
+  #     - action: utter_fallback

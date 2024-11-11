@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-job",
+      "2": "I-job",
+      "3": "L-job",
+      "4": "U-job",
+      "5": "B-major",
+      "6": "I-major",
+      "7": "L-major",
+      "8": "U-major",
+      "9": "B-monhoc",
+      "10": "I-monhoc",
+      "11": "L-monhoc",
+      "12": "U-monhoc",
+      "13": "B-nam",
+      "14": "I-nam",
+      "15": "L-nam",
+      "16": "U-nam",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-job": 1,
+      "I-job": 2,
+      "L-job": 3,
+      "U-job": 4,
+      "B-major": 5,
+      "I-major": 6,
+      "L-major": 7,
+      "U-major": 8,
+      "B-monhoc": 9,
+      "I-monhoc": 10,
+      "L-monhoc": 11,
+      "U-monhoc": 12,
+      "B-nam": 13,
+      "I-nam": 14,
+      "L-nam": 15,
+      "U-nam": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

@@ -1,278 +1,296 @@
 version: "3.1"
 
 stories:
-  - story: Chao hoi va thong tin truong
+  - story: Chào hỏi
     steps:
       - intent: chaohoi
       - action: utter_chaohoi
-      - intent: thongtintruong
-      - action: utter_thongtintruong
 
-  - story: Tam biet va cam on
+  - story: Tạm biệt
     steps:
       - intent: tambiet
       - action: utter_tambiet
-      - intent: camon
-      - action: utter_camon
 
-  - story: Xac nhan
+  - story: Câu hỏi thường gặp
     steps:
-      - intent: xacnhan
-      - action: utter_xacnhan
+      - intent: cauhoithuonggap
+      - action: utter_cauhoithuonggap
 
-  - story: Tu choi
+  - story: Thông tin trường
     steps:
-      - intent: tuchoi
-      - action: utter_tuchoi
+      - intent: thongtintruong
+      - action: utter_thongtintruong
 
-  - story: Tuyen sinh va chuong trinh dao tao
+  - story: Chương trình đào tạo
     steps:
-      - intent: tuyensinh
-      - action: utter_tuyensinh
       - intent: chuongtrinhdaotao
       - action: utter_chuongtrinhdaotao
 
-  - story: Hoc phi
+  - story: Tuyển sinh
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
+
+  - story: Xét tuyển điểm thi THPT
+    steps:
+      - intent: xettuyendiemthiTHPT
+      - action: utter_xettuyendiemthiTHPT
+
+  - story: Xét tuyển học bạ
+    steps:
+      - intent: xettuyenhocba
+      - action: utter_xettuyenhocba
+
+  - story: Học phí
     steps:
       - intent: hocphi
       - action: utter_hocphi
 
-  - story: Hoc bong
+  - story: Học bổng
     steps:
       - intent: hocbong
       - action: utter_hocbong
 
-  - story: Chi tiet hoc bong
+  - story: Duy trì học bổng
     steps:
-      - intent: chitiethocbong
-      - action: utter_chitiethocbong
+      - intent: duytrihocbong
+      - action: utter_duytrihocbong
 
-  - story: Thong tin lien he
+  - story: Thông tin liên hệ
     steps:
       - intent: thongtinlienhe
       - action: utter_thongtinlienhe
 
-  - story: Co so vat chat
+  - story: Cơ sở vật chất
     steps:
       - intent: cosovatchat
       - action: utter_cosovatchat
 
-  - story: Hoi bot
+  - story: Cảm ơn
+    steps:
+      - intent: camon
+      - action: utter_camon
+
+  - story: Hỏi về bot
     steps:
       - intent: hoi_bot
       - action: utter_hoibot
 
-  - story: Thoi gian nhap hoc
+  - story: Thời gian nhập học
     steps:
       - intent: thoigiannhaphoc
       - action: utter_thoigiannhaphoc
 
-  - story: Giang vien
+  - story: Thông tin giảng viên
     steps:
       - intent: giangvien
       - action: utter_giangvien
 
-  - story: Sinh vien
+  - story: Số lượng sinh viên
     steps:
-      - intent: sinhvien
-      - action: utter_sinhvien
+      - intent: SoLuongSinhVien
+      - action: utter_SoLuongSinhVien
 
-  - story: Ten truong
+  - story: Tên trường
     steps:
       - intent: tentruong
       - action: utter_tentruong
 
-  - story: Diem chuan
+  - story: Điểm chuẩn
     steps:
       - intent: diemchuan
       - action: utter_diemchuan
 
-  - story: Diem chuan 2022
+  - story: Điểm chuẩn năm 2022
     steps:
-      - intent: diemchuan2022
-      - action: utter_diemchuan2022
+      - intent: diemchuanNam2022
+      - action: utter_diemchuanNam2022
 
-  - story: Diem chuan 2023
+  - story: Điểm chuẩn năm 2023
     steps:
-      - intent: diemchuan2023
-      - action: utter_diemchuan2023
+      - intent: diemchuanNam2023
+      - action: utter_diemchuanNam2023
 
-  - story: Diem chuan 2024
+  - story: Điểm chuẩn năm 2024
     steps:
-      - intent: diemchuan2024
-      - action: utter_diemchuan2024
+      - intent: diemchuanNam2024
+      - action: utter_diemchuanNam2024
 
-  - story: Co hoi viec lam
+  - story: Cơ hội việc làm
     steps:
       - intent: cohoivieclam
       - action: utter_cohoivieclam
 
-  - story: Doi tac
+  - story: Đối tác
     steps:
       - intent: doitac
       - action: utter_doitac
 
-  - story: Chuyen nganh cong nghe
+  - story: Chuyên ngành công nghệ
     steps:
       - intent: chuyennganhcongnghe
       - action: utter_chuyennganhcongnghe
 
-  - story: Chuyen nganh cong nghe thong tin
+  - story: Ngành CNTT
     steps:
-      - intent: chuyennganhcntt
-      - action: utter_chuyennganhcntt
+      - intent: NganhCNTT
+      - action: utter_NganhCNTT
 
-  - story: Chi tiet cong nghe thong tin
+  - story: Ngành Khoa học máy tính
     steps:
-      - intent: chitietcntt
-      - action: utter_chitietcntt
+      - intent: NganhKHMT
+      - action: utter_NganhKHMT
 
-  - story: Chuyen nganh khoa hoc may tinh
+  - story: Ngành Điện tử viễn thông
     steps:
-      - intent: chuyennganhkhmt
-      - action: utter_chuyennganhkhmt
+      - intent: NganhDTVT
+      - action: utter_NganhDTVT
 
-  - story: Chi tiet khoa hoc may tinh
+  - story: hỏi việc làm ngành Công nghệ thông tin
     steps:
-      - intent: chitietkhmt
-      - action: utter_chitietkhmt
+      - intent: ViecLamNganhCNTT
+        entities:
+          - job: "Việc làm"
+          - major: "Công nghệ thông tin"
+      - action: utter_ViecLamNganhCNTT
 
-  - story: Chuyen nganh dien tu vien thong
+  - story: hỏi việc làm ngành Khoa học máy tính
     steps:
-      - intent: chuyennganhdtvt
-      - action: utter_chuyennganhdtvt
+      - intent: ViecLamNganhKHMT
+        entities:
+          - job: "Việc làm"
+          - major: "Khoa học máy tính"
+      - action: utter_ViecLamNganhKHMT
 
-  - story: Chi tiet dien tu vien thong
+  - story: hỏi việc làm ngành Điện tử viễn thông
     steps:
-      - intent: chitietdtvt
-      - action: utter_chitietdtvt
+      - intent: ViecLamNganhDTVT
+        entities:
+          - job: "Việc làm"
+          - major: "Điện tử viễn thông"
+      - action: utter_ViecLamNganhDTVT
 
-  - story: Chuyen nganh thiet ke do hoa
+  - story: Ngành Thiết kế đồ họa
     steps:
-      - intent: chuyennganhtkdh
-      - action: utter_chuyennganhtkdh
+      - intent: NganhTKDH
+      - action: utter_NganhTKDH
 
-  - story: Chi tiet thiet ke do hoa
+  - story: Ngành Quản trị kinh doanh
     steps:
-      - intent: chitiettkdh
-      - action: utter_chitiettkdh
+      - intent: NganhQTKD
+      - action: utter_NganhQTKD
 
-  - story: Chuyen nganh quan tri kinh doanh
+  - story: Ngành Ngôn ngữ
     steps:
-      - intent: chuyennganhqtkd
-      - action: utter_chuyennganhqtkd
+      - intent: NganhNN
+      - action: utter_NganhNN
 
-  - story: Chi tiet quan tri kinh doanh
+  - story: Ngành Ngôn ngữ Hàn
     steps:
-      - intent: chitietqtkd
-      - action: utter_chitietqtkd
+      - intent: NgonNguHan
+      - action: utter_NgonNguHan
 
-  - story: Chuyen nganh ngon ngu
+  - story: Ngành Ngôn ngữ Nhật
     steps:
-      - intent: chuyennganhnn
-      - action: utter_chuyennganhnn
+      - intent: NgonNguNhat
+      - action: utter_NgonNguNhat
 
-  - story: Chi tiet ngon ngu
-    steps:
-      - intent: chitietnn
-      - action: utter_chitietnn
-
-  - story: Nganh ngon ngu han
-    steps:
-      - intent: nganh_nnh
-      - action: utter_nganh_nnh
-
-  - story: Nganh ngon ngu nhat
-    steps:
-      - intent: nganh_nnn
-      - action: utter_nganh_nnn
-
-  - story: Thu vien
+  - story: Thư viện
     steps:
       - intent: thuvien
       - action: utter_thuvien
 
-  - story: Phong hoc
+  - story: Phòng học
     steps:
       - intent: phonghoc
       - action: utter_phonghoc
 
-  - story: Cau lac bo
+  - story: Phòng Lab
     steps:
-      - intent: clb
-      - action: utter_clb
+      - intent: phongLab
+      - action: utter_phongLab
 
-  - story: Cau lac bo cau long
+  - story: Câu lạc bộ
+    steps:
+      - intent: cauLacBo
+      - action: utter_cauLacBo
+
+  - story: Câu lạc bộ lập trình
+    steps:
+      - intent: clb_lapTrinh
+      - action: utter_clb_lapTrinh
+
+  - story: Câu lạc bộ cầu lông
     steps:
       - intent: clb_caulong
       - action: utter_clb_caulong
 
-  - story: Cau lac bo bong da
+  - story: Câu lạc bộ bóng đá
     steps:
       - intent: clb_bongda
       - action: utter_clb_bongda
 
-  - story: Cau lac bo bong ro
+  - story: Câu lạc bộ bóng rổ
     steps:
       - intent: clb_bongro
       - action: utter_clb_bongro
 
-  - story: Cau lac bo bong chuyen
+  - story: Câu lạc bộ bóng chuyền
     steps:
       - intent: clb_bongchuyen
       - action: utter_clb_bongchuyen
 
-  - story: Cau lac bo tieng anh
+  - story: Câu lạc bộ tiếng Anh
     steps:
-      - intent: clb_english
-      - action: utter_clb_english
+      - intent: clb_tiengAnh
+      - action: utter_clb_tiengAnh
 
-  - story: Cau lac bo nhay
+  - story: Câu lạc bộ tiếng Hàn
     steps:
-      - intent: clb_dance
-      - action: utter_clb_dance
+      - intent: clb_tiengHan
+      - action: utter_clb_tiengHan
 
-  - story: Cau lac bo su kien
+  - story: Câu lạc bộ tiếng Nhật
     steps:
-      - intent: clb_event
-      - action: utter_clb_event
+      - intent: clb_tiengNhat
+      - action: utter_clb_tiengNhat
 
-  - story: Qua nhap hoc
+  - story: Câu lạc bộ nghệ thuật
+    steps:
+      - intent: clb_nghethuat
+      - action: utter_clb_nghethuat
+
+  - story: Quà nhập học
     steps:
       - intent: quanhaphoc
       - action: utter_quanhaphoc
 
-  - story: Diem ren luyen
+  - story: Điểm rèn luyện
     steps:
       - intent: diemrenluyen
       - action: utter_diemrenluyen
 
-  - story: Dong phuc
-    steps:
-      - intent: dongphuc
-      - action: utter_dongphuc
-
-  - story: Ky tuc xa
+  - story: Ký túc xá
     steps:
       - intent: kytucxa
       - action: utter_kytucxa
 
-  - story: Ho tro hoc tap
+  - story: Hỗ trợ học tập
     steps:
       - intent: hotrohoctap
       - action: utter_hotrohoctap
 
-  - story: Hoc lai
+  - story: Học lại
     steps:
       - intent: hoclai
       - action: utter_hoclai
 
-  - story: Noi quy
+  - story: Nội quy
     steps:
       - intent: noiquy
       - action: utter_noiquy
 
-  - story: Cau hoi thuong gap
+  - story: Fallback cho câu hỏi không có câu trả lời
     steps:
-      - intent: cauhoithuonggap
-      - action: utter_cauhoithuonggap
+      - intent: nlu_fallback
+      - action: utter_fallback

@@ -1,63 +1,97 @@
 version: "3.1"
 
 intents:
+  - cauhoithuonggap
   - chaohoi
   - tambiet
   - camon
-  - xacnhan
-  - tuchoi
   - thongtintruong
   - chuongtrinhdaotao
   - tuyensinh
+  - xettuyendiemthiTHPT
+  - xettuyenhocba
   - hocphi
   - hocbong
-  - chitiethocbong
+  - duytrihocbong
   - thongtinlienhe
-  - cosovatchat
   - hoi_bot
   - thoigiannhaphoc
   - giangvien
-  - sinhvien
+  - SoLuongSinhVien
   - tentruong
   - diemchuan
-  - diemchuan2022
-  - diemchuan2023
-  - diemchuan2024
+  - diemchuanNam2022
+  - diemchuanNam2023
+  - diemchuanNam2024
   - cohoivieclam
   - doitac
   - chuyennganhcongnghe
-  - chuyennganhcntt
-  - chitietcntt
-  - chuyennganhkhmt
-  - chitietkhmt
-  - chuyennganhdtvt
-  - chitietdtvt
-  - chuyennganhtkdh
-  - chitiettkdh
-  - chuyennganhqtkd
-  - chitietqtkd
-  - chuyennganhnn
-  - chitietnn
-  - nganh_nnh
-  - nganh_nnn
+  - NganhCNTT
+  - NganhKHMT
+  - NganhDTVT
+  - ViecLamNganhCNTT
+  - ViecLamNganhKHMT
+  - ViecLamNganhDTVT
+  - NganhTKDH
+  - NganhQTKD
+  - NganhNN
+  - NgonNguHan
+  - NgonNguNhat
+  - cosovatchat
   - thuvien
   - phonghoc
-  - clb
+  - phongLab
+  - cauLacBo
+  - clb_lapTrinh
   - clb_caulong
   - clb_bongda
   - clb_bongro
   - clb_bongchuyen
-  - clb_english
-  - clb_dance
-  - clb_event
+  - clb_tiengAnh
+  - clb_tiengHan
+  - clb_tiengNhat
+  - clb_nghethuat
   - quanhaphoc
   - diemrenluyen
-  - dongphuc
   - kytucxa
   - hotrohoctap
   - hoclai
-  - cauhoithuonggap
   - noiquy
+  - fallback
+
+entities:
+  - nam
+  - nganh
+  - csvc
+  - job
+  - major
+
+slots:
+  nam:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: true
+  nganh:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: true
+  csvc:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: true
+  job:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: true
+  major:
+    type: text
+    mappings:
+      - type: from_text
+    influence_conversation: true
 
 responses:
   utter_chaohoi:
@@ -66,226 +100,317 @@ responses:
     - text: "Tạm biệt, hẹn gặp lại bạn sau nhé!"
   utter_camon:
     - text: "Rất vui được giúp đỡ bạn!"
-  utter_xacnhan:
-    - text: "Xin lỗi, thông tin này tui đang cập nhật "
-  utter_tuchoi:
-    - text: "Rất tiếc, tôi không thể hỗ trợ yêu cầu này."
+  utter_cauhoithuonggap:
+    - text: "Những câu hỏi được hỏi nhiều nhất là học phí , học bổng , cơ sở vật chất , chương trình đào tạo, cơ hội việc làm của trường"
   utter_thongtintruong:
     - text: "Đại học CMC là một trường đại học số hàng đầu uy tín với nhiều chương trình học đa dạng, phù hợp với nhu cầu của sinh viên hiện đại."
   utter_chuongtrinhdaotao:
-    - text: "Trường cung cấp các chương trình như Công nghệ thông tin, Khoa học máy tính, Quản trị kinh doanh, và nhiều ngành thú vị khác nữa nhennn ."
-  utter_tuyensinh:
-    - text: "Bạn có thể đăng ký nhập học trực tuyến hoặc đến trực tiếp văn phòng tuyển sinh của trường để nộp hồ sơ nhé."
-  utter_hocphi:
-    - text: "Học phí tại Đại học CMC dao động từ 20-25 triệu đồng mỗi học kỳ, tùy thuộc vào chuyên ngành và chương trình học nha."
-  utter_hocbong:
-    - text: " Đại học CMC có học bổng đầu vào nhé , những học bổng quý giá , giá trị cao cho các bạn tân sinh viên tại trường."
-
-  utter_chitiethocbong:
     - text: |
-        Thông tin chi tiết về các học bổng :
+        Trường đại học CMC hiện nay đang đào tạo 7 ngành học : 
+        1. Công nghệ thông tin
+        2. Khoa học máy tính
+        3. Điện tử viễn thông
+        4. Thiết kế đồ họa
+        5. Quản trị kinh doanh
+        6. Ngôn ngữ hàn
+        7. Ngôn ngữ nhật
+  utter_tuyensinh:
+    - text: |
+        Mỗi năm đại học CMC đều tuyển sinh khoảng hơn 700 sinh viên cho các khoa toàn trường đủ chỉ tiêu đặt ra
+        Hiện tại đại học có 2 phương thức xét tuyển:
+        - Xét tuyển điểm thi THPT (Được cộng điểm ưu tiên nếu có Chứng chỉ IELTS, TOEIC hoặc TOEFL iBT)
+        - Xét tuyển học bạ
+        - Bạn đang hỏi xét tuyển theo phương thức nào?
+  utter_xettuyendiemthiTHPT:
+    - text: |
+        Đại học CMC sử dụng kết quả kỳ thi THPT Quốc gia năm 2024 do Bộ GD&ĐT tổ chức để xét tuyển. Điểm xét tuyển là tổng điểm của một trong ba tổ hợp môn xét tuyển:
+        - A00: Toán, Vật lí, Hóa học;
+        - A01: Toán, Vật lí, Tiếng Anh;
+        - D90: Toán, Khoa học tự nhiên, Tiếng Anh.
+        Ngoài điểm ưu tiên theo quy chế tuyển sinh hiện hành, Học viện cộng thêm điểm ưu tiên với thí sinh (sử dụng kết quả kỳ thi THPT Quốc gia để xét tuyển) có chứng chỉ tiếng Anh quốc tế (còn giá trị sử dụng tính đến ngày xét tuyển), theo 3 mức ưu tiên như sau:
+        - Chứng chỉ IELTS từ 5.5 – 6.0 hoặc TOEIC từ 650 đến dưới 750 hoặc TOEFL iBT từ 65 đến dưới 80 : 1,5 điểm;
+        - Chứng chỉ IELTS từ 6.5 – 7.0  hoặc TOEIC từ 750 đến dưới 850 hoặc TOEFL iBT từ 80 đến dưới 95: 2,0 điểm;
+        - Chứng chỉ IELTS từ 7.5 trở lên hoặc TOEIC từ 850 trở lên hoặc TOEFL iBT từ 95 trở lên: 2,5 điểm;
+        Điều kiện dự tuyển:
+        - Tốt nghiệp THPT và đủ điều kiện được xét tuyển vào đại học theo quy định của Bộ Giáo dục và Đào tạo.
+  utter_xettuyenhocba:
+    - text: |
+        Đại học CMC có xét tuyển bằng học bạ và có 4 cách như sau:
+        - Cách 1: Xét học bạ kết hợp môn Tiếng Anh theo điểm trung bình (TB) năm lớp 11 và HK1 lớp 12 theo tổ hợp môn xét tuyển, không cộng điểm ưu tiên.
+        - Cách 2: Xét học bạ kết hợp môn Tiếng Anh theo điểm TB năm lớp 12 theo tổ hợp môn xét tuyển, không cộng điểm ưu tiên.
+        - Cách 3: Xét học bạ theo điểm TB năm lớp 11 và HK1 lớp 12.
+        - Cách 4: Xét học bạ theo điểm TB năm học lớp 12.
+      image: "https://media.vov.vn/sites/default/files/styles/large/public/2024-06/cmc.jpg"
+  utter_hocphi:
+    - text: "Học phí tại Đại học CMC dao động từ 15-26 triệu đồng mỗi học kỳ, tùy thuộc vào chuyên ngành và chương trình học. Ch tiết thì trong ảnh nha:"
+      image: "https://cmcu.edu.vn/wp-content/uploads/2024/06/bang-chi-tiet-hoc-phi-Truong-dai-hoc-cmc.webp"
+  utter_hocbong:
+    - text: |
+        CMC có nhiều học bổng giá trị cao cho sinh viên. Bao gồm:
         - Học bổng 100% học phí 1 năm học cho sinh viên đạt 26 điểm thpt hoặc có bằng ielt hoặc đạt giải nhất trong các kì thi quốc gia
         - Học bổng 70% học phí 1 năm học cho sinh viên đạt 25 điểm thpt hoặc đạt giải nhì, ba trong kì thi quốc gia
         - Học bổng 50% học phí 1 năm cho sinh viên đạt 24 điểm thpt
+  utter_duytrihocbong:
+    - text: "Điều kiện để duy trì học bổng là GPA của bạn hết 1 năm đạt 3.0/4.0 nhé. Nếu tập trung học hoàn thiện đầy đủ các yêu cầu , môn học thì giữ học bổng quá là đơn giản luôn <3."
   utter_thongtinlienhe:
     - text: |
-        Đại học CMC có 3 cơ sở:
+        Đại học CMC hiện có 3 cơ sở:
         - Cơ sở 1: Số 84C, Đường Nguyễn Thanh Bình, Vạn Phúc, Hà Đông, Hà Nội
         - Cơ sở 2: Vạn Phúc Building, Đường Tố Hữu, Vạn Phúc, Hà Đông, Hà Nội
-        - Cơ sở 3: Tây Mỗ, Nam Từ Liêm, Hà Nội
-  utter_cosovatchat:
-    - text: "Trường có cơ sở vật chất mới hiện đại bao gồm thư viện, phòng tự học điều hòa 24/7 cho toàn bộ sinh viên."
+        - Cơ sở 3: Tây Mỗ, Nam Từ Liêm, Hà Nội ( đang xây dựng nhé ^.^ )
   utter_hoibot:
     - text: "Tôi là một chatbot được tạo ra để hỗ trợ tư vấn tuyển sinh cho Đại học CMC.Bạn cần gì cứ hỏi tôi nhenn"
   utter_thoigiannhaphoc:
     - text: "Thời gian nhập học thường vào tháng 8 hàng năm. Bạn hãy theo dõi thông báo trên website https://cmc-u.edu.vn/ để cập nhật thông tin mới nhất."
   utter_giangvien:
-    - text: "Giảng viên tại Đại học CMC đều là những người có kinh nghiệm trong ngành và tận tâm với sinh viên."
-  utter_sinhvien:
+    - text: |
+        Giảng viên của trường có kinh nghiệm rất đa dạng và phong phú. Toàn bộ giảng viên trong trường đều là những thạc sĩ, tiến sĩ, là các chuyên gia hàng đầu trong lĩnh vực. 
+        Đặc biệt, nhiều giảng viên có nhiều năm kinh nghiệm giảng dạy và làm việc trong ngành, cũng như có kinh nghiệm quốc tế.CMC luôn cung cấp chất lượng giáo dục tốt nhất với sự hỗ trợ từ đội ngũ giảng viên dày dạn kinh nghiệm và nhiệt huyết.
+        Danh sách toàn bộ giảng viên CMC ở đây : "https://cmcu.edu.vn/faculty-staffs/"
+
+  utter_SoLuongSinhVien:
     - text: "Hiện tại trường có gần 2000 sinh viên. Vì là trường mới nên mới có sinh viên khóa 1, khóa 2 và khóa 3."
   utter_tentruong:
-    - text: "Cái tên CMC của đại học CMC là khởi nguồn từ các chữ cái đầu tiên của các sáng lập viên là ông Nguyễn Trung Chính, ông Hà Thế Minh và các cộng sự."
+    - text: |
+        Cái tên CMC của đại học CMC là khởi nguồn từ các chữ cái đầu tiên của các sáng lập viên là ông Nguyễn Trung Chính, ông Hà Thế Minh và các cộng sự.
+        Đây là chủ tịch tập đoàn CMC :
+      image: "https://tttctt.1cdn.vn/thumbs/540x360/2022/10/12/anh-4.jpg"
   utter_diemchuan:
-    - text: "Đại học CMC là đại học mới 3 năm nay , nên là bạn muốn hỏi điểm chuẩn năm nào thế? "
-
-  utter_diemchuan2022:
     - text: |
-        Điểm chuẩn của các ngành tại Đại học CMC năm 2022 là:
-        - Các ngành công nghệ đều có điểm chuẩn là 23 điểm
-        - Thiết kế đồ họa : 20 điểm
-        - Quản trị kinh doanh : 20 điểm
-        - các ngành ngôn ngữ đều có điểm chuẩn là 21 điểm
-
-  utter_diemchuan2023:
-    - text: |
-        Điểm chuẩn của các ngành tại Đại học CMC năm 2023 là:
-        - Các ngành công nghệ đều có điểm chuẩn là 24 điểm
-        - Thiết kế đồ họa : 21 điểm
-        - Quản trị kinh doanh : 21 điểm
-        - các ngành ngôn ngữ đều có điểm chuẩn là 22 điểm
-
-  utter_diemchuan2024:
-    - text: |
-        Điểm chuẩn của các ngành tại Đại học CMC năm 2024 là:
-        - Các ngành công nghệ đều có điểm chuẩn là 25 điểm
-        - Thiết kế đồ họa : 22 điểm
-        - Quản trị kinh doanh : 22 điểm
-        - các ngành ngôn ngữ đều có điểm chuẩn là 23 điểm
-
+        Đại học CMC là đại học mới 3 năm (2022; 2023; 2024) thuii
+        - Điểm chuẩn trung bình năm 2022 là : 19 - 22 điểm
+        - Điểm chuẩn trung bình năm 2023 là : 20 - 24 điểm
+        - Điểm chuẩn trung bình năm 2024 là : 21 - 25 điểm
+        Bạn muốn hỏi chi tiết năm nào ?
+  utter_diemchuanNam2022:
+    - text: "Điểm chuẩn năm 2022 nè: "
+      image: "https://cdn.tailieu.com/images/2022-07/19/BO/diem-chuan-hoc-ba-dai-hoc-a-chau-dot-2.jpg"
+  utter_diemchuanNam2023:
+    - text: "Điểm chuẩn năm 2023 nè: "
+      image: "https://xdcs.cdnchinhphu.vn/446259493575335936/2023/8/22/1692691842553-101-1692692643317-1692692643476857845376.png"
+  utter_diemchuanNam2024:
+    - text: "Điểm chuẩn năm 2024 nè: "
+      image: "https://xdcs.cdnchinhphu.vn/446259493575335936/2024/8/18/123-17239155480901952539287.jpg"
   utter_cohoivieclam:
-    - text: "Về cơ hội việc làm, Đại học CMC cam kết việc làm 100% cho các sinh viên học hệ song ngữ.Còn khối ngành hệ bình thường sẽ có cơ hội thực tập tại tập đoàn."
+    - text: "Về cơ hội việc làm, Đại học CMC cam kết việc làm 100% cho các sinh viên học hệ song ngữ.Còn khối ngành hệ bình thường sẽ có cơ hội thực tập tại tập đoàn CMC và các đối tác lớn của tập đoàn."
   utter_doitac:
-    - text: "Tập đoàn CMC có nhiều đối tác công nghệ lớn như Samsung, Google, AWS, HP, Intel, v.v."
+    - text: "Trường đại học CMC thuộc tập đoàn CMC có nhiều đối tác công nghệ lớn như Samsung, Google, AWS, HP, Intel, v.v."
   utter_chuyennganhcongnghe:
     - text: "Các chuyên ngành liên quan đến công nghệ tại Đại học CMC bao gồm Công nghệ thông tin, Khoa học máy tính, và Điện tử - viễn thông."
-
-  utter_chuyennganhcntt:
+  utter_NganhCNTT:
     - text: |
         Ngành Công nghệ thông tin tại Đại học CMC có các chuyên ngành:
         - Kỹ thuật phần mềm
         - Kỹ thuật máy tính
         - An toàn thông tin
         - Điện toán đám mây
-
-  utter_chitietcntt:
-    - text: "Thông tin chi tiết về ngành Công nghệ thông tin có thể xem tại website của Đại học CMC."
-
-  utter_chuyennganhkhmt:
+  utter_NganhKHMT:
     - text: |
         Ngành Khoa học máy tính tại Đại học CMC có các chuyên ngành:
         - Phát triển phần mềm
         - Trí tuệ nhân tạo
         - Big data
         - Hệ thống thông tin
-
-  utter_chitietkhmt:
-    - text: "Thông tin chi tiết về ngành Khoa học máy tính có thể xem tại website của Đại học CMC."
-
-  utter_chuyennganhdtvt:
+  utter_NganhDTVT:
     - text: |
         Ngành Công nghệ kỹ thuật điện tử - viễn thông có các chuyên ngành:
         - Thiết kế vi mạch bán dẫn (IC design)
         - Hệ thống nhúng và IoT
         - Công nghệ mạng và truyền thông tiên tiến
-
-  utter_chitietdtvt:
-    - text: "Thông tin chi tiết về ngành Điện tử - viễn thông có thể xem tại website của Đại học CMC."
-
-  utter_chuyennganhtkdh:
-    - text: "Ngành Thiết kế đồ họa tại Đại học CMC cung cấp kiến thức và kỹ năng về thiết kế 2D, 3D, và kỹ thuật đồ họa số."
-
-  utter_chitiettkdh:
-    - text: "Thông tin chi tiết về ngành Thiết kế đồ họa có thể xem tại website của Đại học CMC."
-
-  utter_chuyennganhqtkd:
-    - text: "Ngành Quản trị kinh doanh tại Đại học CMC cung cấp các kiến thức về quản lý, marketing, và tài chính."
-
-  utter_chitietqtkd:
-    - text: "Thông tin chi tiết về ngành Quản trị kinh doanh có thể xem tại website của Đại học CMC."
-
-  utter_chuyennganhnn:
+  utter_ViecLamNganhCNTT:
+    - text: |
+        Sinh viên tốt nghiệp ngành Công nghệ Thông tin có thể làm việc trong các lĩnh vực và vị trí sau:
+        - Chuyên viên phát triển phần mềm, ứng dụng di động, và web tại các công ty công nghệ.
+        - Chuyên viên quản trị hệ thống, quản trị cơ sở dữ liệu, và bảo mật thông tin tại các doanh nghiệp, tổ chức.
+        - Kỹ sư hệ thống, kỹ sư mạng tại các công ty viễn thông, trung tâm dữ liệu.
+        - Chuyên viên phát triển hệ thống nhúng, thiết kế phần mềm cho các thiết bị điện tử thông minh tại các công ty phần mềm và công ty sản xuất thiết bị điện tử.
+        - Chuyên viên phân tích dữ liệu, khoa học dữ liệu tại các tổ chức tài chính, ngân hàng, và công ty khởi nghiệp.
+        - Giám đốc kỹ thuật, Trưởng bộ phận công nghệ thông tin tại các công ty, tập đoàn.
+        - Chuyên viên phát triển trí tuệ nhân tạo, máy học, và các hệ thống thông minh tại các trung tâm nghiên cứu, doanh nghiệp công nghệ cao.
+  utter_ViecLamNganhKHMT:
+    - text: |
+        Sinh viên tốt nghiệp ngành Khoa học máy tính có thể làm việc trong các lĩnh vực và vị trí sau:
+        - Lập trình viên (Software Developer/Engineer): Phát triển các ứng dụng, phần mềm cho máy tính, di động hoặc web.
+        - Kỹ sư phần mềm (Software Engineer): Thiết kế, phát triển và bảo trì phần mềm.
+        - Lập trình viên game (Game Developer): Phát triển trò chơi cho máy tính, console, hoặc thiết bị di động.
+        - Full Stack Developer: Làm việc với cả front-end và back-end của ứng dụng web.
+        - Chuyên viên phân tích dữ liệu (Data Analyst): Phân tích dữ liệu để đưa ra các quyết định chiến lược.
+        - Kỹ sư học máy (Machine Learning Engineer): Phát triển các mô hình học máy để dự đoán và tối ưu hóa các quy trình.
+        - Chuyên gia AI (AI Specialist): Phát triển các ứng dụng trí tuệ nhân tạo, chatbot, và hệ thống tự động.
+  utter_ViecLamNganhDTVT:
+    - text: |
+        Sinh viên tốt nghiệp ngành Điện tử Viễn thông có thể làm việc trong các lĩnh vực và vị trí sau:
+        - Kỹ sư thiết kế và phát triển hệ thống viễn thông, bao gồm các thiết bị mạng, trạm phát sóng và các công nghệ liên quan.
+        - Chuyên viên quản trị mạng, thiết kế, cài đặt và bảo trì các hệ thống mạng và thiết bị viễn thông.
+        - Kỹ sư hệ thống viễn thông, làm việc với các công ty viễn thông để triển khai và duy trì các hệ thống truyền thông và dữ liệu.
+        - Chuyên viên phát triển phần mềm nhúng và ứng dụng cho các thiết bị viễn thông như điện thoại di động, bộ định tuyến, và thiết bị truyền thông.
+        - Kỹ sư mạng, giám sát và tối ưu hóa hiệu suất mạng, đảm bảo sự ổn định và an toàn của hệ thống.
+        - Kỹ sư bảo trì và hỗ trợ kỹ thuật cho các thiết bị và hệ thống viễn thông tại các công ty cung cấp dịch vụ viễn thông.
+        - Chuyên viên phân tích và phát triển các giải pháp công nghệ mới trong lĩnh vực điện tử và viễn thông.
+  utter_NganhTKDH:
+    - text: |
+        Ngành Thiết kế đồ họa tại Đại học CMC cung cấp kiến thức và kỹ năng về thiết kế 2D, 3D, và kỹ thuật đồ họa số.Ngành có các chuyên ngành là :
+        - Đồ họa truyền thông
+        - Đồ họa hoạt hình
+  utter_NganhQTKD:
+    - text: |
+        Ngành Quản trị kinh doanh tại Đại học CMC cung cấp các kiến thức về quản lý, marketing, và tài chính.Có những chuyên ngành chính là :
+        - Quản trị kinh doanh
+        - tài chính - kế toán
+        - Logistic và quản lý chuỗi cung ứng
+  utter_NganhNN:
     - text: "Ngành Ngôn ngữ tại Đại học CMC bao gồm các chuyên ngành như Ngôn ngữ Hàn, và Ngôn ngữ Nhật.bạn muốn biết thêm về chuyên ngành nào ?"
-
-  utter_chitietnn:
-    - text: "Thông tin chi tiết về ngành Ngôn ngữ có thể xem tại website của Đại học CMC."
-
-  utter_nganh_nnh:
-    - text: "Ngành Ngôn ngữ Hàn tại Đại học CMC cung cấp kiến thức về ngôn ngữ, văn hóa, và kỹ năng giao tiếp tiếng Hàn."
-
-  utter_nganh_nnn:
-    - text: "Ngành Ngôn ngữ Nhật tại Đại học CMC cung cấp kiến thức về ngôn ngữ, văn hóa, và kỹ năng giao tiếp tiếng Nhật."
+  utter_NgonNguHan:
+    - text: |
+        Ngành Ngôn ngữ Hàn tại Đại học CMC cung cấp kiến thức về ngôn ngữ, văn hóa, và kỹ năng giao tiếp tiếng Hàn.Đại học CMC có đối tác lớn nhất là SAMSUNG hàn quốc nên sinh viên sẽ có rất nhiều có hội giao tiếp với người bản xứ.
+        Nhấn vào trang page để biết thêm nhiều thông tin nhé: "https://cmcu.edu.vn/nganh-ngon-ngu-han-quoc/"
+      image: "https://i.ytimg.com/vi/QkMVe-5Pj0E/maxresdefault.jpg"
+  utter_NgonNguNhat:
+    - text: |
+        Ngành Ngôn ngữ Nhật tại Đại học CMC cung cấp kiến thức về ngôn ngữ, văn hóa, và kỹ năng giao tiếp tiếng Nhật.Ngành quy tụ rất nhiều trai xinh gái đẹp thích phong cách lofi nhật bản.
+        Đây là page để biết thêm thông tin về ngành nhé: "https://cmcu.edu.vn/nganh-ngon-ngu-nhat/"
+      image: "https://i.ytimg.com/vi/71FlFKB0WTY/sddefault.jpg"
+  utter_cosovatchat:
+    - text: "Trường có cơ sở vật chất mới hiện đại bao gồm thư viện, phòng tự học, nhiều phòng lab mới tinh, có sảnh chờ , sảnh đón khách, những phòng học mới nhất cùng các thiết bị được trang bị đầy đủ tuyệt đối. Bên cạnh đó ở cơ sở 3 đang xây dựng cũng sẽ có nhà đa năng hoàn toàn mới đáp ứng đầy đủ nhu cầu của sinh viên. "
   utter_thuvien:
-    - text: "CMC có phòng thư viện với đầy đủ các đầu sách cho sinh viên các ngành. Bên cạnh đó thư viện cũng có 1 view học rất chill, hãy đến trải nghiệm nhé."
+    - text: "CMC có phòng thư viện với đầy đủ các đầu sách, giáo trình  từ tiếng việt đến tiếng anh cùng các loại ngôn ngữ đa dạng nữa  cho sinh viên các ngành. Bên cạnh đó thư viện cũng có 1 view học rất chill, hãy đến trải nghiệm nhé."
+      image: "https://cmc-u.edu.vn/wp-content/uploads/2023/03/069A5869-min-min-scaled-600x600.jpg"
   utter_phonghoc:
-    - text: "Phòng học tại CMC được trang bị đầy đủ các thiết bị hiện đại phục vụ cho giảng viên và sinh viên."
-  utter_clb:
-    - text: "CMC có nhiều câu lạc bộ đa dạng cho sinh viên, từ thể thao đến nghệ thuật."
+    - text: "Phòng học tại CMC được trang bị đầy đủ các thiết bị hiện đại phục vụ cho giảng viên và sinh viên.Đặc biệt là luôn có điều hòa nhé còn có hệ thống các ổ điện cho các coder không lo hết pin máy tính.Có ghế ngồi và bàn riêng cho từng sinh viên , tạo cảm giác thoải mái nhất có thể."
+      image: "https://cmc-u.edu.vn/wp-content/uploads/2023/11/3-600x600.jpg"
+  utter_phongLab:
+    - text: "Hệ thống 6 phòng lab hiện đại của Viện Nghiên cứu Ứng dụng Công nghệ CIST, sinh viên Trường Đại học CMC sẽ có cơ hội thực hành nghiên cứu các ứng dụng công nghệ tiên tiến nhất"
+      image: "https://vcdn1-vnexpress.vnecdn.net/2024/06/18/image001-4058-1718706037.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=LpVzA9YQtmi7tJn5-MUKCw"
+  utter_cauLacBo:
+    - text: |
+        CMC có nhiều câu lạc bộ đa dạng cho sinh viên, từ học tập, thể thao đến nghệ thuật.Bao gồm:
+        - Clb lập trình 👩‍💻👨‍💻
+        - clb cầu lông 🏸
+        - clb bóng đá ⚽
+        - clb bóng chuyền 🏐
+        - clb bóng rổ 🏀
+        - clb tiếng anh 
+        - clb tiếng hàn
+        - clb tiếng nhật
+        - clb nghệ thuật 🎤💃🕺👯
+        - ......
+        CMC có nhiều clb lắm nha bên trên là một số những clb tiêu biểu nhất mà tôi biết,liệt kê nhiều clb thể thao để hướng tới sinh viên đều khỏe mạnh ^.^
+  utter_clb_lapTrinh:
+    - text: |
+        CLB lập trình 👩‍💻👨‍💻 của đại học cmc mang đến sân chơi bổ ích cho các bạn đam mê lập trình viên , sinh viên ngành công nghệ và cả các bạn ngành khác yêu thích công nghệ nữa nhenn. Đây cũng có thể là nơi quy tụ rất nhiều
+        bạn nữ IT siu cool ngầu đó nha, girl IT ít lắm đó ^^
   utter_clb_caulong:
-    - text: "CMC có câu lạc bộ cầu lông nhé mà Hiện CMC chưa có sân cầu lông chính thức nhưng có câu lạc bộ cầu lông hoạt động sôi nổi."
+    - text: |
+        CMC có câu lạc bộ cầu lông 🏸 nhé mà hiện trường chưa có sân cầu lông chính thức nhưng có câu lạc bộ cầu lông hoạt động sôi nổi cho tất cả các lông thủ nhen ^^
+        Đây là page của clb nhé:"https://www.facebook.com/profile.php?id=61552317201568"
   utter_clb_bongda:
-    - text: "CMC có câu lạc bộ bóng đá với sân bóng riêng lớn tại cơ sở 1 cho các cầu thử thỏa sức tập luyện cùng đồng đội."
+    - text: |
+        CMC có câu lạc bộ bóng đá ⚽ dành cho tất cả các sinh viên đam mê với trái bóng trên sân cỏ và sân bóng riêng lớn tại cơ sở 1 cho các cầu thủ thỏa sức đam mê tập luyện cùng đồng đội.^^
+        Đây là page của clb nhé : "https://www.facebook.com/CMC.Uni.FC"
   utter_clb_bongro:
-    - text: "CMC có câu lạc bộ bóng rổ với sân bóng rổ trong nhà tại cơ sở 1."
+    - text: |
+        CMC có câu lạc bộ bóng rổ 🏀 dành cho tất cả sinh viên đam mê với trái bóng cam và có sân bóng rổ trong nhà (indoor) tại cơ sở 1 nhé ^^
+        Đây là page của clb nhé:"https://www.facebook.com/CMCU.BasketballTeam"
+
   utter_clb_bongchuyen:
-    - text: "CMC có câu lạc bộ bóng chuyền, hoạt động trên nhiều sân khác nhau."
-  utter_clb_english:
-    - text: "Câu lạc bộ tiếng Anh của CMC là nơi lý tưởng để rèn luyện kỹ năng ngôn ngữ.Không những thế còn được giao lưu biết thêm rất nhiều bạn nhé."
-  utter_clb_dance:
-    - text: "CMC có câu lạc bộ nhảy dành cho những ai đam mê nghệ thuật biểu diễn."
-  utter_clb_event:
-    - text: "Câu lạc bộ sự kiện tại CMC luôn cần những bạn trẻ năng động tham gia tổ chức các chương trình."
+    - text: |
+        CMC có câu lạc bộ bóng chuyền 🏐 nhé, clb dành cho tất cả sinh viên đam mê bộ môn bóng hơi , clb hoạt động trên nhiều sân khác nhau, vi vu khắp đất hà nội lunnn ^^
+        Đây là page của clb nhé:"https://www.facebook.com/profile.php?id=61552178861778"
+
+  utter_clb_tiengAnh:
+    - text: |
+        Hello, câu lạc bộ tiếng Anh của CMC là nơi lý tưởng để rèn luyện kỹ năng ngôn ngữ.Không những thế còn được giao lưu biết thêm rất nhiều bạn nhé.
+        Đây là page của clb nhé : "https://www.facebook.com/cmcuenglishclub"
+
+  utter_clb_tiengHan:
+    - text: |
+        Annyeonghasêô ^^, clb tiếng Hàn là nơi lý tưởng để luyện kỹ năng ngôn ngữ Hàn và kết bạn với những bạn sinh viên có cùng đam mê ngôn ngữ Hàn và văn hóa đất bạn. Và có thể có fangroup idol Kpop đó ^^
+        Đây là page của clb nhé:'https://www.facebook.com/OKC.CMCUni'
+
+  utter_clb_tiengNhat:
+    - text: |
+        Konichiwa ^^ , clb tiếng Nhật là nơi lý tưởng để luyện kỹ năng ngôn ngữ nhật và kết bạn với những bạn sinh viên có cùng đam mê ngôn ngữ nhật và văn hóa đất bạn. Và có fangroup cho các bạn đam mê anime nhật bản nữa đó ^^
+        Đây là page của clb nhé:"https://www.facebook.com/CMCJapaneseClub"
+  utter_clb_nghethuat:
+    - text: |
+        CMC có câu lạc bộ nghệ thuật 🎤👯🕺💃 dành cho những ai đam mê nghệ thuật biểu diễn.Tham gia clb bạn còn có thể được đi biểu diễn cho những sự kiện quan trọng của trường nữa nhé ^^
+        Đây là page của clb nhé :"https://www.facebook.com/CLBTheRebels"
   utter_quanhaphoc:
-    - text: "Trường thường có quà chào đón cho các bạn tân sinh viên nhập học.Quà giá trị có thể lên tới 15 triệu đồng nhé "
+    - text: "Trường đại học CMC có quà chào đón cho các bạn tân sinh viên nhập học.Quà giá trị có thể lên tới 15 triệu đồng nhé "
+      image: "https://cmc-u.edu.vn/wp-content/uploads/2024/08/Truong-Dai-hoc-CMC-tang-laptop-cho-100-sinh-vien-nam-2024-scaled.webp"
   utter_diemrenluyen:
     - text: "Điểm rèn luyện được đánh giá dựa trên hoạt động ngoại khóa và thái độ học tập của sinh viên."
-  utter_dongphuc:
-    - text: "Sinh viên CMC có đồng phục riêng có màu xanh da trời rất đpẹ tạo nên sự đồng nhất và tự hào vè ngôi trường mình theo học."
   utter_kytucxa:
     - text: "CMC chưa có ký túc xá nhé. Nhưng có hỗ trợ các bạn sinh viên tìm kiếm những nhà trọ giá cả hợp lý gần trường."
   utter_hotrohoctap:
     - text: "CMC có các chương trình hỗ trợ học tập cho sinh viên, bao gồm học thêm giờ và cho thi nâng điểm cùng tài liệu học tập miễn phí."
   utter_hoclai:
-    - text: "Sinh viên có thể đăng ký học lại môn nếu chưa đạt yêu cầu học tập, hoặc thi trượt với mức chi phí phù hợp."
-  utter_cauhoithuonggap:
-    - text: "Những câu hỏi được hỏi nhiều nhất là học phí , học bổng , cơ sở vật chất , chương trình đào tạo, cơ hội việc làm của trường"
+    - text: |
+        Sinh viên có thể đăng ký học lại môn nếu chưa đạt yêu cầu học tập, hoặc thi trượt với mức chi phí phù hợp tùy ngành như sau :
+        - Ngành CNTT,KHMT,DTVT phí học lại dao động từ 1 triệu - 2 triệu / 1 tín chỉ tùy học phần
+        - Ngành QTKD phí học lại dao động từ 500.000 - 2 triệu / 1 tín chỉ tùy học phần
+        - Ngành TKDH phí học lại dao động từ 500.000 - 2 triệu / 1 tín chỉ tùy học phần
+        - Ngành Ngôn ngữ phí học lại dao động từ 500.000 - 2 triệu / 1 tín chỉ tùy học phần
+
   utter_noiquy:
     - text: "Nội quy nhà trường được thiết lập nhằm đảm bảo môi trường học tập văn minh và an toàn. Hãy đăng kí vào học cmc để biết thêm nhiều nội quy hay nhée"
+  utter_fallback:
+    - text: "Xin lỗi, tôi chưa biết thông tin này hoặc thông tin này đang được cập nhật.^^"
 
 actions:
-  - utter_chaohoi
-  - utter_tambiet
-  - utter_camon
-  - utter_xacnhan
-  - utter_tuchoi
-  - utter_thongtintruong
-  - utter_chuongtrinhdaotao
-  - utter_tuyensinh
-  - utter_hocphi
-  - utter_hocbong
-  - utter_chitiethocbong
-  - utter_thongtinlienhe
-  - utter_cosovatchat
-  - utter_hoibot
-  - utter_thoigiannhaphoc
-  - utter_giangvien
-  - utter_sinhvien
-  - utter_tentruong
-  - utter_diemchuan
-  - utter_diemchuan2022
-  - utter_diemchuan2023
-  - utter_diemchuan2024
-  - utter_cohoivieclam
-  - utter_doitac
-  - utter_chuyennganhcongnghe
-  - utter_chuyennganhcntt
-  - utter_chitietcntt
-  - utter_chuyennganhkhmt
-  - utter_chitietkhmt
-  - utter_chuyennganhdtvt
-  - utter_chitietdtvt
-  - utter_chuyennganhtkdh
-  - utter_chitiettkdh
-  - utter_chuyennganhqtkd
-  - utter_chitietqtkd
-  - utter_chuyennganhnn
-  - utter_chitietnn
-  - utter_nganh_nnh
-  - utter_nganh_nnn
-  - utter_thuvien
-  - utter_phonghoc
-  - utter_clb
-  - utter_clb_caulong
-  - utter_clb_bongda
-  - utter_clb_bongro
-  - utter_clb_bongchuyen
-  - utter_clb_english
-  - utter_clb_dance
-  - utter_clb_event
-  - utter_quanhaphoc
-  - utter_diemrenluyen
-  - utter_dongphuc
-  - utter_kytucxa
-  - utter_hotrohoctap
-  - utter_hoclai
-  - utter_cauhoithuonggap
-  - utter_noiquy
+  - action_chaohoi
+  - action_tambiet
+  - action_cauhoithuonggap
+  - action_camon
+  - action_thongtintruong
+  - action_chuongtrinhdaotao
+  - action_tuyensinh
+  - action_xettuyendiemthiTHPT
+  - action_xettuyenhocba
+  - action_hocphi
+  - action_hocbong
+  - action_chitiethocbong
+  - action_thongtinlienhe
+  - action_hoibot
+  - action_thoigiannhaphoc
+  - action_giangvien
+  - action_SoLuongSinhVien
+  - action_tentruong
+  - action_diemchuan
+  - action_diemchuanNam2022
+  - action_diemchuanNam2023
+  - action_diemchuanNam2024
+  - action_cohoivieclam
+  - action_doitac
+  - action_chuyennganhcongnghe
+  - action_NganhCNTT
+  - action_NganhKHMT
+  - action_NganhDTVT
+  - action_ViecLamNganhCNTT
+  - action_ViecLamNganhKHMT
+  - action_ViecLamNganhDTVT
+  - action_NganhTKDH
+  - action_NganhQTKD
+  - action_NganhNN
+  - action_NgonNguHan
+  - action_NgonNguNhat
+  - action_cosovatchat
+  - action_thuvien
+  - action_phonghoc
+  - action_phongLab
+  - action_cauLacBo
+  - action_clb_lapTrinh
+  - action_clb_caulong
+  - action_clb_bongda
+  - action_clb_bongro
+  - action_clb_bongchuyen
+  - action_clb_tiengAnh
+  - action_clb_tiengHan
+  - action_clb_tiengNhat
+  - action_clb_nghethuat
+  - action_quanhaphoc
+  - action_diemrenluyen
+  - action_kytucxa
+  - action_hotrohoctap
+  - action_hoclai
+  - action_noiquy
