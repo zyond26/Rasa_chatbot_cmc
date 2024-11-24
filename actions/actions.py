@@ -63,7 +63,7 @@ DATABASE =[" chào hỏi ",
 
 class ActionRecommend(Action):
     def name(self) -> Text:
-        return "action_recommend"
+        return "action_chaohoi"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
@@ -76,8 +76,9 @@ class ActionRecommend(Action):
             suggest.append(DATABASE[suggest_number])
 
         dispatcher.utter_message(
-            text="Tôi nghĩ bạn nên hỏi về chủ đề '{}' hoặc bên cạnh có cũng có thể là chủ đề '{}'".format(suggest[0],suggest[1])
+            text="Xin chào 🤗,mình là Chatbot hỗ trợ tư vấn tuyển sinh của đại học CMC. Bạn cần tư vấn về vấn đề gì?".format(suggest[0],suggest[1])
         )
 
         return []
 
+        

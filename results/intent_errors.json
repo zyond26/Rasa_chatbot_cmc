@@ -1,0 +1,242 @@
+[
+  {
+    "text": "Trường có thư viện không?",
+    "intent": "cosovatchat",
+    "intent_prediction": {
+      "name": "thuvien",
+      "confidence": 0.80223149061203
+    }
+  },
+  {
+    "text": "Trường có ký túc xá không?",
+    "intent": "cosovatchat",
+    "intent_prediction": {
+      "name": "kytucxa",
+      "confidence": 0.6992889046669006
+    }
+  },
+  {
+    "text": "Điểm chuẩn năm 2022 là bao nhiêu?",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.39759892225265503
+    }
+  },
+  {
+    "text": "Năm 2022 điểm chuẩn bao nhiêu?",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.40740418434143066
+    }
+  },
+  {
+    "text": "Điểm chuẩn của năm 2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.39020875096321106
+    }
+  },
+  {
+    "text": "Cho tôi biết điểm chuẩn năm 2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3633432388305664
+    }
+  },
+  {
+    "text": "Điểm chuẩn năm 2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3758185803890228
+    }
+  },
+  {
+    "text": "năm 2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.32846391201019287
+    }
+  },
+  {
+    "text": "2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.35140153765678406
+    }
+  },
+  {
+    "text": "điểm chuẩn năm 2022",
+    "intent": "diemchuanNam2022",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3904961943626404
+    }
+  },
+  {
+    "text": "Điểm chuẩn năm 2023 là bao nhiêu?",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.39759892225265503
+    }
+  },
+  {
+    "text": "Năm 2023 điểm chuẩn bao nhiêu?",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.40740418434143066
+    }
+  },
+  {
+    "text": "Điểm chuẩn của năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.39020875096321106
+    }
+  },
+  {
+    "text": "Cho tôi biết điểm chuẩn năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3633432388305664
+    }
+  },
+  {
+    "text": "Điểm chuẩn năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3758185803890228
+    }
+  },
+  {
+    "text": "năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.32846391201019287
+    }
+  },
+  {
+    "text": "2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.35140153765678406
+    }
+  },
+  {
+    "text": "điểm chuẩn năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3904961943626404
+    }
+  },
+  {
+    "text": "điểm chuẩn của trường năm 2023",
+    "intent": "diemchuanNam2023",
+    "intent_prediction": {
+      "name": "diemchuanNam2024",
+      "confidence": 0.3857458531856537
+    }
+  },
+  {
+    "text": "Tôi không chắc",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.0065872217528522015
+    }
+  },
+  {
+    "text": "Bạn nói gì cơ?",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "SoSanh",
+      "confidence": 0.00544649176299572
+    }
+  },
+  {
+    "text": "Tôi không hiểu",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.008229464292526245
+    }
+  },
+  {
+    "text": "Câu hỏi này hơi lạ",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.014491849578917027
+    }
+  },
+  {
+    "text": "Không có câu trả lời nào đúng",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.0051474194042384624
+    }
+  },
+  {
+    "text": "haha",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "HeThongNhung&IOT",
+      "confidence": 0.007075516507029533
+    }
+  },
+  {
+    "text": "tôi yêu bạn",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.01431857980787754
+    }
+  },
+  {
+    "text": "bạn bị điên à",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.007603656034916639
+    }
+  },
+  {
+    "text": "có bị hâm không",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.009019066579639912
+    }
+  },
+  {
+    "text": "ơ",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.011661557480692863
+    }
+  },
+  {
+    "text": "ô",
+    "intent": "nlu_fallback",
+    "intent_prediction": {
+      "name": "thongtintruong",
+      "confidence": 0.011966309510171413
+    }
+  }
+]

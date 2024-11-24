@@ -1,0 +1,33 @@
+digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class=active, fontsize=12, label=action_session_start];
+2 [class=active, fontsize=12, label=utter_chaohoi];
+3 [class=active, fontsize=12, label=utter_chuongtrinhdaotao];
+4 [class=active, fontsize=12, label=utter_diemchuan];
+5 [class=active, fontsize=12, label="1.01: action_diemchuanNam2024"];
+6 [class=active, fontsize=12, label=diemchuanNam2022];
+7 [class=active, fontsize=12, label=utter_tambiet];
+8 [class="intent dashed active", label="  ?  ", shape=rect];
+9 [class="intent active", fillcolor=lightblue, label="/chaohoi", shape=rect, style=filled];
+10 [class="intent active", fillcolor=lightblue, label="/chuongtrinhdaotao", shape=rect, style=filled];
+11 [class="intent active", fillcolor=lightblue, label="/diemchuan", shape=rect, style=filled];
+12 [class="intent active", fillcolor=lightblue, label="/nlu_fallback", shape=rect, style=filled];
+13 [class="intent active", fillcolor=lightblue, label="/diemchuanNam2022", shape=rect, style=filled];
+14 [class="intent active", fillcolor=lightblue, label="/tambiet", shape=rect, style=filled];
+0 -> "-1"  [class="", key=NONE, label=""];
+0 -> 1  [class=active, key=NONE, label=""];
+1 -> 9  [class=active, key=0];
+2 -> 10  [class=active, key=0];
+3 -> 11  [class=active, key=0];
+4 -> 12  [class=active, key=0];
+5 -> 13  [class=active, key=0];
+6 -> 14  [class=active, key=0];
+7 -> 8  [class=active, key=NONE, label=""];
+9 -> 2  [class=active, key=0];
+10 -> 3  [class=active, key=0];
+11 -> 4  [class=active, key=0];
+12 -> 5  [class=active, key=0];
+13 -> 6  [class=active, key=0];
+14 -> 7  [class=active, key=0];
+}

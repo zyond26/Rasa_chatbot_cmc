@@ -21,15 +21,14 @@ stories:
       - intent: thongtintruong
       - action: utter_thongtintruong
 
-  - story: Chương trình đào tạo
-    steps:
-      - intent: chuongtrinhdaotao
-      - action: utter_chuongtrinhdaotao
-
   - story: Tuyển sinh
     steps:
       - intent: tuyensinh
       - action: utter_tuyensinh
+      - intent: xettuyendiemthiTHPT
+      - action: utter_xettuyendiemthiTHPT
+      - intent: xettuyenhocba
+      - action: utter_xettuyenhocba
 
   - story: Xét tuyển điểm thi THPT
     steps:
@@ -126,33 +125,68 @@ stories:
       - intent: doitac
       - action: utter_doitac
 
-  - story: Chuyên ngành công nghệ
+  - story: Chương trình đào tạo
     steps:
-      - intent: chuyennganhcongnghe
-      - action: utter_chuyennganhcongnghe
+      - intent: chuongtrinhdaotao
+      - action: utter_chuongtrinhdaotao
 
-  - story: Ngành CNTT
+  - story: hỏi Ngành CNTT
     steps:
       - intent: NganhCNTT
       - action: utter_NganhCNTT
 
-  - story: Ngành Khoa học máy tính
+  - story: hỏi kỹ thuật phần mềm
     steps:
-      - intent: NganhKHMT
-      - action: utter_NganhKHMT
+      - intent: KyThuatPhanMem
+      - action: utter_KyThuatPhanMem
 
-  - story: Ngành Điện tử viễn thông
+  - story: hỏi kỹ thuật máy tính
     steps:
-      - intent: NganhDTVT
-      - action: utter_NganhDTVT
+      - intent: KyThuatMayTinh
+      - action: utter_KyThuatMayTinh
 
-  - story: hỏi việc làm ngành Công nghệ thông tin
+  - story: so sánh hai ngành kỹ thuật
+    steps:
+      - intent: SoSanh
+      - action: utter_SoSanh
+
+  - story: hỏi An toàn thông tin
+    steps:
+      - intent: AnToanThongTin
+      - action: utter_AnToanThongTin
+
+  - story: hỏi Điện toán đám mây
+    steps:
+      - intent: DienToanDamMay
+      - action: utter_DienToanDamMay
+
+  - story: hỏi về việc làm ngành Công nghệ thông tin
     steps:
       - intent: ViecLamNganhCNTT
         entities:
           - job: "Việc làm"
           - major: "Công nghệ thông tin"
       - action: utter_ViecLamNganhCNTT
+
+  - story: hỏi về Ngành Khoa học máy tính
+    steps:
+      - intent: NganhKHMT
+      - action: utter_NganhKHMT
+
+  - story: hỏi về phát triển phần mềm
+    steps:
+      - intent: PhatTrienPhanMem
+      - action: utter_PhatTrienPhanMem
+
+  - story: hỏi về Trí tuệ nhân tạo và dữ liệu lớn
+    steps:
+      - intent: TriTueNhanTao&BigData
+      - action: utter_TriTueNhanTao&BigData
+
+  - story: hỏi về Hệ thống thông tin
+    steps:
+      - intent: HeThongThongTin
+      - action: utter_HeThongThongTin
 
   - story: hỏi việc làm ngành Khoa học máy tính
     steps:
@@ -162,6 +196,26 @@ stories:
           - major: "Khoa học máy tính"
       - action: utter_ViecLamNganhKHMT
 
+  - story: hỏi Ngành Điện tử viễn thông
+    steps:
+      - intent: NganhDTVT
+      - action: utter_NganhDTVT
+
+  - story: hỏi về thiết kế vi mạch bán dẫn
+    steps:
+      - intent: ThietKeViMachBanDan
+      - action: utter_ThietKeViMachBanDan
+
+  - story: hỏi về hệ thống nhúng và iot
+    steps:
+      - intent: HeThongNhung&IOT
+      - action: utter_HeThongNhung&IOT
+
+  - story: hỏi về công nghệ mạng và truyền thông tiên tiến
+    steps:
+      - intent: CongNgheMang&TruyenThongTienTien
+      - action: utter_CongNgheMang&TruyenThongTienTien
+
   - story: hỏi việc làm ngành Điện tử viễn thông
     steps:
       - intent: ViecLamNganhDTVT
@@ -170,27 +224,42 @@ stories:
           - major: "Điện tử viễn thông"
       - action: utter_ViecLamNganhDTVT
 
-  - story: Ngành Thiết kế đồ họa
+  - story: hỏi Ngành Thiết kế đồ họa
     steps:
       - intent: NganhTKDH
       - action: utter_NganhTKDH
 
-  - story: Ngành Quản trị kinh doanh
+  # - story: hỏi về đồ họa truyền thông
+  #   steps:
+  #     - intent: DoHoaTruyenThong
+  #     - action: utter_DoHoaTruyenThong
+
+  # - story: hỏi về đồ họa hoạt hình
+  #   steps:
+  #     - intent: DoHoaHoatHinh
+  #     - action: utter_DoHoaHoatHinh
+
+  - story: hỏi về  Ngành Quản trị kinh doanh
     steps:
       - intent: NganhQTKD
       - action: utter_NganhQTKD
 
-  - story: Ngành Ngôn ngữ
-    steps:
-      - intent: NganhNN
-      - action: utter_NganhNN
+  # - story: hỏi về Tài chính và kế toán
+  #   steps:
+  #     - intent: TaiChinh&KeToan
+  #     - action: utter_TaiChinh&KeToan
 
-  - story: Ngành Ngôn ngữ Hàn
+  # - story: hỏi về logistic và chuỗi cung ứng
+  #   steps:
+  #     - intent: Logictic&ChuoiCungUng
+  #     - action: utter_Logistic&ChuoiCungUng
+
+  - story: hỏi Ngành Ngôn ngữ Hàn
     steps:
       - intent: NgonNguHan
       - action: utter_NgonNguHan
 
-  - story: Ngành Ngôn ngữ Nhật
+  - story: hỏi Ngành Ngôn ngữ Nhật
     steps:
       - intent: NgonNguNhat
       - action: utter_NgonNguNhat
@@ -294,3 +363,81 @@ stories:
     steps:
       - intent: nlu_fallback
       - action: utter_fallback
+
+- story: interactive_story_1
+  steps:
+  - intent: chaohoi
+  - slot_was_set:
+    - nam: hi
+  - slot_was_set:
+    - nganh: hi
+  - slot_was_set:
+    - csvc: hi
+  - slot_was_set:
+    - job: hi
+  - slot_was_set:
+    - major: hi
+  - action: utter_chaohoi
+  - intent: chuongtrinhdaotao
+  - slot_was_set:
+    - nam: tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+  - slot_was_set:
+    - nganh: tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+  - slot_was_set:
+    - csvc: tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+  - slot_was_set:
+    - job: tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+  - slot_was_set:
+    - major: tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+  - action: utter_chuongtrinhdaotao
+  - intent: diemchuan
+  - slot_was_set:
+    - nam: điểm chuẩn của trường
+  - slot_was_set:
+    - nganh: điểm chuẩn của trường
+  - slot_was_set:
+    - csvc: điểm chuẩn của trường
+  - slot_was_set:
+    - job: điểm chuẩn của trường
+  - slot_was_set:
+    - major: điểm chuẩn của trường
+  - action: utter_diemchuan
+  - intent: nlu_fallback
+    entities:
+    - nam: '2024'
+  - slot_was_set:
+    - nam: điểm chuẩn năm 2024
+  - slot_was_set:
+    - nganh: điểm chuẩn năm 2024
+  - slot_was_set:
+    - csvc: điểm chuẩn năm 2024
+  - slot_was_set:
+    - job: điểm chuẩn năm 2024
+  - slot_was_set:
+    - major: điểm chuẩn năm 2024
+  - action: '1.01: action_diemchuanNam2024'
+  - intent: nlu_fallback
+  - slot_was_set:
+    - nam: năm 2022
+  - slot_was_set:
+    - nganh: năm 2022
+  - slot_was_set:
+    - csvc: năm 2022
+  - slot_was_set:
+    - job: năm 2022
+  - slot_was_set:
+    - major: năm 2022
+  - intent: diemchuanNam2022
+  - action: diemchuanNam2022
+  - intent: tambiet
+  - slot_was_set:
+    - nam: bye
+  - slot_was_set:
+    - nganh: bye
+  - slot_was_set:
+    - csvc: bye
+  - slot_was_set:
+    - job: bye
+  - slot_was_set:
+    - major: bye
+  - action: utter_tambiet

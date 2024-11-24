@@ -1,812 +1,866 @@
 version: "3.1"
-
 nlu:
-  - intent: chaohoi
-    examples: |
-      - admin
-      - chào local
-      - chào admin
-      - Thưa thầy
-      - hi thầy
-      - hi cô
-      - hi bạn
-      - hi ad
-      - xin chào
-      - xin chao
-      - chào
-      - chào ad
-      - chào bot
-      - hello
-      - hi
-      - alo
-  - intent: tambiet
-    examples: |
-      - tạm biệt
-      - oke rồi,tạm biệt bạn
-      - goodbye
-      - bai cưng   
-      - bye bye
-      - pp
-      - bai bai
-      - bai
-      - bye
-      - bái bai
-      - tạm biệt nhennn
-      - bye em
-      - bye bot
-
-  - intent: cauhoithuonggap
-    examples: |
-      - chủ đề nào được quan tâm nhất
-      - người ta hay hỏi gì về cmc
-      - dùng chat bot hỏi gì nhiều nhất
-      - chủ đề quan tâm nhất ở cmc
-      - những câu hỏi thường gặp
-      - những câu hỏi nào hay được hỏi nhiều nhất
-
-  - intent: thongtintruong
-    examples: |
-      - thông tin đại học cmc
-      - thông tin trường đại học cmc
-      - thông tin về [cmc]
-      - thông tin về đại học 
-      - thông tin về CMC
-      - [CMC] có những đặc điểm gì
-      - lịch sử của [trường]
-      - đại học CMC  là gì
-      - school infomation
-      - info
-      - CMC là gì
-      - CMC có những gì
-      - cho tôi biết thông tin về đại học cmc
-      - tôi muốn biết thông tin của đại học cmc
-      - thông tin chung
-      - những thông tin về đại học CMC
-      - thông tin của trường
-
-  - intent: chuongtrinhdaotao
-    examples: |
-      - [trường] đào tạo những ngành gì
-      - thông tin ngành
-      - ngành học
-      - thông tin ngành đào tạo
-      - ngành đào tạo
-      - ngành
-      - những ngành [cmc] đào tạo
-      - [cmc] dạy những ngành gì
-      - majors
-      - major
-      - chương trình đào tạo
-      - trường đào tạo những ngành gì
-      - có ngành nào được đào tạo ở trường
-      - cmc có chương trình đào tạo như nào
-      - các ngành hiện có ở cmc
-      - các ngành hiện có ở trường
-      - tôi muốn biết các ngành được đào tạo ở trường
-      - tôi muốn biết đại học CMC đào tạo những ngành nào
-
-  - intent: tuyensinh
-    examples: |
-      - Thầy ơi, cho em hỏi thông tin tuyển sinh các năm trước
-      - Cô ơi , cho em hỏi thông tin truyển sinh các năm trước
-      - Chào thầy, em hỏi thông tin tuyển sinh các năm trước
-      - Chào cô, cho em hỏi thông tin tuyển sinh các năm trước
-      - Cô có thể cho em biết thông tin tuyển sinh các năm trước
-      - chào admin cho em hỏi thông tin tuyển sinh các năm trước
-      - chào local cho em hỏi thông tin tuyển sinh các năm trước
-      - admin có thể cho em biết thông tin tuyển sinh các năm trước
-      - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
-      - thông tin tuyển sinh các năm
-      - thông tin tuyển sinh các năm trước
-      - thông tin tuyển sinh của đại học cmc
-      - tuyển sinh
-      - có những hình thức tuyển sinh nào
-      - trường tuyển sinh bao nhiêu sinh viên
-
-  - intent: xettuyendiemthiTHPT
-    examples: |
-      - phương thức điểm thi tốt nghiệp trung học phổ thông
-      - phương thức điểm thi tốt nghiệp
-      - điểm thi
-      - thpt
-      - điểm thi tốt nghiệp
-      - tốt nghiệp
-      - phương thức xét điểm thi tốt nghiệp
-      - phương thức xét điểm thi tốt nghiệp trung học phổ thông
-      - điều kiện xét tuyển điểm thi THPT
-      - các điều kiện để xét tuyển theo điểm thi THPT
-      - các điều kiện cần để xét tuyển theo điểm thi THPT
-      - các điều kiện cần để có thể xét tuyển theo điểm thi THPT
-      - điều kiện để được xét tuyển theo điểm thi THPT
-      - xét tuyển theo điểm
-      - xét theo điểm thi
-      - xét theo điểm thpt thì sao
-      - hình thức xét tuyển theo điểm thi
-      - điểm thi thpt
-      - phương thức xét tuyển theo điểm thi
-      - phương thức điểm thi thì sao
-
-  - intent: xettuyenhocba
-    examples: |
-      - xét học bạ
-      - xét tuyển theo phương thức học bạ
-      - học bạ
-      - trường có xét học bạ không
-      - [CMC] có xét học bạ không
-      - [trường] có xét học bạ không
-      - xét học bạ không
-      - điều kiện xét học bạ
-      - các điều kiện để xét tuyển theo phương thức học bạ
-      - các điều kiện cần để xét học bạ
-      - các điều kiện cần để xét tuyển theo phương thức học bạ
-      - điều kiện để được xét tuyển theo phương thức học bạ
-      - hình thức xét tuyển theo học bạ
-      - xét tuyển theo học bạ
-      - xét học bạ
-      - xét theo học bạ
-      - phương thức học bạ thì sao
-
-  - intent: hocphi
-    examples: |
-      - học phí của [cmc] là bao nhiêu
-      - học phí tại [cmc] như thế nào
-      - mức học phí
-      - học phí
-      - học phí hiện tại
-      - học phí năm nay như thế nào
-      - học phí của [trường]
-      - học phí của [trường] mình
-      - học phí của [cmc] mình như thế nào
-      - học phí 1 năm là bao nhiêu
-      - học phí 1 năm
-      - bao nhiêu tiền 1 tín
-      - học phí 1 tín
-      - học phí 1 tín là bao nhiêu
-      - học phí bao nhiêu tiền 1 kì
-      - học phí 1 kì
-      - học phí 1 kì là bao nhiêu
-      - bao nhiêu tiền 1 kì
-      - học phí bao nhiêu tiền 1 học kì
-      - học phí 1 học kì
-      - học phí của cmc
-      - cmc có học phí thế nào
-
-  - intent: hocbong
-    examples: |
-      - cho em hỏi học bổng của [trường] mình như thế nào
-      - thưa thầy, cho em hỏi học bổng của [trường] mình được trao như thế nào
-      - học bổng
-      - Thông tin về học bổng
-      - Chính sách về học bổng
-      - học bổng của [trường]
-      - học bổng của [trường] mình
-      - làm sao để có học bổng?
-      - học bổng của [trường] như thế nào?
-      - học bổng của [trường] mình như thế nào?
-      - làm sao để có học bổng của [trường] mình?
-
-  - intent: duytrihocbong
-    examples: |
-      - làm sao để duy trì học bổng
-      - duy trì học bổng 
-      - giữ học bổng làm sao
-      - điều kiện để có học bổng cả 3 năm
-      - điều kiện giữ học bổng
-      - duy trì học bổng có khó không
-      - làm sao để giữ học bổng
-      - điều kiện duy trì được học bổng tại trường
-
-  - intent: thongtinlienhe
-    examples: |
-      - Địa chỉ của Đại học CMC là gì?
-      - Trường CMC nằm ở đâu?
-      - Làm sao để liên hệ với Đại học CMC?
-      - Cho tôi xin thông tin liên hệ của trường CMC
-      - Đại học CMC nằm ở địa chỉ nào?
-      - thông tin liên hệ
-      - địa chỉ
-      - CMC ở đâu
-
-  - intent: cosovatchat
-    examples: |
-      - Cơ sở vật chất của Đại học CMC như thế nào?
-      - Trường có thư viện không?
-      - Trường có ký túc xá không?
-      - Đại học CMC có những tiện nghi gì?
-      - Cơ sở vật chất của trường có hiện đại không?
-      - Cơ sở vật chất
-
-  - intent: camon
-    examples: |
-      - cảm ơn
-      - cảm ơn bạn
-      - tôi cảm ơn
-      - rất cảm ơn
-      - cảm ơn rất nhiều
-      - cảm ơn nhé
-
-  - intent: hoi_bot
-    examples: |
-      - Bạn là ai?
-      - Giới thiệu về bạn
-      - Chatbot này là gì?
-      - Cho tôi biết về bạn
-      - Bạn có thể làm gì?
-      - Giới thiệu con chatbot này
-      - Bạn là chatbot đúng không?
-      - Bạn có thể giúp gì?
-      - Chatbot này có thể làm gì?
-      - Chatbot này hoạt động như thế nào?
-      - khả năng của bot
-      - bot có khả năng gì
-      - hãy nêu chức năng của bot
-      - bạn có thể làm gì
-
-  - intent: thoigiannhaphoc
-    examples: |
-      - Khi nào nhập học tại CMC?
-      - Thời gian nhập học của trường là khi nào?
-      - Lịch nhập học tại trường như thế nào?
-      - Bao giờ thì trường bắt đầu học?
-      - Cho tôi biết thời gian nhập học
-      - lịch nhập học
-      - thời gian nhập học
-
-  - intent: giangvien
-    examples: |
-      - [giáo viên] của [cmc] có kinh nghiệm như thế nào?
-      - Kinh nghiệm của [giảng viên] [trường] là gì?
-      - giảng viên thế nào?
-      - Kinh nghiệm của [giảng viên] [trường]
-      - [giảng viên] [trường] có gì đặc biệt về kinh nghiệm?
-      - [giảng viên] [cmc] có bao nhiêu năm kinh nghiệm?
-      - Kinh nghiệm làm việc của [giảng viên] [trường] là gì?
-      - Cần bao nhiêu kinh nghiệm để làm [thầy] ở [trường] này?
-      - Kinh nghiệm [giáo viên] của [trường] ra sao?
-      - Kinh nghiệm của các [giảng viên] tại [cmc] là thế nào?
-      - Trình độ kinh nghiệm của [giảng viên] trong [trường] như thế nào??
-      - [thầy] trong [trường] có giỏi không?
-      - [cô] trong [trường] thế nào?
-      - [giảng viên] của đại học cmc có giỏi không?
-      - giảng viên
-      - giảng viên cmc thế nào
-
-  - intent: SoLuongSinhVien
-    examples: |
-      - [CMC] có bao nhiêu [học sinh]?
-      - Số lượng [sinh viên] của [trường] là bao nhiêu?
-      - [trường] hiện tại có bao nhiêu [sinh viên]?
-      - Số [học viên] của [trường] là bao nhiêu?
-      - [CMC] có tổng cộng bao nhiêu [sinh viên]?
-      - Có bao nhiêu [sv] đang học tại [trường]?
-      - số lương sinh viên
-      - số lượng sv
-
-  - intent: tentruong
-    examples: |
-      - cmc có nghĩa là gì?
-      - cmc viết tắt của gì?
-      - mục đích của cmc university?
-      - cmc nghĩa là gì?
-      - ý nghĩa của cmc?
-      - tại sao lại tên là cmc?
-      - tên trường
-
-  - intent: diemchuan
-    examples: |
-      - điểm chuẩn đại học cmc
-      - điểm chuẩn các ngành 
-      - điểm chuẩn để vào đại học cmc
-      - điểm chuẩn
-      - điểm chuẩn các năm
-      - xem điểm chuẩn
-
-  - intent: diemchuanNam2022
-    examples: |
-      - Điểm chuẩn năm 2022 là bao nhiêu?
-      - Năm 2022 điểm chuẩn bao nhiêu?
-      - Điểm chuẩn của năm 2022
-      - Cho tôi biết điểm chuẩn năm [2022](nam)
-      - Điểm chuẩn năm [2022](nam)
-      - năm 2022
-      - 2022
-      - năm kia
-      - điểm chuẩn năm 2022
-
-  - intent: diemchuanNam2023
-    examples: |
-      - Điểm chuẩn năm 2023 là bao nhiêu?
-      - Năm 2023 điểm chuẩn bao nhiêu?
-      - Điểm chuẩn của năm 2023
-      - Cho tôi biết điểm chuẩn năm [2023](nam)
-      - Điểm chuẩn năm [2023](nam)
-      - năm 2023
-      - 2023
-      - năm ngoái
-      - năm trước
-      - điểm chuẩn năm ngoái
-      - điểm chuẩn năm 2023
-      - điểm chuẩn của trường năm 2023
-
-  - intent: diemchuanNam2024
-    examples: |
-      - Điểm chuẩn năm 2024 là bao nhiêu?
-      - Năm 2024 điểm chuẩn bao nhiêu?
-      - Điểm chuẩn của năm 2024
-      - Cho tôi biết điểm chuẩn năm [2024](nam)
-      - Điểm chuẩn năm [2024](nam)
-      - năm 2024
-      - 2024
-      - năm nay
-      - điểm chuẩn năm nay
-      - điểm chuẩn của trường năm 2024
-      - điểm chuẩn năm 2024
-
-  - intent: cohoivieclam
-    examples: |
-      - Công việc sau khi ra [trường]
-      - Công việc
-      - [Việc làm](job) sau khi ra [trường]
-      - Cơ hội việc làm
-      - [Việc làm](job)
-      - Triển vọng nghề nghiệp
-      - [Việc làm](job) sau khi học xong
-      - [Việc làm](job) sau khi học xong ngành
-      - cơ hội  việc làm của trường ra sao?
-      - ra trường có thể làm ở đâu?
-      - có những cơ hội việc làm nào cho sinh viên?
-      - cơ hội việc làm
-
-  - intent: doitac
-    examples: |
-      - các đối tác của cmc
-      - cmc có những đối tác nào?
-      - đối tác
-      - đối tác của trường
-      - trường có kết nối đối tác không
-      - các đối tác
-      - có những đối tác nào 
-      - đối tác là những tập đoàn nào
-
-  - intent: chuyennganhcongnghe
-    examples: |
-      - cmc chuyên về công nghệ có những ngành gì?
-      - các ngành công nghệ
-      - thông tin các ngành công nghệ
-      - toàn bộ về công nghệ ở cmc
-      - có những ngành nào liên quan đến công nghệ
-      - toàn bộ các ngành liên quan đến công nghệ ở đại học CMC
-      - chuyên ngành công nghệ
-      - chuyên ngành công nghệ
-      - có những chuyên ngành công nghệ nào
-
-  - intent: NganhCNTT
-    examples: |
-      - Chương trình đào tạo của ngành [CNTT](major) có những [môn học](monhoc) nào?
-      - Ngành [CNTT](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
-      - [Môn học](monhoc) trong chương trình đào tạo của ngành [IT](major) là gì?
-      - Ngành [Công nghệ thông tin](major) học những [môn học](monhoc) nào?
-      - Ngành [Công nghệ thông tin](major) có những môn nào?
-      - Những [môn học](monhoc) trong chương trình của ngành [Công nghệ thông tin](major) là gì?
-      - Chương trình học của ngành [CNTT](major) có những [môn](monhoc) gì?
-      - Các [môn học](monhoc) trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
-      - chương trình đào tạo ngành [CNTT](major) có những [môn học](monhoc) nào
-      - chuyên ngành công nghệ thông tin 
-      - công nghệ thông tin
-      - ngành công nghệ thông tin
-      - mô tả ngành công nghệ thông tin
-
-  - intent: NganhKHMT
-    examples: |
-      - Chương trình đào tạo của ngành [KHMT](major) có những [môn học](monhoc) nào?
-      - Ngành [Khoa học máy tính](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
-      - [Môn học](monhoc) trong chương trình đào tạo của ngành [Khoa học máy tính](major) là gì?
-      - Ngành [Khoa học máy tính](major) học những [môn học](monhoc) nào?
-      - Ngành [Khoa học máy tính](major) có những môn nào?
-      - Những [môn học](monhoc) trong chương trình của ngành [KHMT](major) là gì?
-      - Chương trình học của ngành [KHMT](major) có những [môn](monhoc) gì?
-      - Các [môn học](monhoc) trong chương trình đào tạo ngành [Khoa học máy tính](major) là gì?
-      - chuyên ngành khoa học máy tính
-      - ngành khoa học máy tính
-      - khoa học máy tính tại cmc
-      - mô tả ngành khoa học máy tính
-
-  - intent: ViecLamNganhDTVT
-    examples: |
-      - học xong ngành [Điện tử viễn thông](major) thì làm gì
-      - [Việc làm](job) ngành [Điện tử viễn thông](major)
-      - Công việc cho ngành [Điện tử viễn thông](major)
-      - ngành [Điện tử viễn thông](major) ra làm gì?
-      - Ngành [Điện tử viễn thông](major) ra trường làm gì?
-      - học xong ngành [DTVT](major) thì làm gì
-      - [Việc làm](job) ngành [DTVT](major)
-      - Công việc cho ngành [DTVT](major)
-      - ngành [DTVT](major) ra làm gì?
-      - Ngành [DTVT](major) ra trường làm gì?
-
-  - intent: ViecLamNganhKHMT
-    examples: |
-      - học xong ngành [Khoa học máy tính](major) thì làm gì
-      - [Việc làm](job) ngành [Khoa học máy tính](major)
-      - Công việc cho ngành [khoa học máy tính](major)
-      - ngành [khoa học máy tính](major) ra làm gì?
-      - Ngành [khoa học máy tính](major) ra trường làm gì?
-      - học xong ngành [KHMT](major) thì làm gì
-      - [Việc làm](job) ngành [KHMT](major)
-      - Công việc cho ngành [KHMT](major)
-      - ngành [KHMT](major) ra làm gì?
-      - Ngành [KHMT](major) ra trường làm gì?
-
-  - intent: ViecLamNganhCNTT
-    examples: |
-      - học xong ngành [Công nghệ thông tin](major) thì làm gì
-      - [Việc làm](job) ngành [Công nghệ thông tin](major)
-      - Công việc cho ngành [Công nghệ thông tin](major)
-      - ngành [Công nghệ thông tin](major) ra làm gì?
-      - Ngành [Công nghệ thông tin](major) ra trường làm gì?
-      - học xong ngành [CNTT](major) thì làm gì
-      - [Việc làm](job) ngành [CNTT](major)
-      - Công việc cho ngành [IT](major)
-      - ngành [CNTT](major) ra làm gì?
-      - Ngành [IT](major) ra trường làm gì?
-
-  - intent: NganhDTVT
-    examples: |
-      - Chương trình đào tạo của ngành [DTVT](major) có những [môn học](monhoc) nào?
-      - Ngành [DTVT](major) bao gồm các [môn học](monhoc) gì trong chương trình đào tạo?
-      - [Môn học](monhoc) trong chương trình đào tạo của ngành [Điện tử viễn thông](major) là gì?
-      - Ngành [Điện tử viễn thông](major) học những [môn](monhoc) nào?
-      - Ngành [Điện tử viễn thông](major) có những môn nào?
-      - Những [môn học](monhoc) trong chương trình của ngành [DTVT](major) là gì?
-      - Chương trình học của ngành [Điện tử viễn thông](major) có những [môn](monhoc) gì?
-      - Các [môn học](monhoc) trong chương trình đào tạo ngành [Điện tử viễn thông](major) là gì?
-      - điện tử viễn thông
-      - chuyên ngành kỹ thuật điện tử viễn thông
-      - ngành điện tử viễn thông
-      - mô tả ngành điện tử viễn thông
-
-  - intent: NganhTKDH
-    examples: |
-      - ngành thiết kế đồ họa có những chuyên ngành gì?
-      - học thiết kế đồ họa có những ngành nào
-      - thiết kế đồ họa có chuyên ngành  gì 
-      - thiết kết đồ họa có những chuyên ngành nào
-      - tôi muốn biết thêm vè ngành thiết kế đồ họa
-      - thiết kế đồ họa học gì
-      - ngành thiết kế đồ họa có những chuyên ngành gì
-      - học thiết kế đồ họa có gì vui
-      - tôi muốn biết ngành thiết kế đồ họa của trường 
-      - mô tả ngành thiết kế đồ họa
-
-  - intent: NganhQTKD
-    examples: |
-      - ngành quản trị kinh doanh có những chuyên ngành gì?
-      - học quản trị kinh doanh có chuyên ngành nào
-      - các chuyên ngành của qtkd
-      - chuyên ngành của quản trị kinh doanh
-      - quản trị kinh doanh học gì
-      - học quản trị kinh doanh có hay không
-      - quản trị kinh doanh có chuyên ngành nào
-      - những chuyên ngành của quản trị kinh doanh
-      - tôi muốn biết về ngành quản trị kinh doanh
-      - thông tin về ngành quản trị kinh doanh
-      - mô tả ngành quản trị kinh doanh
-
-  - intent: NganhNN
-    examples: |
-      - cmc có ngành ngôn ngữ không?
-      - có những ngành ngôn ngữ nào ở cmc
-      - có những ngành ngôn ngữ nào 
-      - cmc đào tạo những ngành ngôn ngữ nào
-      - có những chuyên ngành ngôn ngữ nào
-      - chuyên ngành ngôn ngữ 
-      - ngôn ngữ
-      - trường có ngành ngôn ngữ nào
-      - những ngành ngôn  ngữ ở cmc
-      - tôi muốn biết các ngành ngôn ngữ ở trường 
-      - tôi muốn biết các ngành ngôn ngữ được dạy ở cmc
-
-  - intent: NgonNguHan
-    examples: |
-      - ngành ngôn ngữ hàn có gì ?
-      - ngôn ngữ hàn
-      - học ngôn ngữ hàn
-      - chuyên ngành ngôn ngữ hàn
-      - ngành ngôn ngữ hàn
-      - ngôn ngữ hàn có gì hay
-      - ngôn ngữ hàn là học về gì
-      - tôi muốn biết thêm về ngành ngôn ngữ hàn
-
-  - intent: NgonNguNhat
-    examples: |
-      - ngành ngôn ngữ nhật có gì?
-      - ngôn ngữ nhật
-      - ngành ngôn ngữ nhật
-      - học ngôn ngữ nhật 
-      - chuyên ngành ngôn  ngữ nhật
-      - ngôn ngữ nhật có gì hay
-      - ngôn ngữ nhật là học về gì
-      - tôi muốn biết về ngành ngôn ngữ nhật
-
-  - intent: thuvien
-    examples: |
-      - cmc có thư viện không ?
-      - thư viện cmc có gì?
-      - thư viện
-      - thư viện có sách gì
-      - thư viện có xịn không
-      - toàn bộ về thư viện
-      - thư viện ở cmc như thế nào 
-      - trường có thư viện không
-      - mô tả thư viện
-      - tôi muốn biết thêm về thư viện
-
-  - intent: phonghoc
-    examples: |
-      - cmc có phòng học như nào
-      - hệ thống phòng học
-      - thông tin về phòng học
-      - toàn bộ về phòng học ở cmc
-      - phòng học ở cmc có gì
-      - phòng học
-      - phòng học thế nào
-      - các phòng học có gì 
-      - phòng học có xịn không
-      - tôi muốn biết thêm thông tin về phòng học
-      - phòng học như thế nào 
-      - vậy còn phòng học thì sao
-      - mô tả phòng học
-
-  - intent: phongLab
-    examples: |
-      - cmc có phòng lab không
-      - phòng lab có xịn không
-      - phòng lab cmc có gì
-      - trường có phòng lab không 
-      - phòng lab
-      - phòng lab như thế nào?
-      - tôi muốn biết thêm về phòng lab
-      - thông tin phòng lab
-      - mô tả phòng lab
-      - tôi muốn biết thêm về các phòng Lab
-
-  - intent: cauLacBo
-    examples: |
-      - [cmc] có những [CLB] sinh viên nào?
-      - Các [câu lạc bộ] sinh viên tại [trường] là gì?
-      - Danh sách các [câu lạc bộ] sinh viên
-      - [câu lạc bộ] sinh viên của [trường]
-      - Những [câu lạc bộ] sinh viên tại [cmc]
-      - [CLB] nào có ở [trường]?
-      - nhiều [câu lạc bộ] không?
-      - Có các [câu lạc bộ] sinh viên nào tại [trường]?
-      - [cmc] có [câu lạc bộ] nào cho sinh viên không?
-      - Sinh viên có thể tham gia các [câu lạc bộ] nào?
-      - Các hoạt động [CLB] của sinh viên là gì?
-      - Làm cách nào để tham gia [câu lạc bộ] của [trường]?
-      - [câu lạc bộ]
-      - có những câu lạc bộ nào
-      - các câu lạc bộ
-      - tôi muốn biết về các câu lạc bộ của trường
-      - sinh viên có câu lạc bộ nào
-
-  - intent: clb_lapTrinh
-    examples: |
-      - cmc có câu lạc bộ lập trình không
-      - thông tin về câu lạc bộ lập trình
-      - câu lạc bộlập trình
-      - câu lạc bộ lập trình
-      - lập trình 
-      - câu lạc bộ lập trình ở cmc có gì
-      - có câu lạc bộ cho sinh viên công nghệ không 
-      - sinh viên công nghệ có câu lạc bộ 
-      - trường có câu lạc bộ gì cho sinh viên công nghệ
-      - thêm thông tin về câu lạc bộ lập trình
-      - tôi muốn biết thêm thông tin về câu lạc bộ lập trình
-
-  - intent: clb_caulong
-    examples: |
-      - cmc có câu lạc bộ cầu lông không?
-      - cmc có sân cầu lông không
-      - thông tin về câu lạc bộ cầu lông
-      - toàn bộ về câu lạc bộ cầu lông
-      - câu lạc bộ cầu lông
-      - cầu lông
-      - tôi muốn biết thêm thông tin về câu lạc bộ cầu lông
-
-  - intent: clb_bongda
-    examples: |
-      - cmc có câu lạc bóng đá không?
-      - cmc có sân bóng không
-      - thông tin về câu lạc bộ bóng đá
-      - toàn bộ về câu lạc bộ bóng đá
-      - câu lạc bộ bóng đá
-      - bóng đá
-      - tôi muốn biết thêm thông tin về câu lạc bộ bóng đá
-
-  - intent: clb_bongro
-    examples: |
-      - cmc có câu lạc bộ bóng rổ không?
-      - cmc có sân bóng rổ không
-      - thông tin về câu lạc bộ bóng rổ
-      - toàn bộ về câu lạc bộ bóng rổ
-      - câu lạc bộ bóng rổ
-      - bóng rổ
-      - tôi muốn biết thêm thông tin về câu lạc bộ bóng rổ
-
-  - intent: clb_bongchuyen
-    examples: |
-      - cmc có câu lạc bộ bóng chuyền không?
-      - cmc có sân bóng chuyền không
-      - thông tin về câu lạc bộ bóng chuyền
-      - toàn bộ về câu lạc bộ bóng chuyền
-      - câu lạc bộ bóng chuyền
-      - bóng chuyền
-      - tôi muốn biết thêm thông tin về câu lạc bộ bóng chuyền
-
-  - intent: clb_tiengAnh
-    examples: |
-      - cmc có câu lạc bộ tiếng anh không
-      - thông tin về câu lạc bộ tiếng anh
-      - câu lạc bộ tiếng anh
-      - câu lạc bộ english
-      - tiếng anh
-      - tôi muốn biết thêm thông tin về câu lạc bộ tiếng anh
-
-  - intent: clb_tiengHan
-    examples: |
-      - cmc có câu lạc bộ tiếng hàn không
-      - thông tin về câu lạc bộ tiếng hàn
-      - câu lạc bộ tiếng hàn
-      - câu lạc bộ korean
-      - tiếng hàn
-      - có câu lạc bộ cho ngôn ngữ hàn không 
-      - có câu lạc bộ tiếng hàn không
-      - tôi muốn biết thêm thông tin về câu lạc bộ tiếng hàn
-
-  - intent: clb_tiengNhat
-    examples: |
-      - cmc có câu lạc bộ tiếng nhật không
-      - thông tin về câu lạc bộ tiếng nhật
-      - câu lạc bộ tiếng nhật
-      - câu lạc bộ japanese
-      - tiếng nhật
-      - có câu lạc bộ tiếng nhật không
-      - ngành ngôn ngữ Nhật có câu lạc bộ không
-      - tôi muốn biết thêm thông tin về câu lạc bộ tiếng nhật
-
-  - intent: clb_nghethuat
-    examples: |
-      - cmc có câu lạc bộ nghệ thuật không
-      - thông tin về câu lạc bộ nghệ thuật
-      - câu lạc bộ nghệ thuật
-      - nghệ thuật
-      - nhảy
-      - có câu lạc bộ nghệ thuật không 
-      - có câu lạc bộ nghệ thuật nào không
-      - tôi muốn biết thêm thông tin về câu lạc bộ nghệ thuật
-
-  - intent: quanhaphoc
-    examples: |
-      - nhập học có gì?
-      - quà nhập học của cmc là gì
-      - khi đi nhập học được gì?
-      - quà nhập học
-      - đi nhập học ở cmc có quà gì không
-      - đi nhập học có quà gì
-      - quà nhập học có gì
-
-  - intent: diemrenluyen
-    examples: |
-      - cmc tính điểm rèn luyện như thế nào 
-      - cách tính điểm rèn luyện
-      - thêm điểm rèn luyện
-      - điểm rèn luyện
-      - tính điểm rèn luyện
-
-  - intent: kytucxa
-    examples: |
-      - cho em biết thông tin về ký túc xá
-      - ký túc xá đại học cmc
-      - CMC có ký túc xá không
-      - ký túc xá ở CMC như thế nào
-      - ký túc xá
-      - trường mình có ký túc xá không
-
-  - intent: hotrohoctap
-    examples: |
-      - cmc có hỗ trợ học tập cho các sinh viên không?
-      - hỗ trợ học tập
-      - học kém có được hỗ trợ học tập không
-      - trường có chính sách hỗ trợ học tập không
-
-  - intent: hoclai
-    examples: |
-      - thi trượt học lại thế nào 
-      - ở cmc cho học lại thế nào
-      - cách thức học lại ở cmc
-      - học lại
-      - trượt môn học lại
-      - chính sách học lại
-      - chi phí học lại
-      - học lại tốn bao nhiêu
-
-  - intent: noiquy
-    examples: |
-      - có những nội quy gì
-      - nội quy
-      - nội quy cmc
-      - cmc có nội quy học tập gì
-      - những nội quy gì có khi đi học ở cmc
-      - những nội quy quy định
-      - các nội quy cần tuân thủ
-
-  - intent: nlu_fallback
-    examples: |
-      - Tôi không chắc
-      - Bạn nói gì cơ?
-      - Tôi không hiểu
-      - Câu hỏi này hơi lạ
-      - Không có câu trả lời nào đúng
-      - haha
-      - tôi yêu bạn
-      - bạn bị điên à
-      - có bị hâm không
-      - ơ
-      - ô
-
-  - synonym: sinh viên
-    examples: |
-      - học sinh
-      - học viên
-      - sv
-  - synonym: câu lạc bộ
-    examples: |
-      - CLB
-      - clb
-
-  - synonym: giảng viên
-    examples: |
-      - giáo viên
-      - thầy
-      - cô
-      - thầy giáo
-      - cô giáo
-
-  - synonym: trường
-    examples: |
-      - CMC
-      - hv
-
-  - synonym: Công nghệ thông tin
-    examples: |
-      - IT
-      - CNTT
-  - synonym: Khoa học máy tính
-    examples: |
-      - KHMT
-
-  - synonym: Điện tử viễn thông
-    examples: |
-      - DTVT
-
-  - synonym: "2024"
-    examples: |
-      - năm 2024
-      - năm nay
-
-  - synonym: "2023"
-    examples: |
-      - năm 2023
-      - năm ngoái
-      - năm trước
-
-  - synonym: "2022"
-    examples: |
-      - năm 2022
-      - năm kia
-
-  - synonym: "THPT"
-    examples: |
-      - trung học phổ thông
-      - Trung Học Phổ Thông
+- intent: chaohoi
+  examples: |
+    - admin
+    - chào local
+    - chào admin
+    - Thưa thầy
+    - hi thầy
+    - hi cô
+    - hi bạn
+    - hi ad
+    - xin chào
+    - xin chao
+    - chào
+    - chào ad
+    - chào bot
+    - hello
+    - hi
+    - alo
+- intent: tambiet
+  examples: |
+    - tạm biệt
+    - oke rồi,tạm biệt bạn
+    - goodbye
+    - bai cưng
+    - bye bye
+    - pp
+    - bai bai
+    - bai
+    - bye
+    - bái bai
+    - tạm biệt nhennn
+    - bye em
+    - bye bot
+- intent: cauhoithuonggap
+  examples: |
+    - chủ đề nào được quan tâm nhất
+    - người ta hay hỏi gì về cmc
+    - dùng chat bot hỏi gì nhiều nhất
+    - chủ đề quan tâm nhất ở cmc
+    - những câu hỏi thường gặp
+    - những câu hỏi nào hay được hỏi nhiều nhất
+- intent: thongtintruong
+  examples: |
+    - thông tin đại học cmc
+    - thông tin trường đại học cmc
+    - thông tin về [cmc]
+    - thông tin về đại học
+    - thông tin về CMC
+    - [CMC] có những đặc điểm gì
+    - lịch sử của [trường]
+    - đại học CMC  là gì
+    - school infomation
+    - info
+    - CMC là gì
+    - CMC có những gì
+    - cho tôi biết thông tin về đại học cmc
+    - tôi muốn biết thông tin của đại học cmc
+    - thông tin chung
+    - những thông tin về đại học CMC
+    - thông tin của trường
+- intent: tuyensinh
+  examples: |
+    - Thầy ơi, cho em hỏi thông tin tuyển sinh các năm trước
+    - Cô ơi , cho em hỏi thông tin truyển sinh các năm trước
+    - Chào thầy, em hỏi thông tin tuyển sinh các năm trước
+    - Chào cô, cho em hỏi thông tin tuyển sinh các năm trước
+    - Cô có thể cho em biết thông tin tuyển sinh các năm trước
+    - chào admin cho em hỏi thông tin tuyển sinh các năm trước
+    - chào local cho em hỏi thông tin tuyển sinh các năm trước
+    - admin có thể cho em biết thông tin tuyển sinh các năm trước
+    - chào bot cho tôi hỏi thông tin tuyển sinh các năm trước
+    - thông tin tuyển sinh các năm
+    - thông tin tuyển sinh các năm trước
+    - thông tin tuyển sinh của đại học cmc
+    - tuyển sinh
+    - có những hình thức tuyển sinh nào
+    - trường tuyển sinh bao nhiêu sinh viên
+- intent: xettuyendiemthiTHPT
+  examples: |
+    - phương thức điểm thi tốt nghiệp trung học phổ thông
+    - phương thức điểm thi tốt nghiệp
+    - điểm thi
+    - thpt
+    - điểm thi tốt nghiệp
+    - tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp
+    - phương thức xét điểm thi tốt nghiệp trung học phổ thông
+    - điều kiện xét tuyển điểm thi THPT
+    - các điều kiện để xét tuyển theo điểm thi THPT
+    - các điều kiện cần để xét tuyển theo điểm thi THPT
+    - các điều kiện cần để có thể xét tuyển theo điểm thi THPT
+    - điều kiện để được xét tuyển theo điểm thi THPT
+    - xét tuyển theo điểm
+    - xét theo điểm thi
+    - xét theo điểm thpt thì sao
+    - hình thức xét tuyển theo điểm thi
+    - điểm thi thpt
+    - phương thức xét tuyển theo điểm thi
+    - phương thức điểm thi thì sao
+- intent: xettuyenhocba
+  examples: |
+    - xét học bạ
+    - xét tuyển theo phương thức học bạ
+    - học bạ
+    - trường có xét học bạ không
+    - [CMC] có xét học bạ không
+    - [trường] có xét học bạ không
+    - xét học bạ không
+    - điều kiện xét học bạ
+    - các điều kiện để xét tuyển theo phương thức học bạ
+    - các điều kiện cần để xét học bạ
+    - các điều kiện cần để xét tuyển theo phương thức học bạ
+    - điều kiện để được xét tuyển theo phương thức học bạ
+    - hình thức xét tuyển theo học bạ
+    - xét tuyển theo học bạ
+    - xét theo học bạ
+    - phương thức học bạ thì sao
+- intent: hocphi
+  examples: |
+    - học phí của [cmc] là bao nhiêu
+    - học phí tại [cmc] như thế nào
+    - mức học phí
+    - học phí
+    - học phí hiện tại
+    - học phí năm nay như thế nào
+    - học phí của [trường]
+    - học phí của [trường] mình
+    - học phí của [cmc] mình như thế nào
+    - học phí 1 năm là bao nhiêu
+    - học phí 1 năm
+    - bao nhiêu tiền 1 tín
+    - học phí 1 tín
+    - học phí 1 tín là bao nhiêu
+    - học phí bao nhiêu tiền 1 kì
+    - học phí 1 kì
+    - học phí 1 kì là bao nhiêu
+    - bao nhiêu tiền 1 kì
+    - học phí bao nhiêu tiền 1 học kì
+    - học phí 1 học kì
+    - học phí của cmc
+    - cmc có học phí thế nào
+- intent: hocbong
+  examples: |
+    - cho em hỏi học bổng của [trường] mình như thế nào
+    - thưa thầy, cho em hỏi học bổng của [trường] mình được trao như thế nào
+    - học bổng
+    - Thông tin về học bổng
+    - Chính sách về học bổng
+    - học bổng của [trường]
+    - học bổng của [trường] mình
+    - làm sao để có học bổng?
+    - học bổng của [trường] như thế nào?
+    - học bổng của [trường] mình như thế nào?
+    - làm sao để có học bổng của [trường] mình?
+- intent: duytrihocbong
+  examples: |
+    - làm sao để duy trì học bổng
+    - duy trì học bổng
+    - giữ học bổng làm sao
+    - điều kiện để có học bổng cả 3 năm
+    - điều kiện giữ học bổng
+    - duy trì học bổng có khó không
+    - làm sao để giữ học bổng
+    - điều kiện duy trì được học bổng tại trường
+- intent: thongtinlienhe
+  examples: |
+    - Địa chỉ của Đại học CMC là gì?
+    - Trường CMC nằm ở đâu?
+    - Làm sao để liên hệ với Đại học CMC?
+    - Cho tôi xin thông tin liên hệ của trường CMC
+    - Đại học CMC nằm ở địa chỉ nào?
+    - thông tin liên hệ
+    - địa chỉ
+    - CMC ở đâu
+- intent: cosovatchat
+  examples: |
+    - Cơ sở vật chất của Đại học CMC như thế nào?
+    - Trường có thư viện không?
+    - Trường có ký túc xá không?
+    - Đại học CMC có những tiện nghi gì?
+    - Cơ sở vật chất của trường có hiện đại không?
+    - Cơ sở vật chất
+- intent: camon
+  examples: |
+    - cảm ơn
+    - cảm ơn bạn
+    - tôi cảm ơn
+    - rất cảm ơn
+    - cảm ơn rất nhiều
+    - cảm ơn nhé
+- intent: hoi_bot
+  examples: |
+    - Bạn là ai?
+    - Giới thiệu về bạn
+    - Chatbot này là gì?
+    - Cho tôi biết về bạn
+    - Bạn có thể làm gì?
+    - Giới thiệu con chatbot này
+    - Bạn là chatbot đúng không?
+    - Bạn có thể giúp gì?
+    - Chatbot này có thể làm gì?
+    - Chatbot này hoạt động như thế nào?
+    - khả năng của bot
+    - bot có khả năng gì
+    - hãy nêu chức năng của bot
+    - bạn có thể làm gì
+- intent: thoigiannhaphoc
+  examples: |
+    - Khi nào nhập học tại CMC?
+    - Thời gian nhập học của trường là khi nào?
+    - Lịch nhập học tại trường như thế nào?
+    - Bao giờ thì trường bắt đầu học?
+    - Cho tôi biết thời gian nhập học
+    - lịch nhập học
+    - thời gian nhập học
+- intent: giangvien
+  examples: |
+    - [giáo viên] của [cmc] có kinh nghiệm như thế nào?
+    - Kinh nghiệm của [giảng viên] [trường] là gì?
+    - giảng viên thế nào?
+    - Kinh nghiệm của [giảng viên] [trường]
+    - [giảng viên] [trường] có gì đặc biệt về kinh nghiệm?
+    - [giảng viên] [cmc] có bao nhiêu năm kinh nghiệm?
+    - Kinh nghiệm làm việc của [giảng viên] [trường] là gì?
+    - Cần bao nhiêu kinh nghiệm để làm [thầy] ở [trường] này?
+    - Kinh nghiệm [giáo viên] của [trường] ra sao?
+    - Kinh nghiệm của các [giảng viên] tại [cmc] là thế nào?
+    - Trình độ kinh nghiệm của [giảng viên] trong [trường] như thế nào??
+    - [thầy] trong [trường] có giỏi không?
+    - [cô] trong [trường] thế nào?
+    - [giảng viên] của đại học cmc có giỏi không?
+    - giảng viên
+    - giảng viên cmc thế nào
+- intent: SoLuongSinhVien
+  examples: |
+    - [CMC] có bao nhiêu [học sinh]?
+    - Số lượng [sinh viên] của [trường] là bao nhiêu?
+    - [trường] hiện tại có bao nhiêu [sinh viên]?
+    - Số [học viên] của [trường] là bao nhiêu?
+    - [CMC] có tổng cộng bao nhiêu [sinh viên]?
+    - Có bao nhiêu [sv] đang học tại [trường]?
+    - số lương sinh viên
+    - số lượng sv
+- intent: tentruong
+  examples: |
+    - cmc có nghĩa là gì?
+    - cmc viết tắt của gì?
+    - mục đích của cmc university?
+    - cmc nghĩa là gì?
+    - ý nghĩa của cmc?
+    - tại sao lại tên là cmc?
+    - tên trường
+- intent: diemchuan
+  examples: |
+    - điểm chuẩn đại học cmc
+    - điểm chuẩn các ngành
+    - điểm chuẩn để vào đại học cmc
+    - điểm chuẩn
+    - điểm chuẩn các năm
+    - xem điểm chuẩn
+    - Điểm chuẩn các năm là bao nhiêu?
+    - Cho tôi biết điểm chuẩn các năm
+    - Điểm chuẩn của trường các năm gần đây?
+    - Điểm chuẩn qua các năm thế nào?
+    - Có thể cho biết điểm chuẩn các năm được không?
+    - tôi muốn biết điểm chuẩn đầu vào của trường
+    - điểm chuẩn đầu vào
+    - điểm chuẩn của trường
+- intent: diemchuanNam2022
+  examples: |
+    - Điểm chuẩn năm 2022 là bao nhiêu?
+    - Năm 2022 điểm chuẩn bao nhiêu?
+    - Điểm chuẩn của năm 2022
+    - Cho tôi biết điểm chuẩn năm [2022](nam)
+    - Điểm chuẩn năm [2022](nam)
+    - năm 2022
+    - 2022
+    - năm kia
+    - điểm chuẩn năm 2022
+- intent: diemchuanNam2023
+  examples: |
+    - Điểm chuẩn năm 2023 là bao nhiêu?
+    - Năm 2023 điểm chuẩn bao nhiêu?
+    - Điểm chuẩn của năm 2023
+    - Cho tôi biết điểm chuẩn năm [2023](nam)
+    - Điểm chuẩn năm [2023](nam)
+    - năm 2023
+    - 2023
+    - năm ngoái
+    - năm trước
+    - điểm chuẩn năm ngoái
+    - điểm chuẩn năm 2023
+    - điểm chuẩn của trường năm 2023
+- intent: diemchuanNam2024
+  examples: |
+    - Điểm chuẩn năm 2024 là bao nhiêu?
+    - Năm 2024 điểm chuẩn bao nhiêu?
+    - Điểm chuẩn của năm 2024
+    - Cho tôi biết điểm chuẩn năm [2024](nam)
+    - Điểm chuẩn năm [2024](nam)
+    - năm 2024
+    - 2024
+    - năm nay
+    - điểm chuẩn năm nay
+    - điểm chuẩn của trường năm 2024
+    - điểm chuẩn năm 2024
+- intent: cohoivieclam
+  examples: |
+    - Công việc sau khi ra [trường]
+    - Công việc
+    - [Việc làm](job) sau khi ra [trường]
+    - Cơ hội việc làm
+    - [Việc làm](job)
+    - Triển vọng nghề nghiệp
+    - [Việc làm](job) sau khi học xong
+    - [Việc làm](job) sau khi học xong ngành
+    - cơ hội  việc làm của trường ra sao?
+    - ra trường có thể làm ở đâu?
+    - có những cơ hội việc làm nào cho sinh viên?
+    - cơ hội việc làm
+- intent: doitac
+  examples: |
+    - các đối tác của cmc
+    - cmc có những đối tác nào?
+    - đối tác
+    - đối tác của trường
+    - trường có kết nối đối tác không
+    - các đối tác
+    - có những đối tác nào
+    - đối tác là những tập đoàn nào
+    - tôi muốn biết thông tin các đối tác của trường
+    - trường có những đối tác nàoo
+- intent: chuongtrinhdaotao
+  examples: |
+    - [trường] đào tạo những ngành gì
+    - thông tin ngành
+    - ngành học
+    - thông tin ngành đào tạo
+    - ngành đào tạo
+    - ngành
+    - những ngành [cmc] đào tạo
+    - [cmc] dạy những ngành gì
+    - majors
+    - major
+    - chương trình đào tạo
+    - trường đào tạo những ngành gì
+    - có ngành nào được đào tạo ở trường
+    - cmc có chương trình đào tạo như nào
+    - các ngành hiện có ở cmc
+    - các ngành hiện có ở trường
+    - tôi muốn biết các ngành được đào tạo ở trường
+    - tôi muốn biết đại học CMC đào tạo những ngành nào
+    - tôi muốn biết thêm thông tin về chương trình đào tạo của trường
+- intent: NganhCNTT
+  examples: |
+    - Chương trình đào tạo của ngành [CNTT](major) có những [môn học](monhoc) nào?
+    - Ngành [CNTT](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [IT](major) là gì?
+    - Ngành [Công nghệ thông tin](major) học những [môn học](monhoc) nào?
+    - Ngành [Công nghệ thông tin](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [Công nghệ thông tin](major) là gì?
+    - Chương trình học của ngành [CNTT](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [Công nghệ thông tin](major) là gì?
+    - chương trình đào tạo ngành [CNTT](major) có những [môn học](monhoc) nào
+    - chuyên ngành công nghệ thông tin
+    - công nghệ thông tin
+    - ngành công nghệ thông tin
+    - mô tả ngành công nghệ thông tin
+- intent: KyThuatPhanMem
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành kỹ thuật phần mềm
+    - kỹ thuật phần mềm học gì
+    - kỹ thuật phần mềm có gì
+    - thông tin của chuyên ngành kỹ thuật phần mềm
+    - học phần kỹ  thuật phần mềm
+    - Kỹ thuật phần mềm
+    - thông tin cho kỹ thuật phần mềm
+- intent: KyThuatMayTinh
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành kỹ thuật máy tính
+    - kỹ thuật máy tính học gì
+    - kỹ thuật máy tính có gì
+    - thông tin của chuyên ngành kỹ thuật máy tính
+    - học phần kỹ  thuật máy tính
+    - Kỹ thuật máy tính
+    - thông tin cho kỹ thuật máy tính
+    - Kỹ thuật máy tính thì sao
+    - thế còn ký thuật máy tính
+- intent: SoSanh
+  examples: |
+    - so sánh hai ngành kỹ thuật với nhau
+    - hai chuyên ngành kỹ thuật có gì khác nhau
+    - kỹ thuật máy tính và kỹ thuật phần mềm có gì khác nhau
+    - khác nhau giữa hai chuyên ngành kỹ thuật phần mềm và kỹ thuật máy tính
+    - so sánh hai chuyên ngành kỹ thuật
+    - kỹ thuật máy tính và kỹ thuật máy tính khác nhau gì
+    - so sánh
+    - 
+- intent: AnToanThongTin
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành an toàn thông tin
+    - An toàn thông tin học gì
+    - An toàn thông tin có gì
+    - thông tin của chuyên ngành an toàn thông tin
+    - học phần an toàn thông tin
+    - thế còn an toàn thông tin
+    - thông tin cho an toàn thông tin
+    - An toàn thông tin
+    - ATTT
+- intent: DienToanDamMay
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành Điện toán đám mây
+    - Điện toán đám mây  học gì
+    - Điện toán đám mây có gì
+    - thông tin của chuyên ngành điện toán đám mây
+    - học phần điện toán đám mây
+    - Thế còn điện toán đám mây
+    - thông tin cho điện toán đám mây
+    - Điện toán đám mây
+    - điện toán đám mây
+- intent: ViecLamNganhCNTT
+  examples: |
+    - học xong ngành [Công nghệ thông tin](major) thì làm gì
+    - [Việc làm](job) ngành [Công nghệ thông tin](major)
+    - Công việc cho ngành [Công nghệ thông tin](major)
+    - ngành [Công nghệ thông tin](major) ra làm gì?
+    - Ngành [Công nghệ thông tin](major) ra trường làm gì?
+    - học xong ngành [CNTT](major) thì làm gì
+    - [Việc làm](job) ngành [CNTT](major)
+    - Công việc cho ngành [IT](major)
+    - ngành [CNTT](major) ra làm gì?
+    - Ngành [IT](major) ra trường làm gì?
+- intent: NganhKHMT
+  examples: |
+    - Chương trình đào tạo của ngành [KHMT](major) có những [môn học](monhoc) nào?
+    - Ngành [Khoa học máy tính](major) bao gồm các [môn](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [Khoa học máy tính](major) là gì?
+    - Ngành [Khoa học máy tính](major) học những [môn học](monhoc) nào?
+    - Ngành [Khoa học máy tính](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [KHMT](major) là gì?
+    - Chương trình học của ngành [KHMT](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [Khoa học máy tính](major) là gì?
+    - chuyên ngành khoa học máy tính
+    - ngành khoa học máy tính
+    - khoa học máy tính tại cmc
+    - mô tả ngành khoa học máy tính
+- intent: PhatTrienPhanMem
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành phát triển phần mềm
+    - phát triển phần mềm học gì
+    - phát triển phần mềm  có gì
+    - thông tin của chuyên ngành phát triển phần mềm
+    - học phần phát triển phần mềm
+    - Thế còn phát triển phần mềm
+    - thông tin cho phát triển phần mềm
+    - Phát triển phần mềm
+    - phát triển phần mềm
+- intent: TriTueNhanTao&BigData
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành TRí tuệ nhân tạo và Bigdata
+    - trí tuệ nhân tạo và dữ liệu lớn(bigdata)  học gì
+    - trí tuệ nhân tạo có gì
+    - thông tin của chuyên ngành trí tuệ nhân tạo và bigdata
+    - học phần trí tuệ nhân tạo và dữ liệu lớn
+    - Thế còn trí tuệ nhân tạo và bigdata
+    - thông tin cho trí tuệ nhân tạo và dữ liệu lớn
+    - Trí tuệ nhân tạo và bigdata
+    - trí tuệ nhân tạo và dữ liệu lớn
+- intent: HeThongThongTin
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành hệ thống thông tin
+    - Hệ thống thông tin học gì
+    - Hệ thống thông tin có gì
+    - thông tin của chuyên ngành hệ thống thông tin
+    - học phần hệ thống thông tin
+    - Thế còn hệ thống thông tin
+    - thông tin cho hệ thống thông tin
+    - Hệ thống thông tin
+    - hệ thống thông tin
+- intent: ViecLamNganhKHMT
+  examples: |
+    - học xong ngành [Khoa học máy tính](major) thì làm gì
+    - [Việc làm](job) ngành [Khoa học máy tính](major)
+    - Công việc cho ngành [khoa học máy tính](major)
+    - ngành [khoa học máy tính](major) ra làm gì?
+    - Ngành [khoa học máy tính](major) ra trường làm gì?
+    - học xong ngành [KHMT](major) thì làm gì
+    - [Việc làm](job) ngành [KHMT](major)
+    - Công việc cho ngành [KHMT](major)
+    - ngành [KHMT](major) ra làm gì?
+    - Ngành [KHMT](major) ra trường làm gì?
+    - học xong khoa học máy tính ra làm gì?
+- intent: NganhDTVT
+  examples: |
+    - Chương trình đào tạo của ngành [DTVT](major) có những [môn học](monhoc) nào?
+    - Ngành [DTVT](major) bao gồm các [môn học](monhoc) gì trong chương trình đào tạo?
+    - [Môn học](monhoc) trong chương trình đào tạo của ngành [Điện tử viễn thông](major) là gì?
+    - Ngành [Điện tử viễn thông](major) học những [môn](monhoc) nào?
+    - Ngành [Điện tử viễn thông](major) có những môn nào?
+    - Những [môn học](monhoc) trong chương trình của ngành [DTVT](major) là gì?
+    - Chương trình học của ngành [Điện tử viễn thông](major) có những [môn](monhoc) gì?
+    - Các [môn học](monhoc) trong chương trình đào tạo ngành [Điện tử viễn thông](major) là gì?
+    - điện tử viễn thông
+    - chuyên ngành kỹ thuật điện tử viễn thông
+    - ngành điện tử viễn thông
+    - mô tả ngành điện tử viễn thông
+- intent: ThietKeViMachBanDan
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành thiết kế vi mạch bán dẫn
+    - thiết kế vi mạch bán dẫn học gì
+    - thiết kế vi mạch bán dẫn có gì
+    - thông tin của chuyên ngành thiết kế vi mạch bán dẫn
+    - học phần thiết kế vi mạch bán dẫn
+    - Thế còn thiết kế vi mạch bán dẫn
+    - thông tin cho thiết kế vi mạch bán dẫn
+    - thiết kế vi mạch bán dẫn
+    - Thiết kế vi mạch bán dẫn
+    - IC design
+    - mạch IC
+    - thiết kế mạch IC
+- intent: HeThongNhung&IOT
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành Hệ thống nhúng và iot
+    - Hệ thống nhúng và iot học gì
+    - Hệ thống nhúng và iot có gì
+    - thông tin của chuyên ngành Hệ thống nhúng và iot
+    - học phần Hệ thống nhúng và iot
+    - Thế còn Hệ thống nhúng và iot
+    - thông tin cho Hệ thống nhúng và iot
+    - Hệ thống nhúng và iot
+    - hệ thống nhúng và iot
+    - iot
+    - nhúng
+    - embedded
+    - nhúng và iot
+- intent: CongNgheMang&TruyenThongTienTien
+  examples: |
+    - Tôi muốn biết thêm thông tin về chuyên ngành Công nghệ mạng và truyền thông tiên tiến
+    - Công nghệ mạng và truyền thông tiên tiến học gì
+    - Công nghệ mạng và truyền thông tiên tiến có gì
+    - thông tin của chuyên ngành Công nghệ mạng và truyền thông tiên tiến
+    - học phần Công nghệ mạng và truyền thông tiên tiến
+    - Thế còn Công nghệ mạng và truyền thông tiên tiến
+    - thông tin cho Công nghệ mạng và truyền thông tiên tiến
+    - Công nghệ mạng và truyền thông tiên tiến
+    - Công nghệ mạng
+    - truyền thông tiên tiến
+    - ngành công nghệ mạng và truyền thông tiên tiến
+- intent: ViecLamNganhDTVT
+  examples: |
+    - học xong ngành [Điện tử viễn thông](major) thì làm gì
+    - [Việc làm](job) ngành [Điện tử viễn thông](major)
+    - Công việc cho ngành [Điện tử viễn thông](major)
+    - ngành [Điện tử viễn thông](major) ra làm gì?
+    - Ngành [Điện tử viễn thông](major) ra trường làm gì?
+    - học xong ngành [DTVT](major) thì làm gì
+    - [Việc làm](job) ngành [DTVT](major)
+    - Công việc cho ngành [DTVT](major)
+    - ngành [DTVT](major) ra làm gì?
+    - Ngành [DTVT](major) ra trường làm gì?
+- intent: NganhTKDH
+  examples: |
+    - ngành thiết kế đồ họa có những chuyên ngành gì?
+    - học thiết kế đồ họa có những ngành nào
+    - thiết kế đồ họa có chuyên ngành  gì
+    - thiết kết đồ họa có những chuyên ngành nào
+    - tôi muốn biết thêm vè ngành thiết kế đồ họa
+    - thiết kế đồ họa học gì
+    - ngành thiết kế đồ họa có những chuyên ngành gì
+    - học thiết kế đồ họa có gì vui
+    - tôi muốn biết ngành thiết kế đồ họa của trường
+    - mô tả ngành thiết kế đồ họa
+- intent: NganhQTKD
+  examples: |
+    - ngành quản trị kinh doanh có những chuyên ngành gì?
+    - học quản trị kinh doanh có chuyên ngành nào
+    - các chuyên ngành của qtkd
+    - chuyên ngành của quản trị kinh doanh
+    - quản trị kinh doanh học gì
+    - học quản trị kinh doanh có hay không
+    - quản trị kinh doanh có chuyên ngành nào
+    - những chuyên ngành của quản trị kinh doanh
+    - tôi muốn biết về ngành quản trị kinh doanh
+    - thông tin về ngành quản trị kinh doanh
+    - mô tả ngành quản trị kinh doanh
+- intent: NgonNguHan
+  examples: |
+    - ngành ngôn ngữ hàn có gì ?
+    - ngôn ngữ hàn
+    - học ngôn ngữ hàn
+    - chuyên ngành ngôn ngữ hàn
+    - ngành ngôn ngữ hàn
+    - ngôn ngữ hàn có gì hay
+    - ngôn ngữ hàn là học về gì
+    - tôi muốn biết thêm về ngành ngôn ngữ hàn
+- intent: NgonNguNhat
+  examples: |
+    - ngành ngôn ngữ nhật có gì?
+    - ngôn ngữ nhật
+    - ngành ngôn ngữ nhật
+    - học ngôn ngữ nhật
+    - chuyên ngành ngôn  ngữ nhật
+    - ngôn ngữ nhật có gì hay
+    - ngôn ngữ nhật là học về gì
+    - tôi muốn biết về ngành ngôn ngữ nhật
+- intent: thuvien
+  examples: |
+    - cmc có thư viện không ?
+    - thư viện cmc có gì?
+    - thư viện
+    - thư viện có sách gì
+    - thư viện có xịn không
+    - toàn bộ về thư viện
+    - thư viện ở cmc như thế nào
+    - trường có thư viện không
+    - mô tả thư viện
+    - tôi muốn biết thêm về thư viện
+- intent: phonghoc
+  examples: |
+    - cmc có phòng học như nào
+    - hệ thống phòng học
+    - thông tin về phòng học
+    - toàn bộ về phòng học ở cmc
+    - phòng học ở cmc có gì
+    - phòng học
+    - phòng học thế nào
+    - các phòng học có gì
+    - phòng học có xịn không
+    - tôi muốn biết thêm thông tin về phòng học
+    - phòng học như thế nào
+    - vậy còn phòng học thì sao
+    - mô tả phòng học
+    - hệ thống các phòng học
+    - còn phòng học thì sao
+- intent: phongLab
+  examples: |
+    - cmc có phòng lab không
+    - phòng lab có xịn không
+    - phòng lab cmc có gì
+    - trường có phòng lab không
+    - phòng lab
+    - phòng lab như thế nào?
+    - tôi muốn biết thêm về phòng lab
+    - thông tin phòng lab
+    - mô tả phòng lab
+    - tôi muốn biết thêm về các phòng Lab
+    - thế còn phòng lab thì sao
+    - hệ thống các phòng lab
+- intent: cauLacBo
+  examples: |
+    - [cmc] có những [CLB] sinh viên nào?
+    - Các [câu lạc bộ] sinh viên tại [trường] là gì?
+    - Danh sách các [câu lạc bộ] sinh viên
+    - [câu lạc bộ] sinh viên của [trường]
+    - Những [câu lạc bộ] sinh viên tại [cmc]
+    - [CLB] nào có ở [trường]?
+    - nhiều [câu lạc bộ] không?
+    - Có các [câu lạc bộ] sinh viên nào tại [trường]?
+    - [cmc] có [câu lạc bộ] nào cho sinh viên không?
+    - Sinh viên có thể tham gia các [câu lạc bộ] nào?
+    - Các hoạt động [CLB] của sinh viên là gì?
+    - Làm cách nào để tham gia [câu lạc bộ] của [trường]?
+    - [câu lạc bộ]
+    - có những câu lạc bộ nào
+    - các câu lạc bộ
+    - tôi muốn biết về các câu lạc bộ của trường
+    - sinh viên có câu lạc bộ nào
+- intent: clb_lapTrinh
+  examples: |
+    - cmc có câu lạc bộ lập trình không
+    - thông tin về câu lạc bộ lập trình
+    - câu lạc bộlập trình
+    - câu lạc bộ lập trình
+    - lập trình
+    - câu lạc bộ lập trình ở cmc có gì
+    - có câu lạc bộ cho sinh viên công nghệ không
+    - sinh viên công nghệ có câu lạc bộ
+    - trường có câu lạc bộ gì cho sinh viên công nghệ
+    - thêm thông tin về câu lạc bộ lập trình
+    - tôi muốn biết thêm thông tin về câu lạc bộ lập trình
+- intent: clb_caulong
+  examples: |
+    - cmc có câu lạc bộ cầu lông không?
+    - cmc có sân cầu lông không
+    - thông tin về câu lạc bộ cầu lông
+    - toàn bộ về câu lạc bộ cầu lông
+    - câu lạc bộ cầu lông
+    - cầu lông
+    - tôi muốn biết thêm thông tin về câu lạc bộ cầu lông
+- intent: clb_bongda
+  examples: |
+    - cmc có câu lạc bóng đá không?
+    - cmc có sân bóng không
+    - thông tin về câu lạc bộ bóng đá
+    - toàn bộ về câu lạc bộ bóng đá
+    - câu lạc bộ bóng đá
+    - bóng đá
+    - tôi muốn biết thêm thông tin về câu lạc bộ bóng đá
+- intent: clb_bongro
+  examples: |
+    - cmc có câu lạc bộ bóng rổ không?
+    - cmc có sân bóng rổ không
+    - thông tin về câu lạc bộ bóng rổ
+    - toàn bộ về câu lạc bộ bóng rổ
+    - câu lạc bộ bóng rổ
+    - bóng rổ
+    - tôi muốn biết thêm thông tin về câu lạc bộ bóng rổ
+- intent: clb_bongchuyen
+  examples: |
+    - cmc có câu lạc bộ bóng chuyền không?
+    - cmc có sân bóng chuyền không
+    - thông tin về câu lạc bộ bóng chuyền
+    - toàn bộ về câu lạc bộ bóng chuyền
+    - câu lạc bộ bóng chuyền
+    - bóng chuyền
+    - tôi muốn biết thêm thông tin về câu lạc bộ bóng chuyền
+- intent: clb_tiengAnh
+  examples: |
+    - cmc có câu lạc bộ tiếng anh không
+    - thông tin về câu lạc bộ tiếng anh
+    - câu lạc bộ tiếng anh
+    - câu lạc bộ english
+    - tiếng anh
+    - tôi muốn biết thêm thông tin về câu lạc bộ tiếng anh
+- intent: clb_tiengHan
+  examples: |
+    - cmc có câu lạc bộ tiếng hàn không
+    - thông tin về câu lạc bộ tiếng hàn
+    - câu lạc bộ tiếng hàn
+    - câu lạc bộ korean
+    - tiếng hàn
+    - có câu lạc bộ cho ngôn ngữ hàn không
+    - có câu lạc bộ tiếng hàn không
+    - tôi muốn biết thêm thông tin về câu lạc bộ tiếng hàn
+- intent: clb_tiengNhat
+  examples: |
+    - cmc có câu lạc bộ tiếng nhật không
+    - thông tin về câu lạc bộ tiếng nhật
+    - câu lạc bộ tiếng nhật
+    - câu lạc bộ japanese
+    - tiếng nhật
+    - có câu lạc bộ tiếng nhật không
+    - ngành ngôn ngữ Nhật có câu lạc bộ không
+    - tôi muốn biết thêm thông tin về câu lạc bộ tiếng nhật
+- intent: clb_nghethuat
+  examples: |
+    - cmc có câu lạc bộ nghệ thuật không
+    - thông tin về câu lạc bộ nghệ thuật
+    - câu lạc bộ nghệ thuật
+    - nghệ thuật
+    - nhảy
+    - có câu lạc bộ nghệ thuật không
+    - có câu lạc bộ nghệ thuật nào không
+    - tôi muốn biết thêm thông tin về câu lạc bộ nghệ thuật
+- intent: quanhaphoc
+  examples: |
+    - nhập học có gì?
+    - quà nhập học của cmc là gì
+    - khi đi nhập học được gì?
+    - quà nhập học
+    - đi nhập học ở cmc có quà gì không
+    - đi nhập học có quà gì
+    - quà nhập học có gì
+- intent: diemrenluyen
+  examples: |
+    - cmc tính điểm rèn luyện như thế nào
+    - cách tính điểm rèn luyện
+    - thêm điểm rèn luyện
+    - điểm rèn luyện
+    - tính điểm rèn luyện
+- intent: kytucxa
+  examples: |
+    - cho em biết thông tin về ký túc xá
+    - ký túc xá đại học cmc
+    - CMC có ký túc xá không
+    - ký túc xá ở CMC như thế nào
+    - ký túc xá
+    - trường mình có ký túc xá không
+- intent: hotrohoctap
+  examples: |
+    - cmc có hỗ trợ học tập cho các sinh viên không?
+    - hỗ trợ học tập
+    - học kém có được hỗ trợ học tập không
+    - trường có chính sách hỗ trợ học tập không
+- intent: hoclai
+  examples: |
+    - thi trượt học lại thế nào
+    - ở cmc cho học lại thế nào
+    - cách thức học lại ở cmc
+    - học lại
+    - trượt môn học lại
+    - chính sách học lại
+    - chi phí học lại
+    - học lại tốn bao nhiêu
+- intent: noiquy
+  examples: |
+    - có những nội quy gì
+    - nội quy
+    - nội quy cmc
+    - cmc có nội quy học tập gì
+    - những nội quy gì có khi đi học ở cmc
+    - những nội quy quy định
+    - các nội quy cần tuân thủ
+- intent: nlu_fallback
+  examples: |
+    - Tôi không chắc
+    - Bạn nói gì cơ?
+    - Tôi không hiểu
+    - Câu hỏi này hơi lạ
+    - Không có câu trả lời nào đúng
+    - haha
+    - tôi yêu bạn
+    - bạn bị điên à
+    - có bị hâm không
+    - ơ
+    - ô
+    - điểm chuẩn năm [2024](nam)
+- synonym: sinh viên
+  examples: |
+    - học sinh
+    - học viên
+    - sv
+- synonym: câu lạc bộ
+  examples: |
+    - CLB
+    - clb
+- synonym: giảng viên
+  examples: |
+    - giáo viên
+    - thầy
+    - cô
+    - thầy giáo
+    - cô giáo
+- synonym: trường
+  examples: |
+    - CMC
+    - hv
+- synonym: Công nghệ thông tin
+  examples: |
+    - IT
+    - CNTT
+- synonym: Khoa học máy tính
+  examples: |
+    - KHMT
+- synonym: Điện tử viễn thông
+  examples: |
+    - DTVT
+- synonym: '2024'
+  examples: |
+    - năm 2024
+    - năm nay
+- synonym: '2023'
+  examples: |
+    - năm 2023
+    - năm ngoái
+    - năm trước
+- synonym: '2022'
+  examples: |
+    - năm 2022
+    - năm kia
+- synonym: THPT
+  examples: |
+    - trung học phổ thông
+    - Trung Học Phổ Thông

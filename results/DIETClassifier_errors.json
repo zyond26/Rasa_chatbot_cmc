@@ -1,0 +1,53 @@
+[
+  {
+    "text": "điểm chuẩn năm 2022",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nam",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.5711178183555603,
+        "value": "2022",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "điểm chuẩn năm 2023",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nam",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.5711178183555603,
+        "value": "2023",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "điểm chuẩn năm 2024",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nam",
+        "start": 15,
+        "end": 19,
+        "confidence_entity": 0.5711178183555603,
+        "value": "2024",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  }
+]

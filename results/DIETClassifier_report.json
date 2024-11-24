@@ -1,0 +1,49 @@
+{
+  "nam": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 6,
+    "confused_with": {}
+  },
+  "major": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 142,
+    "confused_with": {}
+  },
+  "monhoc": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 38,
+    "confused_with": {}
+  },
+  "job": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 20,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 0.9856459330143541,
+    "recall": 1.0,
+    "f1-score": 0.9927710843373494,
+    "support": 206
+  },
+  "macro avg": {
+    "precision": 0.9166666666666666,
+    "recall": 1.0,
+    "f1-score": 0.95,
+    "support": 206
+  },
+  "weighted avg": {
+    "precision": 0.9902912621359223,
+    "recall": 1.0,
+    "f1-score": 0.9941747572815535,
+    "support": 206
+  },
+  "accuracy": 0.9993071593533487
+}

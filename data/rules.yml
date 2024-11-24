@@ -1,262 +1,286 @@
 version: "3.1"
 
 rules:
-  # - rule: Trả lời câu hỏi thường gặp
-  #   steps:
-  #     - intent: cauhoithuonggap
-  #     - action: utter_cauhoithuonggap
+  - rule: Chào hỏi
+    steps:
+      - intent: chaohoi
+      - action: utter_chaohoi
 
-  # - rule: Chào hỏi
-  #   steps:
-  #     - intent: chaohoi
-  #     - action: utter_chaohoi
+  - rule: Tạm biệt
+    steps:
+      - intent: tambiet
+      - action: utter_tambiet
 
-  # - rule: Cung cấp thông tin trường
-  #   steps:
-  #     - intent: thongtintruong
-  #     - action: utter_thongtintruong
+  - rule: Câu hỏi thường gặp
+    steps:
+      - intent: cauhoithuonggap
+      - action: utter_cauhoithuonggap
 
-  # - rule: Tạm biệt
-  #   steps:
-  #     - intent: tambiet
-  #     - action: utter_tambiet
+  - rule: Thông tin trường
+    steps:
+      - intent: thongtintruong
+      - action: utter_thongtintruong
 
-  # - rule: Cảm ơn
-  #   steps:
-  #     - intent: camon
-  #     - action: utter_camon
+  - rule: Chương trình đào tạo
+    steps:
+      - intent: chuongtrinhdaotao
+      - action: utter_chuongtrinhdaotao
 
-  # - rule: Cung cấp thông tin tuyển sinh
-  #   steps:
-  #     - intent: tuyensinh
-  #     - action: utter_tuyensinh
+  - rule: Tuyển sinh
+    steps:
+      - intent: tuyensinh
+      - action: utter_tuyensinh
 
-  # - rule: Chương trình đào tạo
-  #   steps:
-  #     - intent: chuongtrinhdaotao
-  #     - action: utter_chuongtrinhdaotao
+  - rule: Xét tuyển điểm thi THPT
+    steps:
+      - intent: xettuyendiemthiTHPT
+      - action: utter_xettuyendiemthiTHPT
 
-  # - rule: Học phí
-  #   steps:
-  #     - intent: hocphi
-  #     - action: utter_hocphi
+  - rule: Xét tuyển học bạ
+    steps:
+      - intent: xettuyenhocba
+      - action: utter_xettuyenhocba
 
-  # - rule: Học bổng
-  #   steps:
-  #     - intent: hocbong
-  #     - action: utter_hocbong
+  - rule: Học phí
+    steps:
+      - intent: hocphi
+      - action: utter_hocphi
 
-  # - rule: Duy trì học bổng
-  #   steps:
-  #     - intent: duytrihocbong
-  #     - action: utter_duytrihocbong
+  - rule: Học bổng
+    steps:
+      - intent: hocbong
+      - action: utter_hocbong
 
-  # - rule: Thông tin liên hệ
-  #   steps:
-  #     - intent: thongtinlienhe
-  #     - action: utter_thongtinlienhe
+  - rule: Duy trì học bổng
+    steps:
+      - intent: duytrihocbong
+      - action: utter_duytrihocbong
 
-  # - rule: Hỏi về bot
-  #   steps:
-  #     - intent: hoi_bot
-  #     - action: utter_hoibot
+  - rule: Thông tin liên hệ
+    steps:
+      - intent: thongtinlienhe
+      - action: utter_thongtinlienhe
 
-  # - rule: Thời gian nhập học
-  #   steps:
-  #     - intent: thoigiannhaphoc
-  #     - action: utter_thoigiannhaphoc
+  - rule: Cơ sở vật chất
+    steps:
+      - intent: cosovatchat
+      - action: utter_cosovatchat
 
-  # - rule: Thông tin giảng viên
-  #   steps:
-  #     - intent: giangvien
-  #     - action: utter_giangvien
+  - rule: Cảm ơn
+    steps:
+      - intent: camon
+      - action: utter_camon
 
-  # - rule: Số lượng sinh viên
-  #   steps:
-  #     - intent: SoLuongSinhVien
-  #     - action: utter_SoLuongSinhVien
+  - rule: Hỏi về bot
+    steps:
+      - intent: hoi_bot
+      - action: utter_hoibot
 
-  # - rule: Tên trường
-  #   steps:
-  #     - intent: tentruong
-  #     - action: utter_tentruong
+  - rule: Thời gian nhập học
+    steps:
+      - intent: thoigiannhaphoc
+      - action: utter_thoigiannhaphoc
 
-  # - rule: Điểm chuẩn
-  #   steps:
-  #     - intent: diemchuan
-  #     - action: utter_diemchuan
+  - rule: Thông tin giảng viên
+    steps:
+      - intent: giangvien
+      - action: utter_giangvien
 
-  # - rule: Điểm chuẩn năm 2022
-  #   steps:
-  #     - intent: diemchuanNam2022
-  #     - action: utter_diemchuanNam2022
+  - rule: Số lượng sinh viên
+    steps:
+      - intent: SoLuongSinhVien
+      - action: utter_SoLuongSinhVien
 
-  # - rule: Điểm chuẩn năm 2023
-  #   steps:
-  #     - intent: diemchuanNam2023
-  #     - action: utter_diemchuanNam2023
+  - rule: Tên trường
+    steps:
+      - intent: tentruong
+      - action: utter_tentruong
 
-  # - rule: Điểm chuẩn năm 2024
-  #   steps:
-  #     - intent: diemchuanNam2024
-  #     - action: utter_diemchuanNam2024
+  - rule: Điểm chuẩn
+    steps:
+      - intent: diemchuan
+      - action: utter_diemchuan
 
-  # - rule: Cơ hội việc làm
-  #   steps:
-  #     - intent: cohoivieclam
-  #     - action: utter_cohoivieclam
+  - rule: Điểm chuẩn năm 2022
+    steps:
+      - intent: diemchuanNam2022
+      - action: utter_diemchuanNam2022
 
-  # - rule: Đối tác
-  #   steps:
-  #     - intent: doitac
-  #     - action: utter_doitac
+  - rule: Điểm chuẩn năm 2023
+    steps:
+      - intent: diemchuanNam2023
+      - action: utter_diemchuanNam2023
 
-  # - rule: Chuyên ngành công nghệ
-  #   steps:
-  #     - intent: chuyennganhcongnghe
-  #     - action: utter_chuyennganhcongnghe
+  - rule: Điểm chuẩn năm 2024
+    steps:
+      - intent: diemchuanNam2024
+      - action: utter_diemchuanNam2024
 
-  # - rule: Ngành công nghệ thông tin
-  #   steps:
-  #     - intent: NganhCNTT
-  #     - action: utter_NganhCNTT
+  - rule: Cơ hội việc làm
+    steps:
+      - intent: cohoivieclam
+      - action: utter_cohoivieclam
 
-  # - rule: Ngành khoa học máy tính
-  #   steps:
-  #     - intent: NganhKHMT
-  #     - action: utter_NganhKHMT
+  - rule: Đối tác
+    steps:
+      - intent: doitac
+      - action: utter_doitac
 
-  # - rule: Ngành điện tử viễn thông
-  #   steps:
-  #     - intent: NganhDTVT
-  #     - action: utter_NganhDTVT
+  - rule: Ngành CNTT
+    steps:
+      - intent: NganhCNTT
+      - action: utter_NganhCNTT
 
-  # - rule: Ngành thiết kế đồ họa
-  #   steps:
-  #     - intent: NganhTKDH
-  #     - action: utter_NganhTKDH
+  - rule: Ngành Khoa học máy tính
+    steps:
+      - intent: NganhKHMT
+      - action: utter_NganhKHMT
 
-  # - rule: Ngành quản trị kinh doanh
-  #   steps:
-  #     - intent: NganhQTKD
-  #     - action: utter_NganhQTKD
+  - rule: Ngành Điện tử viễn thông
+    steps:
+      - intent: NganhDTVT
+      - action: utter_NganhDTVT
 
-  # - rule: Ngành ngôn ngữ
-  #   steps:
-  #     - intent: NganhNN
-  #     - action: utter_NganhNN
+  - rule: hỏi việc làm ngành Công nghệ thông tin
+    steps:
+      - intent: ViecLamNganhCNTT
+        entities:
+          - job: "Việc làm"
+          - major: "Công nghệ thông tin"
+      - action: utter_ViecLamNganhCNTT
 
-  # - rule: Ngôn ngữ Hàn
-  #   steps:
-  #     - intent: NgonNguHan
-  #     - action: utter_NgonNguHan
+  - rule: hỏi việc làm ngành Khoa học máy tính
+    steps:
+      - intent: ViecLamNganhKHMT
+        entities:
+          - job: "Việc làm"
+          - major: "Khoa học máy tính"
+      - action: utter_ViecLamNganhKHMT
 
-  # - rule: Ngôn ngữ Nhật
-  #   steps:
-  #     - intent: NgonNguNhat
-  #     - action: utter_NgonNguNhat
+  - rule: hỏi việc làm ngành Điện tử viễn thông
+    steps:
+      - intent: ViecLamNganhDTVT
+        entities:
+          - job: "Việc làm"
+          - major: "Điện tử viễn thông"
+      - action: utter_ViecLamNganhDTVT
 
-  # - rule: Cơ sở vật chất
-  #   steps:
-  #     - intent: cosovatchat
-  #     - action: utter_cosovatchat
+  - rule: Ngành Thiết kế đồ họa
+    steps:
+      - intent: NganhTKDH
+      - action: utter_NganhTKDH
 
-  # - rule: Thư viện
-  #   steps:
-  #     - intent: thuvien
-  #     - action: utter_thuvien
+  - rule: Ngành Quản trị kinh doanh
+    steps:
+      - intent: NganhQTKD
+      - action: utter_NganhQTKD
 
-  # - rule: Phòng học
-  #   steps:
-  #     - intent: phonghoc
-  #     - action: utter_phonghoc
+  - rule: Ngành Ngôn ngữ Hàn
+    steps:
+      - intent: NgonNguHan
+      - action: utter_NgonNguHan
 
-  # - rule: Phòng Lab
-  #   steps:
-  #     - intent: phongLab
-  #     - action: utter_phongLab
+  - rule: Ngành Ngôn ngữ Nhật
+    steps:
+      - intent: NgonNguNhat
+      - action: utter_NgonNguNhat
 
-  # - rule: Câu lạc bộ
-  #   steps:
-  #     - intent: cauLacBo
-  #     - action: utter_cauLacBo
+  - rule: Thư viện
+    steps:
+      - intent: thuvien
+      - action: utter_thuvien
 
-  # - rule: Câu lạc bộ lập trình
-  #   steps:
-  #     - intent: clb_lapTrinh
-  #     - action: utter_clb_lapTrinh
+  - rule: Phòng học
+    steps:
+      - intent: phonghoc
+      - action: utter_phonghoc
 
-  # - rule: Câu lạc bộ cầu lông
-  #   steps:
-  #     - intent: clb_caulong
-  #     - action: utter_clb_caulong
+  - rule: Phòng Lab
+    steps:
+      - intent: phongLab
+      - action: utter_phongLab
 
-  # - rule: Câu lạc bộ bóng đá
-  #   steps:
-  #     - intent: clb_bongda
-  #     - action: utter_clb_bongda
+  - rule: Câu lạc bộ
+    steps:
+      - intent: cauLacBo
+      - action: utter_cauLacBo
 
-  # - rule: Câu lạc bộ bóng rổ
-  #   steps:
-  #     - intent: clb_bongro
-  #     - action: utter_clb_bongro
+  - rule: Câu lạc bộ lập trình
+    steps:
+      - intent: clb_lapTrinh
+      - action: utter_clb_lapTrinh
 
-  # - rule: Câu lạc bộ bóng chuyền
-  #   steps:
-  #     - intent: clb_bongchuyen
-  #     - action: utter_clb_bongchuyen
+  - rule: Câu lạc bộ cầu lông
+    steps:
+      - intent: clb_caulong
+      - action: utter_clb_caulong
 
-  # - rule: Câu lạc bộ tiếng Anh
-  #   steps:
-  #     - intent: clb_tiengAnh
-  #     - action: utter_clb_tiengAnh
+  - rule: Câu lạc bộ bóng đá
+    steps:
+      - intent: clb_bongda
+      - action: utter_clb_bongda
 
-  # - rule: Câu lạc bộ tiếng Hàn
-  #   steps:
-  #     - intent: clb_tiengHan
-  #     - action: utter_clb_tiengHan
+  - rule: Câu lạc bộ bóng rổ
+    steps:
+      - intent: clb_bongro
+      - action: utter_clb_bongro
 
-  # - rule: Câu lạc bộ tiếng Nhật
-  #   steps:
-  #     - intent: clb_tiengNhat
-  #     - action: utter_clb_tiengNhat
+  - rule: Câu lạc bộ bóng chuyền
+    steps:
+      - intent: clb_bongchuyen
+      - action: utter_clb_bongchuyen
 
-  # - rule: Câu lạc bộ nhảy
-  #   steps:
-  #     - intent: clb_nhay
-  #     - action: utter_clb_nhay
+  - rule: Câu lạc bộ tiếng Anh
+    steps:
+      - intent: clb_tiengAnh
+      - action: utter_clb_tiengAnh
 
-  # - rule: Quà nhập học
-  #   steps:
-  #     - intent: quanhaphoc
-  #     - action: utter_quanhaphoc
+  - rule: Câu lạc bộ tiếng Hàn
+    steps:
+      - intent: clb_tiengHan
+      - action: utter_clb_tiengHan
 
-  # - rule: Điểm rèn luyện
-  #   steps:
-  #     - intent: diemrenluyen
-  #     - action: utter_diemrenluyen
+  - rule: Câu lạc bộ tiếng Nhật
+    steps:
+      - intent: clb_tiengNhat
+      - action: utter_clb_tiengNhat
 
-  # - rule: Ký túc xá
-  #   steps:
-  #     - intent: kytucxa
-  #     - action: utter_kytucxa
+  - rule: Câu lạc bộ nghệ thuật
+    steps:
+      - intent: clb_nghethuat
+      - action: utter_clb_nghethuat
 
-  # - rule: Hỗ trợ học tập
-  #   steps:
-  #     - intent: hotrohoctap
-  #     - action: utter_hotrohoctap
+  - rule: Quà nhập học
+    steps:
+      - intent: quanhaphoc
+      - action: utter_quanhaphoc
 
-  # - rule: Học lại
-  #   steps:
-  #     - intent: hoclai
-  #     - action: utter_hoclai
+  - rule: Điểm rèn luyện
+    steps:
+      - intent: diemrenluyen
+      - action: utter_diemrenluyen
 
-  # - rule: Nội quy
-  #   steps:
-  #     - intent: noiquy
-  #     - action: utter_noiquy
+  - rule: Ký túc xá
+    steps:
+      - intent: kytucxa
+      - action: utter_kytucxa
 
-  # - rule: Fallback cho câu hỏi không có câu trả lời
-  #   steps:
-  #     - intent: nlu_fallback
-  #     - action: utter_fallback
+  - rule: Hỗ trợ học tập
+    steps:
+      - intent: hotrohoctap
+      - action: utter_hotrohoctap
+
+  - rule: Học lại
+    steps:
+      - intent: hoclai
+      - action: utter_hoclai
+
+  - rule: Nội quy
+    steps:
+      - intent: noiquy
+      - action: utter_noiquy
+
+  - rule: Fallback cho câu hỏi không có câu trả lời
+    steps:
+      - intent: nlu_fallback
+      - action: utter_fallback

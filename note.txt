@@ -49,3 +49,19 @@ Các loại policies phổ biến:
 2.rasa run actions
 3.rasa shell
 4.rasa run --enable-api --cors "*"
+
+
+
+My Chatbot Project
+
+├── actions/
+│   └── actions.py          # Định nghĩa các hành động tùy chỉnh
+├── data/
+│   ├── nlu.yml             # Dữ liệu huấn luyện NLU (intent, entities)
+│   ├── rules.yml           # Quy tắc đối thoại (optional)
+│   └── stories.yml         # Câu chuyện (stories) mô tả các tình huống hội thoại
+├── domain.yml              # Cấu hình thông tin về chatbot (intent, entities, actions, responses)
+├── config.yml              # Cấu hình các pipeline và policies cho Rasa NLU và Core
+├── credentials.yml         # Cấu hình các thông tin kết nối như API, messaging platforms
+├── endpoints.yml           # Cấu hình endpoint cho các dịch vụ ngoài (hành động tùy chỉnh, APIs)
+├── models/                 # Lưu trữ các mô hình đã huấn luyện
