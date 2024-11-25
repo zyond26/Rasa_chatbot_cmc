@@ -51,7 +51,7 @@ pipeline:
   - name: DIETClassifier
     epochs: 100
     constrain_similarities: true
-  - name: EntitySynonymMapper
+  - name: EntitySynonymMapper #ánh xạ từ đồng nghĩa ví dụ : sv -> sinh viên
   - name: ResponseSelector
     epochs: 100
     constrain_similarities: true
