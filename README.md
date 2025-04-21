@@ -29,7 +29,7 @@ django
 
 ## Cách chạy project này local
 
-1. bạn hãy git clone git này về : " https://github.com/zyond26/AI_project.git "
+1. bạn hãy git clone git này về : " https://github.com/zyond26/Rasa_chatbot_cmc.git "
 2. `rasa train`
 3. `rasa shell`
 
